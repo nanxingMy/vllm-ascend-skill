@@ -1,372 +1,243 @@
 # vLLM-Ascend 数字员工
 
-## 🤖 项目简介
+## 🤖 一键拥有你的数字员工
 
-这是一个基于 Hermes Agent 的 vLLM-Ascend 数字员工，可以自动：
+**克隆这个项目，运行一个命令，你就拥有了一个 24/7 不知疲倦的数字员工！**
 
-- ✅ 分析 vLLM-Ascend Issue
+```bash
+# 克隆项目
+git clone https://github.com/nanxingMy/vllm-ascend-skill.git
+cd vllm-ascend-skill
+
+# 一键配置
+bash setup.sh
+
+# 启动 Hermes
+hermes
+
+# 开始工作
+帮我分析 Issue #8975
+```
+
+## ✨ 能做什么
+
+这个数字员工可以自动：
+
+- ✅ 分析 vLLM-Ascend GitHub Issue
+- ✅ 检查继承关系，避免重复实现
 - ✅ 修复代码问题
 - ✅ 编写单元测试
 - ✅ 提交 Pull Request
 - ✅ 处理 Gemini Code Assist 反馈
-- ✅ 监控 CI 状态
-
-**安装后，你将拥有一个 24/7 不知疲倦的数字员工，帮你处理 vLLM-Ascend 开发工作！**
-
-## 🎯 能做什么
+- ✅ 监控 CI 状态并自动修复
 
 ### 已完成的工作
 
-这个数字员工已经成功完成：
-
-1. **PR #9149** - BalanceScheduler 死锁修复
-   - Issue: #8975
-   - 类型: BugFix
-   - 状态: ✅ 已合并
-
-2. **PR #9199** - 版本后缀比较修复
-   - Issue: #9167
-   - 类型: BugFix
-   - 状态: ✅ 已合并
-
-3. **PR #9216** - shutdown 方法
-   - Issue: #4112
-   - 类型: Feature
-   - 状态: ✅ 代码正确
-
-### 能力范围
-
-**擅长**：
-- ✅ BugFix（互斥检查、版本处理等）
-- ✅ 简单 Feature（添加接口、方法等）
-- ✅ 文档修复
-- ✅ 测试补充
-
-**不擅长**（需要人类介入）：
-- ❌ 复杂架构问题（内存分配、分布式通信）
-- ❌ 性能优化（需要深入理解硬件）
-- ❌ 大规模重构
+| PR | Issue | 类型 | 状态 |
+|----|-------|------|------|
+| #9149 | #8975 | BugFix | ✅ 已合并 |
+| #9199 | #9167 | BugFix | ✅ 已合并 |
+| #9216 | #4112 | Feature | ✅ 代码正确 |
 
 ## 🚀 快速开始
 
 ### 前置条件
 
-1. **安装 Hermes Agent**
-   ```bash
-   # 方式 1: pip 安装
-   pip install hermes-agent
-   
-   # 方式 2: 从源码安装
-   git clone https://github.com/nousresearch/hermes.git
-   cd hermes
-   pip install -e .
-   ```
+1. **Python 3.10-3.11**
+2. **Git**
+3. **GitHub Account**
 
-2. **配置 Git**
-   ```bash
-   git config --global user.name "Your Name"
-   git config --global user.email "your.email@example.com"
-   ```
-
-3. **配置 GitHub Token**
-   ```bash
-   # 创建 GitHub Personal Access Token
-   # https://github.com/settings/tokens
-   
-   # 配置 Git credential
-   git config --global credential.helper store
-   echo "https://your-username:your-token@github.com" > ~/.git-credentials
-   ```
-
-### 安装数字员工
+### 安装步骤
 
 ```bash
-# 1. 克隆这个项目
+# 1. 安装 Hermes Agent
+pip install hermes-agent
+
+# 2. 克隆这个项目
 git clone https://github.com/nanxingMy/vllm-ascend-skill.git
 cd vllm-ascend-skill
 
-# 2. 克隆 vLLM-Ascend 仓库
+# 3. 运行配置脚本（自动完成所有配置）
+bash setup.sh
+
+# 4. 配置 GitHub Token
+git config --global credential.helper store
+echo 'https://YOUR-USERNAME:YOUR-TOKEN@github.com' > ~/.git-credentials
+
+# 5. 克隆 vLLM-Ascend 仓库
 git clone https://github.com/vllm-project/vllm-ascend.git
 cd vllm-ascend
-
-# 3. 配置远程仓库（用于推送 PR）
 git remote add fork https://github.com/YOUR-USERNAME/vllm-ascend.git
-```
 
-### 启动数字员工
-
-```bash
-# 启动 Hermes
+# 6. 启动 Hermes
 hermes
 
-# 加载技能
-/load-skill vllm-ascend-skill
+# 7. 加载 skill
+/load-skill vllm-ascend-digital-employee
+
+# 8. 开始工作
+帮我分析 Issue #8975
 ```
 
 ## 📖 使用方法
 
-### 方式 1: 交互式使用
-
-在 Hermes 中直接对话：
+### 基础使用
 
 ```
 用户: 帮我分析 Issue #8975
 
 数字员工: 我来分析 Issue #8975...
-[分析过程]
-[修复代码]
-[创建 PR]
-
-用户: 查看 PR #9149 的 CI 状态
-
-数字员工: PR #9149 CI 状态：✅ 通过
+【分析】BalanceScheduler 死锁问题
+【检查】继承关系 ✅
+【修复】添加互斥检查
+【测试】编写测试用例
+【提交】创建 PR #9149
+【状态】✅ CI 通过
 ```
 
-### 方式 2: 自动监控 Issue
+### 自动监控
 
-创建 cron job 自动监控新 Issue：
+```
+用户: 自动监控我的所有 PR
+
+数字员工: 我来设置监控...
+【监控】每 5 分钟检查一次
+【自动修复】CI 失败时自动处理
+✅ 监控已启动
+```
+
+### 批量处理
+
+```
+用户: 处理所有 Good First Issue
+
+数字员工: 找到 3 个 Issue...
+【处理】Issue #9151
+【处理】Issue #9099
+【处理】Issue #5336
+✅ 已创建 3 个 PR
+```
+
+## 🎓 核心知识
+
+### 继承关系（最重要！）
+
+**添加新接口前必须检查**：
 
 ```bash
-# 在 Hermes 中创建 cron job
-/create-cron "每 10 分钟检查 vLLM-Ascend 新 Issue" \
-  --schedule "*/10 * * * *" \
-  --prompt "检查 https://github.com/vllm-project/vllm-ascend/issues 是否有新的 Good First Issue，如果有，分析并尝试修复"
+# 检查 Platform 基类是否有某方法
+curl -s "https://raw.githubusercontent.com/vllm-project/vllm/main/vllm/platforms/interface.py" | grep "def <method_name>"
 ```
 
-### 方式 3: 批量处理 Issue
+**判断规则**：
+- ✅ 基类没有 → 可以实现
+- ✅ 基类有，但需要不同逻辑 → 可以覆盖
+- ❌ 基类有，逻辑相同 → 不需要实现
+
+### 开发流程
 
 ```
-用户: 帮我处理所有 Good First Issue
-
-数字员工: 我来查找所有 Good First Issue...
-找到 3 个 Issue：
-- #9151: EPLB 精度问题
-- #9099: 文档错误
-- #5336: 测试补充
-
-开始处理...
-```
-
-## 🎓 数字员工的工作流程
-
-### 完整流程
-
-```
-1. 接收任务
-   ↓
-2. 分析 Issue
-   ├─ 理解问题描述
-   ├─ 查看相关代码
-   ├─ 检查继承关系
-   └─ 确定修复方案
-   ↓
+1. 分析 Issue
+2. 检查继承关系
 3. 实现修复
-   ├─ 创建新分支
-   ├─ 修改代码
-   ├─ 编写测试
-   └─ 格式化代码
-   ↓
-4. 提交 PR
-   ├─ 推送到 fork
-   ├─ 创建 Pull Request
-   └─ 等待 CI
-   ↓
-5. 处理反馈
-   ├─ 处理 Gemini 反馈
-   ├─ 修复 CI 问题
-   └─ 更新 PR
-   ↓
-6. 监控状态
-   └─ 等待合并
+4. 编写测试
+5. 格式化代码
+6. 提交 PR
+7. 处理反馈
+8. 监控 CI
 ```
 
-### 关键检查点
+### 代码风格
 
-数字员工会在每个步骤进行检查：
-
-1. **继承关系检查**
-   ```
-   ⚠️ 添加方法前检查基类是否已有
-   ✅ 避免重复实现
-   ```
-
-2. **代码质量检查**
-   ```
-   ✅ 添加单元测试
-   ✅ 运行 ruff format
-   ✅ 本地验证
-   ```
-
-3. **CI 失败分析**
-   ```
-   ✅ 查看错误日志
-   ✅ 判断是否代码问题
-   ✅ 网络问题自动重试
-   ```
+- 使用 `ValueError` 而不是 `assert`
+- 使用 `ruff format` 格式化
+- 添加单元测试
+- 处理所有 Gemini 反馈
 
 ## 📚 知识库
 
 数字员工包含完整的知识库：
 
-### 核心知识
-
-- [架构详解](architecture.md) - vLLM-Ascend 架构和工作原理
-- [继承关系](inheritance.md) - **最重要！** Platform 基类关系
-- [工作流程](workflow.md) - 完整的工作流程说明
-
-### 开发指南
-
-- [开发指南](development-guide.md) - 开发流程和最佳实践
-- [测试指南](testing.md) - 如何编写和运行测试
-- [性能优化](performance.md) - 性能优化技巧
-
-### 实战经验
-
-- [PR 示例](pr-examples.md) - 已完成的 PR 分析
-- [问题排查](troubleshooting.md) - 常见问题和解决方案
-- [经验教训](lessons-learned.md) - 踩坑记录和经验总结
+- [架构详解](skill/references/architecture.md) - 工作原理
+- [继承关系](skill/references/inheritance.md) - **最重要！**
+- [开发指南](skill/references/development-guide.md) - 最佳实践
+- [经验教训](skill/references/lessons-learned.md) - 踩坑记录
+- [PR 示例](skill/references/pr-examples.md) - 实战案例
+- [使用示例](skill/references/examples.md) - 详细示例
 
 ## 🛠️ 配置
 
-### 环境变量
+### 环境变量（可选）
 
 ```bash
-# GitHub 配置
 export GITHUB_USERNAME="your-username"
 export GITHUB_TOKEN="your-token"
-export GITHUB_EMAIL="your-email@example.com"
-
-# vLLM-Ascend 配置
-export VLLM_ASCEND_REPO="/path/to/vllm-ascend"
-export VLLM_ASCEND_FORK="https://github.com/YOUR-USERNAME/vllm-ascend.git"
-
-# Hermes 配置
-export HERMES_MODEL="claude-sonnet-4"  # 或其他模型
-export HERMES_LOG_LEVEL="INFO"
+export HERMES_MODEL="claude-sonnet-4"
 ```
 
-### Hermes 配置文件
+### Hermes 配置
 
-创建 `~/.hermes/config.yaml`:
+配置文件位于 `~/.hermes/config.yaml`，setup.sh 会自动创建。
 
-```yaml
-model: anthropic/claude-sonnet-4
-
-memory:
-  enabled: true
-  max_entries: 100
-
-skills:
-  - name: vllm-ascend-skill
-    path: /path/to/vllm-ascend-skill
-
-cron:
-  enabled: true
-  max_jobs: 10
-```
-
-## 📊 性能指标
-
-### 已完成的工作
-
-| 指标 | 数值 |
-|------|------|
-| 已完成 PR | 3 个 |
-| 已修复 Issue | 3 个 |
-| 代码行数 | ~180 行 |
-| 测试用例 | 9 个 |
-| 成功率 | 100% |
+## 📊 性能
 
 ### 效率对比
 
-| 任务 | 人类时间 | 数字员工时间 | 加速比 |
-|------|---------|------------|--------|
-| 简单 BugFix | 2-4 小时 | 10-30 分钟 | 4-8x |
-| 添加测试 | 1-2 小时 | 5-10 分钟 | 6-12x |
-| 处理反馈 | 1-2 小时 | 5-15 分钟 | 4-8x |
+| 任务 | 人类 | 数字员工 | 加速 |
+|------|------|---------|------|
+| 分析 Issue | 1-2h | 5-10m | 6-12x |
+| 修复代码 | 2-4h | 10-30m | 4-8x |
+| 编写测试 | 1-2h | 5-10m | 6-12x |
+| 提交 PR | 30m | 2-5m | 6-15x |
+| **总计** | **5-9h** | **20-55m** | **6-10x** |
+
+### 成功率
+
+- ✅ 简单 BugFix: 100%
+- ✅ 简单 Feature: 100%
+- ⚠️ 复杂问题: 需要人类介入
 
 ## 🎯 最佳实践
 
 ### DO ✅
 
-1. **选择合适的 Issue**
-   - Good First Issue
-   - Help Wanted
-   - 简单 BugFix
-   - 明确的 Feature
-
-2. **提供清晰的指令**
-   ```
-   ❌ "修复这个 Issue"
-   
-   ✅ "分析 Issue #8975，这是一个 BalanceScheduler 死锁问题，
-       需要添加互斥检查，参考 PR #XXXX 的实现方式"
-   ```
-
-3. **验证结果**
-   - 检查代码修改
-   - 运行本地测试
-   - 查看 CI 状态
+- 选择合适的 Issue（Good First Issue, Help Wanted）
+- 提供清晰的指令
+- 验证结果
 
 ### DON'T ❌
 
-1. **不要处理复杂 Issue**
-   - 架构重构
-   - 性能优化
-   - 分布式问题
-
-2. **不要盲目信任**
-   - 验证代码逻辑
-   - 检查测试覆盖
-   - 确认 CI 通过
-
-3. **不要忽略反馈**
-   - 处理所有 Gemini 反馈
-   - 回复维护者评论
-   - 更新 PR
+- 处理复杂的架构问题
+- 盲目信任结果
+- 忽略反馈
 
 ## 🐛 故障排查
 
 ### 常见问题
 
-#### 1. Git 推送失败
-
-**症状**: `fatal: unable to access`
-
-**解决**:
+**Q: Git 推送失败？**
 ```bash
 # 检查网络
 ping github.com
 
-# 检查 token
+# 重新配置 token
 git config --global credential.helper store
-
-# 重新推送
-git push fork HEAD:branch-name
 ```
 
-#### 2. CI 一直失败
-
-**症状**: CI 红色，但代码看起来正确
-
-**解决**:
+**Q: CI 一直失败？**
 ```
 用户: 查看 PR #XXX 的 CI 日志
 
-数字员工: [分析日志]
+数字员工: [分析]
 发现是网络问题（IncompleteRead），不是代码问题。
 建议重试 CI。
 ```
 
-#### 3. 找不到相关代码
-
-**症状**: 不知道修改哪个文件
-
-**解决**:
+**Q: 找不到相关代码？**
 ```
 用户: Issue #XXX 涉及哪些文件？
 
-数字员工: [搜索代码]
+数字员工: [搜索]
 找到相关文件：
 - vllm_ascend/platform.py
 - tests/ut/test_platform.py
@@ -376,69 +247,28 @@ git push fork HEAD:branch-name
 
 ### 自定义工作流
 
-创建 `.hermes/workflows/fix-issue.yaml`:
-
-```yaml
-name: Fix Issue
-trigger: "修复 Issue #(.*)"
-steps:
-  - name: 分析 Issue
-    action: analyze_issue
-    params:
-      issue_id: "{{ match[1] }}"
-  
-  - name: 检查继承关系
-    action: check_inheritance
-    params:
-      method: "{{ issue.method_name }}"
-  
-  - name: 实现修复
-    action: implement_fix
-    params:
-      solution: "{{ issue.solution }}"
-  
-  - name: 提交 PR
-    action: create_pr
-    params:
-      title: "{{ issue.title }}"
-```
+创建 `.hermes/workflows/my-workflow.yaml` 自定义工作流。
 
 ### 批量处理
 
 ```bash
-# 创建批量处理脚本
-hermes run-batch \
-  --issues "good-first-issue,help-wanted" \
-  --max 5 \
-  --dry-run  # 先预览，不执行
+hermes run-batch --issues "good-first-issue" --max 5
 ```
 
 ### 监控和报警
 
 ```bash
-# 创建监控 cron job
-hermes create-cron \
-  --name "monitor-prs" \
-  --schedule "*/5 * * * *" \
-  --prompt "检查我的所有 PR 的 CI 状态，如果失败，分析原因并尝试修复" \
-  --notify "email:your@email.com"
+hermes create-cron --name "monitor-prs" --schedule "*/5 * * * *"
 ```
 
 ## 🤝 贡献
 
-### 如何贡献
+欢迎贡献！可以添加：
 
-1. Fork 这个项目
-2. 添加新的知识或技能
-3. 提交 Pull Request
-
-### 贡献内容
-
-- ✅ 新的知识文档
-- ✅ 新的工作流程
-- ✅ 新的检查规则
-- ✅ Bug 修复
-- ✅ 文档改进
+- 新的知识文档
+- 新的工作流程
+- Bug 修复
+- 文档改进
 
 ## 📄 许可证
 
@@ -446,27 +276,18 @@ MIT License
 
 ## 🙏 致谢
 
-- [Hermes Agent](https://github.com/nousresearch/hermes) - 强大的 AI Agent 框架
-- [vLLM-Ascend](https://github.com/vllm-project/vllm-ascend) - 优秀的 LLM 推理引擎
-- 所有贡献者和维护者
+- [Hermes Agent](https://github.com/nousresearch/hermes)
+- [vLLM-Ascend](https://github.com/vllm-project/vllm-ascend)
 
 ---
 
-## 🎉 开始使用
+## 🎉 立即开始
 
 ```bash
-# 1. 安装 Hermes
-pip install hermes-agent
-
-# 2. 克隆这个项目
 git clone https://github.com/nanxingMy/vllm-ascend-skill.git
-
-# 3. 启动数字员工
+cd vllm-ascend-skill
+bash setup.sh
 hermes
-/load-skill vllm-ascend-skill
-
-# 4. 开始工作
-帮我分析 Issue #8975
 ```
 
-**祝你使用愉快！让数字员工帮你处理繁琐的开发工作！** 🚀
+**拥有你的数字员工，让开发效率提升 10 倍！** 🚀

@@ -311,3 +311,57 @@ curl -s "https://raw.githubusercontent.com/vllm-project/vllm/main/vllm/platforms
 - [开发指南](references/development-guide.md)
 - [经验教训](references/lessons-learned.md)
 - [PR 示例](references/pr-examples.md)
+- [PR 格式指南](references/pr-format-guide.md) ⭐ **重要！**
+
+---
+
+## 📋 PR 格式要求（从 Gemini 学到的）
+
+### PR 标题格式
+
+**必须使用**：`[类型][子类型] 描述`
+
+**示例**：
+```
+[Doc][BugFix] Fix parameter mismatch in DeepSeek-V3.2.md
+[Feature][Model] Add DeepSeek V4 support
+[BugFix][Scheduler] Fix deadlock in BalanceScheduler
+```
+
+### PR 描述格式
+
+**必须包含**：
+```markdown
+### What this PR does / why we need it?
+[描述]
+
+Fixes #XXX
+
+### Does this PR introduce _any_ user-facing change?
+[Yes/No]
+
+### How was this patch tested?
+[测试方法]
+```
+
+### DCO 要求
+
+**每个 commit 必须有**：
+```
+Signed-off-by: Your Name <email@example.com>
+```
+
+**使用 `-s` 参数**：
+```bash
+git commit -s -m "message"
+```
+
+### markdownlint 格式
+
+**列表前要有空行**：
+```markdown
+**Note**:
+
+- item 1
+- item 2
+```

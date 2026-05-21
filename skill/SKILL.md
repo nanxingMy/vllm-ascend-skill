@@ -33,9 +33,26 @@ tags:
 - "分析 Issue"
 - "修复 Issue"
 - "提交 PR"
+- "处理 Issue"
+- "workflow"
+- "工作流"
 - "BalanceScheduler"
 - "NPUPlatform"
 - "NPUWorker"
+
+## 相关 Skills
+
+本数字员工包含多个子 skills：
+
+1. **vllm-ascend-issue-workflow** - Issue 处理工作流
+   - 完整的 5 阶段流程
+   - 从 Issue 发现到 PR 合并
+   - 包含检查清单和最佳实践
+
+加载方式：
+```
+/load-skill vllm-ascend-issue-workflow
+```
 
 ## 核心知识
 

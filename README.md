@@ -158,12 +158,23 @@ curl -s "https://raw.githubusercontent.com/vllm-project/vllm/main/vllm/platforms
 
 数字员工包含完整的知识库：
 
+### 核心文档
 - [架构详解](skill/references/architecture.md) - 工作原理
 - [继承关系](skill/references/inheritance.md) - **最重要！**
 - [开发指南](skill/references/development-guide.md) - 最佳实践
 - [经验教训](skill/references/lessons-learned.md) - 踩坑记录
 - [PR 示例](skill/references/pr-examples.md) - 实战案例
 - [使用示例](skill/references/examples.md) - 详细示例
+
+### Issue 处理工作流 ⭐ **新增！**
+完整的 5 阶段工作流文档：
+- [工作流总览](skill/references/workflow/README.md)
+- [快速参考](skill/references/workflow/QUICK-REFERENCE.md) - **常用命令速查**
+- [阶段 1: Issue 发现与分析](skill/references/workflow/workflow-01-issue-discovery.md)
+- [阶段 2: 分支创建与代码修改](skill/references/workflow/workflow-02-branch-and-code.md)
+- [阶段 3: PR 创建与 DCO 处理](skill/references/workflow/workflow-03-pr-and-dco.md)
+- [阶段 4: 检视意见处理](skill/references/workflow/workflow-04-review-feedback.md)
+- [阶段 5: CI 监控与合并](skill/references/workflow/workflow-05-ci-and-merge.md)
 
 ## 🛠️ 配置
 

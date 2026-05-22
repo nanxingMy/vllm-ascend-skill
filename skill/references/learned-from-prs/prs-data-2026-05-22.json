@@ -1,15 +1,14 @@
 {
   "stats": {
-    "total_prs": 1320,
+    "total_prs": 1370,
     "learned_prs": 50,
     "categories": {
-      "Bug Fix": 30,
-      "Documentation": 6,
-      "Test": 9,
-      "Performance": 2,
-      "Feature": 7,
-      "Other": 11,
-      "Refactor": 1
+      "Bug Fix": 20,
+      "Feature": 13,
+      "Other": 13,
+      "Test": 11,
+      "Documentation": 3,
+      "Refactor": 4
     }
   },
   "prs": [
@@ -100103,6 +100102,2971 @@
         "deletions": 111
       },
       "learned_at": "2026-05-22T13:01:16.551626"
+    },
+    {
+      "pr_number": 6430,
+      "pr_title": "[bugfix][npugraph_ex]add the extra check for allreduce rmsnorm fusion pass",
+      "pr_user": "ChenCangtao",
+      "pr_url": "https://github.com/vllm-project/vllm-ascend/pull/6430",
+      "merged_at": "2026-02-04T00:48:28Z",
+      "issue_number": null,
+      "issue_title": null,
+      "issue_labels": [],
+      "categories": [
+        "Bug Fix",
+        "Feature"
+      ],
+      "solution": {
+        "files": [
+          {
+            "path": "vllm_ascend/compilation/npugraph_ex_passes/graphex_allreduce_rmsnorm_fusion_pass.py",
+            "additions": 9,
+            "deletions": 2,
+            "change_type": "modified"
+          }
+        ],
+        "approaches": [
+          "add the extra check for allreduce rmsnorm fusion pass",
+          "Merge branch 'main' into check_allreduce_rmsnorm_fusion_pass",
+          "add extra_stream_scope_check back"
+        ],
+        "key_patterns": [
+          {
+            "pattern": "添加函数",
+            "file": "vllm_ascend/compilation/npugraph_ex_passes/graphex_allreduce_rmsnorm_fusion_pass.py",
+            "count": 1
+          },
+          {
+            "pattern": "添加导入",
+            "file": "vllm_ascend/compilation/npugraph_ex_passes/graphex_allreduce_rmsnorm_fusion_pass.py",
+            "count": 2
+          }
+        ],
+        "additions": 9,
+        "deletions": 2
+      },
+      "learned_at": "2026-05-22T13:09:24.884397"
+    },
+    {
+      "pr_number": 6443,
+      "pr_title": "[v0.13.0][Eagle3]Extend PR #5786 to eagle3",
+      "pr_user": "Angazenn",
+      "pr_url": "https://github.com/vllm-project/vllm-ascend/pull/6443",
+      "merged_at": "2026-01-30T15:45:53Z",
+      "issue_number": 5786,
+      "issue_title": "[v0.13.0][Bugfix] Support ALL D-Nodes in fullgraph when running MTP in PD",
+      "issue_labels": [
+        "ready",
+        "ready-for-test"
+      ],
+      "categories": [
+        "Other"
+      ],
+      "solution": {
+        "files": [
+          {
+            "path": "vllm_ascend/patch/worker/patch_model_runner.py",
+            "additions": 1,
+            "deletions": 1,
+            "change_type": "modified"
+          },
+          {
+            "path": "vllm_ascend/platform.py",
+            "additions": 1,
+            "deletions": 2,
+            "change_type": "modified"
+          }
+        ],
+        "approaches": [
+          "extend to eagle3"
+        ],
+        "key_patterns": [
+          {
+            "pattern": "添加检查",
+            "file": "vllm_ascend/platform.py",
+            "count": 1
+          }
+        ],
+        "additions": 2,
+        "deletions": 3
+      },
+      "learned_at": "2026-05-22T13:09:31.723412"
+    },
+    {
+      "pr_number": 6441,
+      "pr_title": "work around: reset the None reference count to prevent it from droppi…",
+      "pr_user": "1092626063",
+      "pr_url": "https://github.com/vllm-project/vllm-ascend/pull/6441",
+      "merged_at": "2026-01-30T15:45:08Z",
+      "issue_number": null,
+      "issue_title": null,
+      "issue_labels": [],
+      "categories": [
+        "Other"
+      ],
+      "solution": {
+        "files": [
+          {
+            "path": "vllm_ascend/worker/model_runner_v1.py",
+            "additions": 10,
+            "deletions": 0,
+            "change_type": "modified"
+          }
+        ],
+        "approaches": [
+          "work around: reset the None reference count to prevent it from dropping to zero and causing a crash."
+        ],
+        "key_patterns": [
+          {
+            "pattern": "添加检查",
+            "file": "vllm_ascend/worker/model_runner_v1.py",
+            "count": 1
+          },
+          {
+            "pattern": "添加导入",
+            "file": "vllm_ascend/worker/model_runner_v1.py",
+            "count": 1
+          }
+        ],
+        "additions": 10,
+        "deletions": 0
+      },
+      "learned_at": "2026-05-22T13:09:36.024593"
+    },
+    {
+      "pr_number": 6310,
+      "pr_title": "[Bugfix]Modify NPU rotary encoding parameter fields，fix RopeOperation setup failed in condition of self.rotary_dim < self.head_size",
+      "pr_user": "wubin58",
+      "pr_url": "https://github.com/vllm-project/vllm-ascend/pull/6310",
+      "merged_at": "2026-01-30T13:25:04Z",
+      "issue_number": 6060,
+      "issue_title": "[Bug]:  RopeOperation setup failed  when _rope_forward_oot() called  in condition of  self.rotary_dim < self.head_size",
+      "issue_labels": [
+        "bug"
+      ],
+      "categories": [
+        "Bug Fix"
+      ],
+      "solution": {
+        "files": [
+          {
+            "path": "vllm_ascend/ops/rotary_embedding.py",
+            "additions": 3,
+            "deletions": 1,
+            "change_type": "modified"
+          }
+        ],
+        "approaches": [
+          "Modify NPU rotary encoding parameter fields",
+          "Merge branch 'vllm-project:main' into main"
+        ],
+        "key_patterns": [],
+        "additions": 3,
+        "deletions": 1
+      },
+      "learned_at": "2026-05-22T13:09:42.414541"
+    },
+    {
+      "pr_number": 6422,
+      "pr_title": "fix: resolve sync bug in DispathFFNCombine when expert num per card is 32",
+      "pr_user": "serlar",
+      "pr_url": "https://github.com/vllm-project/vllm-ascend/pull/6422",
+      "merged_at": "2026-01-30T13:21:38Z",
+      "issue_number": null,
+      "issue_title": null,
+      "issue_labels": [],
+      "categories": [
+        "Bug Fix"
+      ],
+      "solution": {
+        "files": [
+          {
+            "path": "csrc/dispatch_ffn_combine/op_kernel/dispatch_ffn_combine_kernel.hpp",
+            "additions": 32,
+            "deletions": 15,
+            "change_type": "modified"
+          },
+          {
+            "path": "csrc/dispatch_ffn_combine/op_kernel/utils/block_mmad_preload_async_fixpipe_quant.hpp",
+            "additions": 3,
+            "deletions": 1,
+            "change_type": "modified"
+          }
+        ],
+        "approaches": [
+          "fix: resolve sync bug in DispathFFNCombine when expert num per card is 32"
+        ],
+        "key_patterns": [],
+        "additions": 35,
+        "deletions": 16
+      },
+      "learned_at": "2026-05-22T13:09:46.663442"
+    },
+    {
+      "pr_number": 6416,
+      "pr_title": "fix: resolve sync bug in DispathFFNCombine when expert num per card is 32",
+      "pr_user": "serlar",
+      "pr_url": "https://github.com/vllm-project/vllm-ascend/pull/6416",
+      "merged_at": "2026-01-30T13:21:21Z",
+      "issue_number": null,
+      "issue_title": null,
+      "issue_labels": [],
+      "categories": [
+        "Bug Fix"
+      ],
+      "solution": {
+        "files": [
+          {
+            "path": "csrc/dispatch_ffn_combine/op_kernel/dispatch_ffn_combine_kernel.hpp",
+            "additions": 32,
+            "deletions": 15,
+            "change_type": "modified"
+          },
+          {
+            "path": "csrc/dispatch_ffn_combine/op_kernel/utils/block_mmad_preload_async_fixpipe_quant.hpp",
+            "additions": 3,
+            "deletions": 1,
+            "change_type": "modified"
+          },
+          {
+            "path": "csrc/dispatch_ffn_combine_bf16/op_kernel/dispatch_ffn_combine_bf16_kernel.hpp",
+            "additions": 31,
+            "deletions": 15,
+            "change_type": "modified"
+          },
+          {
+            "path": "csrc/dispatch_ffn_combine_bf16/op_kernel/utils/block_mmad_preload_async_fixpipe_quant.hpp",
+            "additions": 3,
+            "deletions": 1,
+            "change_type": "modified"
+          }
+        ],
+        "approaches": [
+          "fix: resolve sync bug in DispathFFNCombine when expert num per card is 32"
+        ],
+        "key_patterns": [],
+        "additions": 69,
+        "deletions": 32
+      },
+      "learned_at": "2026-05-22T13:09:50.943788"
+    },
+    {
+      "pr_number": 5228,
+      "pr_title": "[Feat]Xlite Qwen3-vl Support",
+      "pr_user": "LJQ142857",
+      "pr_url": "https://github.com/vllm-project/vllm-ascend/pull/5228",
+      "merged_at": "2025-12-22T08:30:52Z",
+      "issue_number": null,
+      "issue_title": null,
+      "issue_labels": [],
+      "categories": [
+        "Feature"
+      ],
+      "solution": {
+        "files": [
+          {
+            "path": "docs/source/user_guide/configuration/additional_config.md",
+            "additions": 1,
+            "deletions": 1,
+            "change_type": "modified"
+          },
+          {
+            "path": "docs/source/user_guide/feature_guide/graph_mode.md",
+            "additions": 3,
+            "deletions": 3,
+            "change_type": "modified"
+          },
+          {
+            "path": "vllm_ascend/platform.py",
+            "additions": 1,
+            "deletions": 1,
+            "change_type": "modified"
+          },
+          {
+            "path": "vllm_ascend/xlite/xlite.py",
+            "additions": 14,
+            "deletions": 4,
+            "change_type": "modified"
+          }
+        ],
+        "approaches": [
+          "Xlite Qwen3-VL Support"
+        ],
+        "key_patterns": [
+          {
+            "pattern": "添加检查",
+            "file": "vllm_ascend/xlite/xlite.py",
+            "count": 2
+          }
+        ],
+        "additions": 19,
+        "deletions": 9
+      },
+      "learned_at": "2026-05-22T13:09:55.251270"
+    },
+    {
+      "pr_number": 6357,
+      "pr_title": "[Fix] Pads query_start_loc to satisfy FIA/TND constraint",
+      "pr_user": "yiz-liu",
+      "pr_url": "https://github.com/vllm-project/vllm-ascend/pull/6357",
+      "merged_at": "2026-01-30T08:41:44Z",
+      "issue_number": null,
+      "issue_title": null,
+      "issue_labels": [],
+      "categories": [
+        "Bug Fix"
+      ],
+      "solution": {
+        "files": [
+          {
+            "path": "tests/e2e/singlecard/test_aclgraph_accuracy.py",
+            "additions": 40,
+            "deletions": 0,
+            "change_type": "modified"
+          },
+          {
+            "path": "vllm_ascend/worker/model_runner_v1.py",
+            "additions": 56,
+            "deletions": 5,
+            "change_type": "modified"
+          }
+        ],
+        "approaches": [
+          "Pads query_start_loc to satisfy FIA/TND constraint",
+          "Add tests for Qwen/DeepSeek with FULL mode"
+        ],
+        "key_patterns": [
+          {
+            "pattern": "添加函数",
+            "file": "tests/e2e/singlecard/test_aclgraph_accuracy.py",
+            "count": 1
+          },
+          {
+            "pattern": "添加检查",
+            "file": "vllm_ascend/worker/model_runner_v1.py",
+            "count": 2
+          }
+        ],
+        "additions": 96,
+        "deletions": 5
+      },
+      "learned_at": "2026-05-22T13:09:59.606529"
+    },
+    {
+      "pr_number": 6320,
+      "pr_title": "[e2e Test][npugraph_ex]add static kernel e2e test case",
+      "pr_user": "ChenCangtao",
+      "pr_url": "https://github.com/vllm-project/vllm-ascend/pull/6320",
+      "merged_at": "2026-01-30T08:24:48Z",
+      "issue_number": null,
+      "issue_title": null,
+      "issue_labels": [],
+      "categories": [
+        "Feature",
+        "Test"
+      ],
+      "solution": {
+        "files": [
+          {
+            "path": "tests/e2e/singlecard/test_aclgraph_accuracy.py",
+            "additions": 32,
+            "deletions": 0,
+            "change_type": "modified"
+          },
+          {
+            "path": "vllm_ascend/compilation/compiler_interface.py",
+            "additions": 2,
+            "deletions": 2,
+            "change_type": "modified"
+          }
+        ],
+        "approaches": [
+          "add static kernel e2e test",
+          "add static kernel test",
+          "add static kernel test",
+          "add static kernel test",
+          "Merge branch 'main' into static_kernel_test"
+        ],
+        "key_patterns": [
+          {
+            "pattern": "添加函数",
+            "file": "tests/e2e/singlecard/test_aclgraph_accuracy.py",
+            "count": 1
+          },
+          {
+            "pattern": "添加导入",
+            "file": "tests/e2e/singlecard/test_aclgraph_accuracy.py",
+            "count": 1
+          }
+        ],
+        "additions": 34,
+        "deletions": 2
+      },
+      "learned_at": "2026-05-22T13:10:04.377826"
+    },
+    {
+      "pr_number": 6397,
+      "pr_title": "[0.13.0]fix patch cudagraph size",
+      "pr_user": "liziyu179",
+      "pr_url": "https://github.com/vllm-project/vllm-ascend/pull/6397",
+      "merged_at": "2026-01-30T08:08:18Z",
+      "issue_number": null,
+      "issue_title": null,
+      "issue_labels": [],
+      "categories": [
+        "Bug Fix"
+      ],
+      "solution": {
+        "files": [
+          {
+            "path": "vllm_ascend/patch/platform/patch_set_cudagraph_sizes.py",
+            "additions": 2,
+            "deletions": 0,
+            "change_type": "modified"
+          }
+        ],
+        "approaches": [
+          "fix patch cudagraph size"
+        ],
+        "key_patterns": [
+          {
+            "pattern": "添加检查",
+            "file": "vllm_ascend/patch/platform/patch_set_cudagraph_sizes.py",
+            "count": 1
+          }
+        ],
+        "additions": 2,
+        "deletions": 0
+      },
+      "learned_at": "2026-05-22T13:10:08.614965"
+    },
+    {
+      "pr_number": 6400,
+      "pr_title": "[P/D][0.13.0]Add ssl cert for metaserver proxy",
+      "pr_user": "wangxiaoteng888",
+      "pr_url": "https://github.com/vllm-project/vllm-ascend/pull/6400",
+      "merged_at": "2026-01-30T07:56:33Z",
+      "issue_number": null,
+      "issue_title": null,
+      "issue_labels": [],
+      "categories": [
+        "Feature"
+      ],
+      "solution": {
+        "files": [
+          {
+            "path": "vllm_ascend/distributed/mooncake_layerwise_connector.py",
+            "additions": 19,
+            "deletions": 2,
+            "change_type": "modified"
+          }
+        ],
+        "approaches": [
+          "add_ssl"
+        ],
+        "key_patterns": [
+          {
+            "pattern": "添加检查",
+            "file": "vllm_ascend/distributed/mooncake_layerwise_connector.py",
+            "count": 1
+          }
+        ],
+        "additions": 19,
+        "deletions": 2
+      },
+      "learned_at": "2026-05-22T13:10:12.898669"
+    },
+    {
+      "pr_number": 6420,
+      "pr_title": "[Nightly] Correct nightly image build ref",
+      "pr_user": "Potabk",
+      "pr_url": "https://github.com/vllm-project/vllm-ascend/pull/6420",
+      "merged_at": "2026-01-30T07:55:58Z",
+      "issue_number": null,
+      "issue_title": null,
+      "issue_labels": [],
+      "categories": [
+        "Other"
+      ],
+      "solution": {
+        "files": [
+          {
+            "path": ".github/Dockerfile.nightly.a2",
+            "additions": 1,
+            "deletions": 1,
+            "change_type": "modified"
+          },
+          {
+            "path": ".github/Dockerfile.nightly.a3",
+            "additions": 1,
+            "deletions": 1,
+            "change_type": "modified"
+          },
+          {
+            "path": ".github/workflows/_e2e_nightly_single_node.yaml",
+            "additions": 0,
+            "deletions": 3,
+            "change_type": "modified"
+          },
+          {
+            "path": ".github/workflows/schedule_nightly_test_a2.yaml",
+            "additions": 0,
+            "deletions": 1,
+            "change_type": "renamed"
+          },
+          {
+            "path": ".github/workflows/schedule_nightly_test_a3.yaml",
+            "additions": 0,
+            "deletions": 2,
+            "change_type": "renamed"
+          }
+        ],
+        "approaches": [
+          "fix"
+        ],
+        "key_patterns": [],
+        "additions": 2,
+        "deletions": 8
+      },
+      "learned_at": "2026-05-22T13:10:17.170756"
+    },
+    {
+      "pr_number": 6396,
+      "pr_title": "[CI][Nightly] Correct the nightly image build ref",
+      "pr_user": "Potabk",
+      "pr_url": "https://github.com/vllm-project/vllm-ascend/pull/6396",
+      "merged_at": "2026-01-30T06:45:18Z",
+      "issue_number": 6367,
+      "issue_title": "[CI] hot fix for nightly image  build tag",
+      "issue_labels": [],
+      "categories": [
+        "Other"
+      ],
+      "solution": {
+        "files": [
+          {
+            "path": ".github/Dockerfile.nightly.a2",
+            "additions": 1,
+            "deletions": 1,
+            "change_type": "modified"
+          },
+          {
+            "path": ".github/Dockerfile.nightly.a3",
+            "additions": 1,
+            "deletions": 1,
+            "change_type": "modified"
+          }
+        ],
+        "approaches": [
+          "nightly use 013"
+        ],
+        "key_patterns": [],
+        "additions": 2,
+        "deletions": 2
+      },
+      "learned_at": "2026-05-22T13:10:23.528783"
+    },
+    {
+      "pr_number": 6295,
+      "pr_title": "[P/D] Using the cache load operator to replace the index select operator.",
+      "pr_user": "liziyu179",
+      "pr_url": "https://github.com/vllm-project/vllm-ascend/pull/6295",
+      "merged_at": "2026-01-30T06:27:54Z",
+      "issue_number": null,
+      "issue_title": null,
+      "issue_labels": [],
+      "categories": [
+        "Other"
+      ],
+      "solution": {
+        "files": [
+          {
+            "path": "tests/ut/kv_connector/test_mooncake_layerwise_connector.py",
+            "additions": 8,
+            "deletions": 3,
+            "change_type": "modified"
+          },
+          {
+            "path": "vllm_ascend/distributed/kv_transfer/kv_p2p/mooncake_layerwise_connector.py",
+            "additions": 111,
+            "deletions": 71,
+            "change_type": "modified"
+          }
+        ],
+        "approaches": [
+          "Using the cache load operator to replace the index select operator.",
+          "fix lint",
+          "add zmq socket fail log",
+          "fix layerwise ut"
+        ],
+        "key_patterns": [
+          {
+            "pattern": "添加检查",
+            "file": "vllm_ascend/distributed/kv_transfer/kv_p2p/mooncake_layerwise_connector.py",
+            "count": 6
+          },
+          {
+            "pattern": "添加异常处理",
+            "file": "vllm_ascend/distributed/kv_transfer/kv_p2p/mooncake_layerwise_connector.py",
+            "count": 2
+          },
+          {
+            "pattern": "添加导入",
+            "file": "vllm_ascend/distributed/kv_transfer/kv_p2p/mooncake_layerwise_connector.py",
+            "count": 1
+          }
+        ],
+        "additions": 119,
+        "deletions": 74
+      },
+      "learned_at": "2026-05-22T13:10:27.907047"
+    },
+    {
+      "pr_number": 6306,
+      "pr_title": "[doc][npugraph_ex]add npugraph_ex introduction doc",
+      "pr_user": "ChenCangtao",
+      "pr_url": "https://github.com/vllm-project/vllm-ascend/pull/6306",
+      "merged_at": "2026-01-30T03:21:37Z",
+      "issue_number": null,
+      "issue_title": null,
+      "issue_labels": [],
+      "categories": [
+        "Feature",
+        "Documentation"
+      ],
+      "solution": {
+        "files": [
+          {
+            "path": "docs/source/developer_guide/feature_guide/index.md",
+            "additions": 1,
+            "deletions": 0,
+            "change_type": "modified"
+          },
+          {
+            "path": "docs/source/developer_guide/feature_guide/npugraph_ex.md",
+            "additions": 101,
+            "deletions": 0,
+            "change_type": "added"
+          },
+          {
+            "path": "docs/source/user_guide/feature_guide/index.md",
+            "additions": 1,
+            "deletions": 0,
+            "change_type": "modified"
+          },
+          {
+            "path": "docs/source/user_guide/feature_guide/npugraph_ex.md",
+            "additions": 35,
+            "deletions": 0,
+            "change_type": "added"
+          }
+        ],
+        "approaches": [
+          "add doc and Correct spelling errors",
+          "add doc for npugraph_ex",
+          "add doc for npugraph_ex",
+          "fix mdlint question",
+          "fix mdlint question",
+          "fix mdlint question",
+          "add doc for npugraph_ex",
+          "add doc for npugraph_ex",
+          "fix clean code question",
+          "fix clean code question"
+        ],
+        "key_patterns": [
+          {
+            "pattern": "添加检查",
+            "file": "docs/source/developer_guide/feature_guide/npugraph_ex.md",
+            "count": 2
+          },
+          {
+            "pattern": "添加函数",
+            "file": "docs/source/developer_guide/feature_guide/npugraph_ex.md",
+            "count": 3
+          },
+          {
+            "pattern": "添加导入",
+            "file": "docs/source/developer_guide/feature_guide/npugraph_ex.md",
+            "count": 5
+          },
+          {
+            "pattern": "添加导入",
+            "file": "docs/source/user_guide/feature_guide/npugraph_ex.md",
+            "count": 1
+          }
+        ],
+        "additions": 138,
+        "deletions": 0
+      },
+      "learned_at": "2026-05-22T13:10:32.234377"
+    },
+    {
+      "pr_number": 6388,
+      "pr_title": "[ST]Add e2e test for Npugraphex_pass",
+      "pr_user": "ForBetterCodeNine",
+      "pr_url": "https://github.com/vllm-project/vllm-ascend/pull/6388",
+      "merged_at": "2026-01-30T01:14:08Z",
+      "issue_number": null,
+      "issue_title": null,
+      "issue_labels": [],
+      "categories": [
+        "Feature",
+        "Test"
+      ],
+      "solution": {
+        "files": [
+          {
+            "path": ".github/workflows/scripts/config.yaml",
+            "additions": 4,
+            "deletions": 0,
+            "change_type": "modified"
+          },
+          {
+            "path": "tests/e2e/singlecard/compile/test_graphex_norm_quant_fusion.py",
+            "additions": 290,
+            "deletions": 0,
+            "change_type": "added"
+          },
+          {
+            "path": "tests/e2e/singlecard/compile/test_graphex_qknorm_rope_fusion.py",
+            "additions": 222,
+            "deletions": 0,
+            "change_type": "added"
+          }
+        ],
+        "approaches": [
+          "add e2e test",
+          "1"
+        ],
+        "key_patterns": [
+          {
+            "pattern": "添加检查",
+            "file": "tests/e2e/singlecard/compile/test_graphex_norm_quant_fusion.py",
+            "count": 8
+          },
+          {
+            "pattern": "添加函数",
+            "file": "tests/e2e/singlecard/compile/test_graphex_norm_quant_fusion.py",
+            "count": 13
+          },
+          {
+            "pattern": "添加类",
+            "file": "tests/e2e/singlecard/compile/test_graphex_norm_quant_fusion.py",
+            "count": 4
+          },
+          {
+            "pattern": "添加导入",
+            "file": "tests/e2e/singlecard/compile/test_graphex_norm_quant_fusion.py",
+            "count": 12
+          },
+          {
+            "pattern": "添加检查",
+            "file": "tests/e2e/singlecard/compile/test_graphex_qknorm_rope_fusion.py",
+            "count": 3
+          },
+          {
+            "pattern": "添加函数",
+            "file": "tests/e2e/singlecard/compile/test_graphex_qknorm_rope_fusion.py",
+            "count": 7
+          },
+          {
+            "pattern": "添加类",
+            "file": "tests/e2e/singlecard/compile/test_graphex_qknorm_rope_fusion.py",
+            "count": 2
+          },
+          {
+            "pattern": "添加导入",
+            "file": "tests/e2e/singlecard/compile/test_graphex_qknorm_rope_fusion.py",
+            "count": 12
+          }
+        ],
+        "additions": 516,
+        "deletions": 0
+      },
+      "learned_at": "2026-05-22T13:10:36.886302"
+    },
+    {
+      "pr_number": 6195,
+      "pr_title": "[CI] Enable the skipped cases when HDK is upgraded to 25.5.0",
+      "pr_user": "wjunLu",
+      "pr_url": "https://github.com/vllm-project/vllm-ascend/pull/6195",
+      "merged_at": "2026-01-29T14:41:41Z",
+      "issue_number": null,
+      "issue_title": null,
+      "issue_labels": [],
+      "categories": [
+        "Other"
+      ],
+      "solution": {
+        "files": [
+          {
+            "path": ".github/workflows/scripts/config.yaml",
+            "additions": 0,
+            "deletions": 5,
+            "change_type": "modified"
+          },
+          {
+            "path": "tests/e2e/multicard/2-cards/spec_decode/test_spec_decode.py",
+            "additions": 0,
+            "deletions": 1,
+            "change_type": "modified"
+          },
+          {
+            "path": "tests/e2e/multicard/2-cards/test_external_launcher.py",
+            "additions": 0,
+            "deletions": 1,
+            "change_type": "modified"
+          },
+          {
+            "path": "tests/e2e/multicard/2-cards/test_offline_weight_load.py",
+            "additions": 0,
+            "deletions": 1,
+            "change_type": "modified"
+          },
+          {
+            "path": "tests/e2e/multicard/2-cards/test_quantization.py",
+            "additions": 0,
+            "deletions": 1,
+            "change_type": "modified"
+          },
+          {
+            "path": "tests/e2e/multicard/4-cards/spec_decode/test_mtp_qwen3_next.py",
+            "additions": 0,
+            "deletions": 1,
+            "change_type": "modified"
+          },
+          {
+            "path": "tests/e2e/multicard/4-cards/test_data_parallel_tp2.py",
+            "additions": 0,
+            "deletions": 1,
+            "change_type": "modified"
+          }
+        ],
+        "approaches": [
+          "Re-open skipped cases when HDK is 25.5.0"
+        ],
+        "key_patterns": [],
+        "additions": 0,
+        "deletions": 11
+      },
+      "learned_at": "2026-05-22T13:10:41.602047"
+    },
+    {
+      "pr_number": 6379,
+      "pr_title": "[CI] Auto partition for test cases",
+      "pr_user": "Potabk",
+      "pr_url": "https://github.com/vllm-project/vllm-ascend/pull/6379",
+      "merged_at": "2026-01-29T12:28:10Z",
+      "issue_number": null,
+      "issue_title": null,
+      "issue_labels": [],
+      "categories": [
+        "Test"
+      ],
+      "solution": {
+        "files": [
+          {
+            "path": ".github/workflows/READMD.md",
+            "additions": 83,
+            "deletions": 0,
+            "change_type": "added"
+          },
+          {
+            "path": ".github/workflows/_e2e_test.yaml",
+            "additions": 151,
+            "deletions": 119,
+            "change_type": "modified"
+          },
+          {
+            "path": ".github/workflows/pr_test_full.yaml",
+            "additions": 1,
+            "deletions": 1,
+            "change_type": "modified"
+          },
+          {
+            "path": ".github/workflows/scripts/ci_utils.py",
+            "additions": 101,
+            "deletions": 0,
+            "change_type": "added"
+          },
+          {
+            "path": ".github/workflows/scripts/config.yaml",
+            "additions": 152,
+            "deletions": 0,
+            "change_type": "added"
+          },
+          {
+            "path": ".github/workflows/scripts/run_suite.py",
+            "additions": 244,
+            "deletions": 0,
+            "change_type": "added"
+          },
+          {
+            "path": ".pre-commit-config.yaml",
+            "additions": 1,
+            "deletions": 0,
+            "change_type": "modified"
+          }
+        ],
+        "approaches": [
+          "add run_suite.py",
+          "upgrade time",
+          "add auto_suites",
+          "fix",
+          "refact workflow",
+          "fix",
+          "fix",
+          "fix",
+          "fix",
+          "add colors",
+          "add readme",
+          "fix lint",
+          "remove usless key",
+          "4 card use parallel"
+        ],
+        "key_patterns": [
+          {
+            "pattern": "添加检查",
+            "file": ".github/workflows/scripts/ci_utils.py",
+            "count": 5
+          },
+          {
+            "pattern": "添加类",
+            "file": ".github/workflows/scripts/ci_utils.py",
+            "count": 2
+          },
+          {
+            "pattern": "添加导入",
+            "file": ".github/workflows/scripts/ci_utils.py",
+            "count": 5
+          },
+          {
+            "pattern": "添加日志",
+            "file": ".github/workflows/scripts/ci_utils.py",
+            "count": 7
+          },
+          {
+            "pattern": "添加检查",
+            "file": ".github/workflows/scripts/run_suite.py",
+            "count": 10
+          },
+          {
+            "pattern": "添加函数",
+            "file": ".github/workflows/scripts/run_suite.py",
+            "count": 5
+          },
+          {
+            "pattern": "添加导入",
+            "file": ".github/workflows/scripts/run_suite.py",
+            "count": 6
+          }
+        ],
+        "additions": 733,
+        "deletions": 120
+      },
+      "learned_at": "2026-05-22T13:10:45.969501"
+    },
+    {
+      "pr_number": 6325,
+      "pr_title": "[bugfix] resolve kv cache leak on P-side due to incorrect req_id",
+      "pr_user": "ghphotoframe",
+      "pr_url": "https://github.com/vllm-project/vllm-ascend/pull/6325",
+      "merged_at": "2026-01-29T08:05:56Z",
+      "issue_number": null,
+      "issue_title": null,
+      "issue_labels": [],
+      "categories": [
+        "Bug Fix"
+      ],
+      "solution": {
+        "files": [
+          {
+            "path": "vllm_ascend/distributed/kv_transfer/kv_p2p/mooncake_connector.py",
+            "additions": 4,
+            "deletions": 3,
+            "change_type": "modified"
+          }
+        ],
+        "approaches": [
+          "[bugfix] resolve kv cache leak on P-side due to incorrect req_id"
+        ],
+        "key_patterns": [],
+        "additions": 4,
+        "deletions": 3
+      },
+      "learned_at": "2026-05-22T13:11:03.063660"
+    },
+    {
+      "pr_number": 6380,
+      "pr_title": "[0.13.0][Doc] Reranker guide remove deprecate task option",
+      "pr_user": "leo-pony",
+      "pr_url": "https://github.com/vllm-project/vllm-ascend/pull/6380",
+      "merged_at": "2026-01-29T08:00:59Z",
+      "issue_number": null,
+      "issue_title": null,
+      "issue_labels": [],
+      "categories": [
+        "Documentation"
+      ],
+      "solution": {
+        "files": [
+          {
+            "path": "docs/source/tutorials/Qwen3_reranker.md",
+            "additions": 1,
+            "deletions": 1,
+            "change_type": "modified"
+          }
+        ],
+        "approaches": [
+          "update reranker guide"
+        ],
+        "key_patterns": [],
+        "additions": 1,
+        "deletions": 1
+      },
+      "learned_at": "2026-05-22T13:11:07.336972"
+    },
+    {
+      "pr_number": 6385,
+      "pr_title": "[Doc] Reranker guide remove deprecated task option",
+      "pr_user": "leo-pony",
+      "pr_url": "https://github.com/vllm-project/vllm-ascend/pull/6385",
+      "merged_at": "2026-01-29T08:00:27Z",
+      "issue_number": null,
+      "issue_title": null,
+      "issue_labels": [],
+      "categories": [
+        "Documentation"
+      ],
+      "solution": {
+        "files": [
+          {
+            "path": "docs/source/tutorials/Qwen3_reranker.md",
+            "additions": 1,
+            "deletions": 1,
+            "change_type": "modified"
+          }
+        ],
+        "approaches": [
+          "update reranker guide"
+        ],
+        "key_patterns": [],
+        "additions": 1,
+        "deletions": 1
+      },
+      "learned_at": "2026-05-22T13:11:11.690739"
+    },
+    {
+      "pr_number": 6335,
+      "pr_title": "[Main2Main][BugFix] Add shared_experts check for AscendSharedFusedMoE",
+      "pr_user": "whx-sjtu",
+      "pr_url": "https://github.com/vllm-project/vllm-ascend/pull/6335",
+      "merged_at": "2026-01-29T00:47:20Z",
+      "issue_number": null,
+      "issue_title": null,
+      "issue_labels": [],
+      "categories": [
+        "Bug Fix",
+        "Feature"
+      ],
+      "solution": {
+        "files": [
+          {
+            "path": "vllm_ascend/ops/fused_moe/fused_moe.py",
+            "additions": 20,
+            "deletions": 13,
+            "change_type": "modified"
+          }
+        ],
+        "approaches": [
+          "add shared_experts check"
+        ],
+        "key_patterns": [
+          {
+            "pattern": "添加检查",
+            "file": "vllm_ascend/ops/fused_moe/fused_moe.py",
+            "count": 2
+          },
+          {
+            "pattern": "添加函数",
+            "file": "vllm_ascend/ops/fused_moe/fused_moe.py",
+            "count": 1
+          }
+        ],
+        "additions": 20,
+        "deletions": 13
+      },
+      "learned_at": "2026-05-22T13:11:15.901694"
+    },
+    {
+      "pr_number": 6367,
+      "pr_title": "[CI] hot fix for nightly image  build tag",
+      "pr_user": "Potabk",
+      "pr_url": "https://github.com/vllm-project/vllm-ascend/pull/6367",
+      "merged_at": "2026-01-28T15:29:51Z",
+      "issue_number": null,
+      "issue_title": null,
+      "issue_labels": [],
+      "categories": [
+        "Bug Fix"
+      ],
+      "solution": {
+        "files": [
+          {
+            "path": ".github/Dockerfile.nightly.a2",
+            "additions": 1,
+            "deletions": 1,
+            "change_type": "modified"
+          },
+          {
+            "path": ".github/Dockerfile.nightly.a3",
+            "additions": 1,
+            "deletions": 1,
+            "change_type": "modified"
+          }
+        ],
+        "approaches": [
+          "fix image tag"
+        ],
+        "key_patterns": [],
+        "additions": 2,
+        "deletions": 2
+      },
+      "learned_at": "2026-05-22T13:11:20.187010"
+    },
+    {
+      "pr_number": 6363,
+      "pr_title": "[cherry-pick][BugFix] Disable enable_shared_expert_dp by default if tensor_parallel_size=1",
+      "pr_user": "underfituu",
+      "pr_url": "https://github.com/vllm-project/vllm-ascend/pull/6363",
+      "merged_at": "2026-01-28T15:00:08Z",
+      "issue_number": null,
+      "issue_title": null,
+      "issue_labels": [],
+      "categories": [
+        "Bug Fix"
+      ],
+      "solution": {
+        "files": [
+          {
+            "path": "vllm_ascend/ascend_config.py",
+            "additions": 2,
+            "deletions": 1,
+            "change_type": "modified"
+          }
+        ],
+        "approaches": [
+          "fix shared_expert_dp bug when tp=1 0.13.0"
+        ],
+        "key_patterns": [],
+        "additions": 2,
+        "deletions": 1
+      },
+      "learned_at": "2026-05-22T13:11:24.530689"
+    },
+    {
+      "pr_number": 6365,
+      "pr_title": "[CI] Cherry pick nightly test from main",
+      "pr_user": "Potabk",
+      "pr_url": "https://github.com/vllm-project/vllm-ascend/pull/6365",
+      "merged_at": "2026-01-28T14:51:53Z",
+      "issue_number": null,
+      "issue_title": null,
+      "issue_labels": [],
+      "categories": [
+        "Test"
+      ],
+      "solution": {
+        "files": [
+          {
+            "path": ".github/workflows/_e2e_nightly_single_node.yaml",
+            "additions": 0,
+            "deletions": 15,
+            "change_type": "modified"
+          },
+          {
+            "path": ".github/workflows/nightly_test_a3.yaml",
+            "additions": 15,
+            "deletions": 4,
+            "change_type": "modified"
+          },
+          {
+            "path": ".github/workflows/schedule_image_build_and_push.yaml",
+            "additions": 1,
+            "deletions": 1,
+            "change_type": "modified"
+          },
+          {
+            "path": "tests/e2e/nightly/multi_node/config/DeepSeek-R1-W8A8-A2.yaml",
+            "additions": 19,
+            "deletions": 14,
+            "change_type": "modified"
+          },
+          {
+            "path": "tests/e2e/nightly/multi_node/config/DeepSeek-R1-W8A8-EPLB.yaml",
+            "additions": 2,
+            "deletions": 2,
+            "change_type": "modified"
+          },
+          {
+            "path": "tests/e2e/nightly/multi_node/config/DeepSeek-R1-W8A8-longseq.yaml",
+            "additions": 3,
+            "deletions": 2,
+            "change_type": "modified"
+          },
+          {
+            "path": "tests/e2e/nightly/multi_node/config/DeepSeek-R1-W8A8.yaml",
+            "additions": 20,
+            "deletions": 5,
+            "change_type": "modified"
+          },
+          {
+            "path": "tests/e2e/nightly/multi_node/config/DeepSeek-V3.1-BF16.yaml",
+            "additions": 82,
+            "deletions": 0,
+            "change_type": "added"
+          },
+          {
+            "path": "tests/e2e/nightly/multi_node/config/DeepSeek-V3.yaml",
+            "additions": 2,
+            "deletions": 1,
+            "change_type": "modified"
+          },
+          {
+            "path": "tests/e2e/nightly/multi_node/config/DeepSeek-V3_2-Exp-bf16.yaml",
+            "additions": 0,
+            "deletions": 51,
+            "change_type": "removed"
+          },
+          {
+            "path": "tests/e2e/nightly/multi_node/config/Kimi-K2-Instruct-W8A8.yaml",
+            "additions": 79,
+            "deletions": 0,
+            "change_type": "added"
+          },
+          {
+            "path": "tests/e2e/nightly/multi_node/config/Qwen3-235B-A22B-A2.yaml",
+            "additions": 2,
+            "deletions": 2,
+            "change_type": "modified"
+          },
+          {
+            "path": "tests/e2e/nightly/multi_node/config/Qwen3-235B-A22B.yaml",
+            "additions": 4,
+            "deletions": 1,
+            "change_type": "modified"
+          },
+          {
+            "path": "tests/e2e/nightly/multi_node/config/Qwen3-235B-W8A8-EPLB.yaml",
+            "additions": 3,
+            "deletions": 1,
+            "change_type": "modified"
+          },
+          {
+            "path": "tests/e2e/nightly/multi_node/config/Qwen3-235B-W8A8-longseq.yaml",
+            "additions": 3,
+            "deletions": 1,
+            "change_type": "modified"
+          },
+          {
+            "path": "tests/e2e/nightly/multi_node/config/Qwen3-235B-W8A8.yaml",
+            "additions": 3,
+            "deletions": 1,
+            "change_type": "modified"
+          },
+          {
+            "path": "tests/e2e/nightly/multi_node/scripts/lws.yaml.jinja2",
+            "additions": 1,
+            "deletions": 1,
+            "change_type": "modified"
+          },
+          {
+            "path": "tests/e2e/nightly/single_node/models/test_deepseek_r1_w8a8_hbm.py",
+            "additions": 123,
+            "deletions": 0,
+            "change_type": "added"
+          },
+          {
+            "path": "tests/e2e/nightly/single_node/models/test_deepseek_v3_2_w8a8.py",
+            "additions": 24,
+            "deletions": 22,
+            "change_type": "renamed"
+          },
+          {
+            "path": "tests/e2e/nightly/single_node/models/test_kimi_k2_thinking.py",
+            "additions": 110,
+            "deletions": 0,
+            "change_type": "added"
+          },
+          {
+            "path": "tools/aisbench.py",
+            "additions": 5,
+            "deletions": 0,
+            "change_type": "modified"
+          }
+        ],
+        "approaches": [
+          "[CI]Add Kimi k2 nightly test (#5682)",
+          "[CI] Add DeepSeek R1 W8A8 HMB nightly ci (#5874)",
+          "rebase",
+          "[CI] Add nightly ci test for deepseek v3.1 (#5386)",
+          "cherry-pick 297f6deb09857a3db184cf8db56a4081d3e57d50",
+          "[BugFix][CI]Fix DeepSeek-R1-W8A8-longseq nightly CI (#6297)",
+          "fix image label"
+        ],
+        "key_patterns": [
+          {
+            "pattern": "添加检查",
+            "file": "tests/e2e/nightly/single_node/models/test_deepseek_r1_w8a8_hbm.py",
+            "count": 2
+          },
+          {
+            "pattern": "添加函数",
+            "file": "tests/e2e/nightly/single_node/models/test_deepseek_r1_w8a8_hbm.py",
+            "count": 1
+          },
+          {
+            "pattern": "添加导入",
+            "file": "tests/e2e/nightly/single_node/models/test_deepseek_r1_w8a8_hbm.py",
+            "count": 7
+          },
+          {
+            "pattern": "添加函数",
+            "file": "tests/e2e/nightly/single_node/models/test_deepseek_v3_2_w8a8.py",
+            "count": 1
+          },
+          {
+            "pattern": "添加函数",
+            "file": "tests/e2e/nightly/single_node/models/test_kimi_k2_thinking.py",
+            "count": 1
+          },
+          {
+            "pattern": "添加导入",
+            "file": "tests/e2e/nightly/single_node/models/test_kimi_k2_thinking.py",
+            "count": 6
+          }
+        ],
+        "additions": 501,
+        "deletions": 124
+      },
+      "learned_at": "2026-05-22T13:11:28.946345"
+    },
+    {
+      "pr_number": 6293,
+      "pr_title": "[CI][BugFix] Import error fix.",
+      "pr_user": "InSec",
+      "pr_url": "https://github.com/vllm-project/vllm-ascend/pull/6293",
+      "merged_at": "2026-01-28T14:07:48Z",
+      "issue_number": null,
+      "issue_title": null,
+      "issue_labels": [],
+      "categories": [
+        "Bug Fix"
+      ],
+      "solution": {
+        "files": [
+          {
+            "path": "tests/e2e/nightly/single_node/models/test_qwen3_next.py",
+            "additions": 1,
+            "deletions": 1,
+            "change_type": "modified"
+          }
+        ],
+        "approaches": [
+          "[CI][BugFix] import error fix."
+        ],
+        "key_patterns": [
+          {
+            "pattern": "添加导入",
+            "file": "tests/e2e/nightly/single_node/models/test_qwen3_next.py",
+            "count": 1
+          }
+        ],
+        "additions": 1,
+        "deletions": 1
+      },
+      "learned_at": "2026-05-22T13:11:33.680659"
+    },
+    {
+      "pr_number": 6361,
+      "pr_title": "[BugFix] Disable enable_shared_expert_dp by default if tensor_parallel_size=1",
+      "pr_user": "underfituu",
+      "pr_url": "https://github.com/vllm-project/vllm-ascend/pull/6361",
+      "merged_at": "2026-01-28T14:01:01Z",
+      "issue_number": null,
+      "issue_title": null,
+      "issue_labels": [],
+      "categories": [
+        "Bug Fix"
+      ],
+      "solution": {
+        "files": [
+          {
+            "path": "vllm_ascend/ascend_config.py",
+            "additions": 1,
+            "deletions": 0,
+            "change_type": "modified"
+          }
+        ],
+        "approaches": [
+          "fix shared_expert_dp bug when tp=1"
+        ],
+        "key_patterns": [],
+        "additions": 1,
+        "deletions": 0
+      },
+      "learned_at": "2026-05-22T13:11:38.064344"
+    },
+    {
+      "pr_number": 6355,
+      "pr_title": "[CI] Nightly tests use `releases/v0.13.0`",
+      "pr_user": "Potabk",
+      "pr_url": "https://github.com/vllm-project/vllm-ascend/pull/6355",
+      "merged_at": "2026-01-28T13:46:14Z",
+      "issue_number": null,
+      "issue_title": null,
+      "issue_labels": [],
+      "categories": [
+        "Test"
+      ],
+      "solution": {
+        "files": [
+          {
+            "path": ".github/Dockerfile.nightly.a2",
+            "additions": 1,
+            "deletions": 1,
+            "change_type": "modified"
+          },
+          {
+            "path": ".github/Dockerfile.nightly.a3",
+            "additions": 1,
+            "deletions": 1,
+            "change_type": "modified"
+          },
+          {
+            "path": ".github/workflows/schedule_nightly_image_build.yaml",
+            "additions": 3,
+            "deletions": 0,
+            "change_type": "modified"
+          }
+        ],
+        "approaches": [
+          "nightly_use 0.13.0",
+          "fix tag"
+        ],
+        "key_patterns": [],
+        "additions": 5,
+        "deletions": 2
+      },
+      "learned_at": "2026-05-22T13:11:45.902298"
+    },
+    {
+      "pr_number": 6353,
+      "pr_title": "[CI] Add per pr image build for nightly test",
+      "pr_user": "Potabk",
+      "pr_url": "https://github.com/vllm-project/vllm-ascend/pull/6353",
+      "merged_at": "2026-01-28T13:40:15Z",
+      "issue_number": null,
+      "issue_title": null,
+      "issue_labels": [],
+      "categories": [
+        "Feature",
+        "Test"
+      ],
+      "solution": {
+        "files": [
+          {
+            "path": ".github/workflows/_schedule_image_build.yaml",
+            "additions": 5,
+            "deletions": 1,
+            "change_type": "modified"
+          },
+          {
+            "path": ".github/workflows/schedule_image_build_and_push.yaml",
+            "additions": 33,
+            "deletions": 4,
+            "change_type": "modified"
+          }
+        ],
+        "approaches": [
+          "add per pr image build",
+          "fix",
+          "fix",
+          "fix",
+          "fix"
+        ],
+        "key_patterns": [],
+        "additions": 38,
+        "deletions": 5
+      },
+      "learned_at": "2026-05-22T13:11:50.099356"
+    },
+    {
+      "pr_number": 6333,
+      "pr_title": "[CI] Fix image build",
+      "pr_user": "Potabk",
+      "pr_url": "https://github.com/vllm-project/vllm-ascend/pull/6333",
+      "merged_at": "2026-01-28T13:36:45Z",
+      "issue_number": null,
+      "issue_title": null,
+      "issue_labels": [],
+      "categories": [
+        "Bug Fix"
+      ],
+      "solution": {
+        "files": [
+          {
+            "path": ".github/workflows/_schedule_image_build.yaml",
+            "additions": 1,
+            "deletions": 2,
+            "change_type": "modified"
+          }
+        ],
+        "approaches": [
+          "fix image build"
+        ],
+        "key_patterns": [],
+        "additions": 1,
+        "deletions": 2
+      },
+      "learned_at": "2026-05-22T13:11:54.450938"
+    },
+    {
+      "pr_number": 6286,
+      "pr_title": "[0.14.1][bugfix][sched] fix incompatibility of RecomputeScheduler with vllm v0.14.1",
+      "pr_user": "linfeng-yuan",
+      "pr_url": "https://github.com/vllm-project/vllm-ascend/pull/6286",
+      "merged_at": "2026-01-28T12:16:59Z",
+      "issue_number": null,
+      "issue_title": null,
+      "issue_labels": [],
+      "categories": [
+        "Bug Fix",
+        "Test"
+      ],
+      "solution": {
+        "files": [
+          {
+            "path": "vllm_ascend/core/recompute_scheduler.py",
+            "additions": 80,
+            "deletions": 26,
+            "change_type": "modified"
+          }
+        ],
+        "approaches": [
+          "fix incompatibility of RecomputeScheduler with vllm v0.14.1",
+          "reabse to vllm 0.15.0",
+          "Revert \"reabse to vllm 0.15.0\""
+        ],
+        "key_patterns": [
+          {
+            "pattern": "添加检查",
+            "file": "vllm_ascend/core/recompute_scheduler.py",
+            "count": 8
+          },
+          {
+            "pattern": "添加函数",
+            "file": "vllm_ascend/core/recompute_scheduler.py",
+            "count": 1
+          },
+          {
+            "pattern": "添加导入",
+            "file": "vllm_ascend/core/recompute_scheduler.py",
+            "count": 3
+          }
+        ],
+        "additions": 80,
+        "deletions": 26
+      },
+      "learned_at": "2026-05-22T13:11:58.670501"
+    },
+    {
+      "pr_number": 6348,
+      "pr_title": "[Misc][Test] add e2e test for apply_top_k_top_p_custom kernel",
+      "pr_user": "linfeng-yuan",
+      "pr_url": "https://github.com/vllm-project/vllm-ascend/pull/6348",
+      "merged_at": "2026-01-28T09:25:57Z",
+      "issue_number": null,
+      "issue_title": null,
+      "issue_labels": [],
+      "categories": [
+        "Feature",
+        "Test"
+      ],
+      "solution": {
+        "files": [
+          {
+            "path": "csrc/apply_top_k_top_p_custom/op_host/aclnn_apply_top_k_top_p_custom.cpp",
+            "additions": 16,
+            "deletions": 17,
+            "change_type": "modified"
+          },
+          {
+            "path": "tests/e2e/nightly/single_node/ops/singlecard_ops/test_apply_top_k_top_p_custom.py",
+            "additions": 139,
+            "deletions": 0,
+            "change_type": "added"
+          }
+        ],
+        "approaches": [
+          "translate chinese comments",
+          "add e2e test for custom ops"
+        ],
+        "key_patterns": [
+          {
+            "pattern": "添加检查",
+            "file": "tests/e2e/nightly/single_node/ops/singlecard_ops/test_apply_top_k_top_p_custom.py",
+            "count": 4
+          },
+          {
+            "pattern": "添加函数",
+            "file": "tests/e2e/nightly/single_node/ops/singlecard_ops/test_apply_top_k_top_p_custom.py",
+            "count": 8
+          },
+          {
+            "pattern": "添加导入",
+            "file": "tests/e2e/nightly/single_node/ops/singlecard_ops/test_apply_top_k_top_p_custom.py",
+            "count": 4
+          }
+        ],
+        "additions": 155,
+        "deletions": 17
+      },
+      "learned_at": "2026-05-22T13:12:03.294787"
+    },
+    {
+      "pr_number": 6331,
+      "pr_title": "[Fix] Adds CUDA graph stats to execution state",
+      "pr_user": "yiz-liu",
+      "pr_url": "https://github.com/vllm-project/vllm-ascend/pull/6331",
+      "merged_at": "2026-01-28T08:34:20Z",
+      "issue_number": null,
+      "issue_title": null,
+      "issue_labels": [],
+      "categories": [
+        "Bug Fix",
+        "Feature",
+        "Test"
+      ],
+      "solution": {
+        "files": [
+          {
+            "path": "vllm_ascend/worker/model_runner_v1.py",
+            "additions": 4,
+            "deletions": 0,
+            "change_type": "modified"
+          }
+        ],
+        "approaches": [
+          "Adds CUDA graph stats to execution state"
+        ],
+        "key_patterns": [],
+        "additions": 4,
+        "deletions": 0
+      },
+      "learned_at": "2026-05-22T13:12:07.658507"
+    },
+    {
+      "pr_number": 6232,
+      "pr_title": "[Bugfix] Add missing draft_attn_metadatas parameter to fix MTP test",
+      "pr_user": "LICO1314",
+      "pr_url": "https://github.com/vllm-project/vllm-ascend/pull/6232",
+      "merged_at": "2026-01-28T06:41:19Z",
+      "issue_number": 5463,
+      "issue_title": "[RFC]: Refactor Attention module",
+      "issue_labels": [
+        "RFC"
+      ],
+      "categories": [
+        "Bug Fix",
+        "Feature",
+        "Test"
+      ],
+      "solution": {
+        "files": [
+          {
+            "path": "vllm_ascend/attention/attention_v1.py",
+            "additions": 2,
+            "deletions": 1,
+            "change_type": "modified"
+          },
+          {
+            "path": "vllm_ascend/attention/context_parallel/attention_cp.py",
+            "additions": 2,
+            "deletions": 1,
+            "change_type": "modified"
+          },
+          {
+            "path": "vllm_ascend/attention/context_parallel/mla_cp.py",
+            "additions": 1,
+            "deletions": 0,
+            "change_type": "modified"
+          },
+          {
+            "path": "vllm_ascend/attention/mla_v1.py",
+            "additions": 1,
+            "deletions": 0,
+            "change_type": "modified"
+          },
+          {
+            "path": "vllm_ascend/compilation/acl_graph.py",
+            "additions": 2,
+            "deletions": 0,
+            "change_type": "modified"
+          },
+          {
+            "path": "vllm_ascend/spec_decode/eagle_proposer.py",
+            "additions": 2,
+            "deletions": 1,
+            "change_type": "modified"
+          }
+        ],
+        "approaches": [
+          "[Bugfix] Add missing draft_attn_metadatas parameter to fix MTP test"
+        ],
+        "key_patterns": [],
+        "additions": 10,
+        "deletions": 3
+      },
+      "learned_at": "2026-05-22T13:12:14.003956"
+    },
+    {
+      "pr_number": 6182,
+      "pr_title": "BugFix:  Fix moe_load accumulation error in ACL graph mode",
+      "pr_user": "Mercykid-bash",
+      "pr_url": "https://github.com/vllm-project/vllm-ascend/pull/6182",
+      "merged_at": "2026-01-26T09:18:46Z",
+      "issue_number": null,
+      "issue_title": null,
+      "issue_labels": [],
+      "categories": [
+        "Bug Fix"
+      ],
+      "solution": {
+        "files": [
+          {
+            "path": "vllm_ascend/ops/fused_moe/fused_moe.py",
+            "additions": 2,
+            "deletions": 2,
+            "change_type": "modified"
+          }
+        ],
+        "approaches": [
+          "moe_load fix"
+        ],
+        "key_patterns": [],
+        "additions": 2,
+        "deletions": 2
+      },
+      "learned_at": "2026-05-22T13:12:18.297332"
+    },
+    {
+      "pr_number": 6258,
+      "pr_title": "[v0.13.0][cherry-pick][BugFix] Fix moe_load accumulation error in ACL graph mode",
+      "pr_user": "Mercykid-bash",
+      "pr_url": "https://github.com/vllm-project/vllm-ascend/pull/6258",
+      "merged_at": "2026-01-26T09:19:20Z",
+      "issue_number": null,
+      "issue_title": null,
+      "issue_labels": [],
+      "categories": [
+        "Bug Fix"
+      ],
+      "solution": {
+        "files": [
+          {
+            "path": "vllm_ascend/ops/fused_moe/fused_moe.py",
+            "additions": 2,
+            "deletions": 1,
+            "change_type": "modified"
+          }
+        ],
+        "approaches": [
+          "add_"
+        ],
+        "key_patterns": [],
+        "additions": 2,
+        "deletions": 1
+      },
+      "learned_at": "2026-05-22T13:12:22.610823"
+    },
+    {
+      "pr_number": 5164,
+      "pr_title": "[Fix] Refines decode mode padding condition for uniform queries",
+      "pr_user": "yiz-liu",
+      "pr_url": "https://github.com/vllm-project/vllm-ascend/pull/5164",
+      "merged_at": "2025-12-18T13:09:23Z",
+      "issue_number": null,
+      "issue_title": null,
+      "issue_labels": [],
+      "categories": [
+        "Bug Fix",
+        "Feature"
+      ],
+      "solution": {
+        "files": [
+          {
+            "path": "vllm_ascend/worker/model_runner_v1.py",
+            "additions": 2,
+            "deletions": 1,
+            "change_type": "modified"
+          }
+        ],
+        "approaches": [
+          "Refines decode mode padding condition for uniform queries"
+        ],
+        "key_patterns": [],
+        "additions": 2,
+        "deletions": 1
+      },
+      "learned_at": "2026-05-22T13:12:26.847633"
+    },
+    {
+      "pr_number": 6289,
+      "pr_title": "[0.13.0][KVCache] Prioritize using a hybrid manager to manage different types of kvcache",
+      "pr_user": "MengqingCao",
+      "pr_url": "https://github.com/vllm-project/vllm-ascend/pull/6289",
+      "merged_at": "2026-01-27T14:22:51Z",
+      "issue_number": null,
+      "issue_title": null,
+      "issue_labels": [],
+      "categories": [
+        "Other"
+      ],
+      "solution": {
+        "files": [
+          {
+            "path": "vllm_ascend/patch/platform/patch_kv_cache_utils.py",
+            "additions": 3,
+            "deletions": 4,
+            "change_type": "modified"
+          }
+        ],
+        "approaches": [
+          "[KVCache] Prioritize using a hybrid manager to manage different types of kvcache"
+        ],
+        "key_patterns": [
+          {
+            "pattern": "添加检查",
+            "file": "vllm_ascend/patch/platform/patch_kv_cache_utils.py",
+            "count": 1
+          }
+        ],
+        "additions": 3,
+        "deletions": 4
+      },
+      "learned_at": "2026-05-22T13:12:31.153043"
+    },
+    {
+      "pr_number": 6141,
+      "pr_title": "[Refactor] profiler config optimze",
+      "pr_user": "mengchengTang",
+      "pr_url": "https://github.com/vllm-project/vllm-ascend/pull/6141",
+      "merged_at": "2026-01-27T14:09:50Z",
+      "issue_number": null,
+      "issue_title": null,
+      "issue_labels": [],
+      "categories": [
+        "Refactor"
+      ],
+      "solution": {
+        "files": [
+          {
+            "path": "vllm_ascend/worker/worker.py",
+            "additions": 5,
+            "deletions": 3,
+            "change_type": "modified"
+          }
+        ],
+        "approaches": [
+          "profiler config optimze"
+        ],
+        "key_patterns": [],
+        "additions": 5,
+        "deletions": 3
+      },
+      "learned_at": "2026-05-22T13:12:35.484767"
+    },
+    {
+      "pr_number": 6006,
+      "pr_title": "[Graph][Fusion] Add MatmulAllReduceAddRMSNorm graph fusion for npugraph_ex.",
+      "pr_user": "ForBetterCodeNine",
+      "pr_url": "https://github.com/vllm-project/vllm-ascend/pull/6006",
+      "merged_at": "2026-01-27T08:41:48Z",
+      "issue_number": null,
+      "issue_title": null,
+      "issue_labels": [],
+      "categories": [
+        "Feature"
+      ],
+      "solution": {
+        "files": [
+          {
+            "path": "docs/source/user_guide/configuration/additional_config.md",
+            "additions": 3,
+            "deletions": 0,
+            "change_type": "modified"
+          },
+          {
+            "path": "vllm_ascend/ascend_config.py",
+            "additions": 19,
+            "deletions": 1,
+            "change_type": "modified"
+          },
+          {
+            "path": "vllm_ascend/compilation/npu_graph_ex_pass_manager.py",
+            "additions": 15,
+            "deletions": 1,
+            "change_type": "modified"
+          },
+          {
+            "path": "vllm_ascend/compilation/npugraph_ex_passes/graphex_allreduce_rmsnorm_fusion_pass.py",
+            "additions": 150,
+            "deletions": 0,
+            "change_type": "added"
+          },
+          {
+            "path": "vllm_ascend/compilation/passes/allreduce_rmsnorm_fusion_pass.py",
+            "additions": 2,
+            "deletions": 2,
+            "change_type": "modified"
+          }
+        ],
+        "approaches": [
+          "all reduce",
+          "allreduce_add_rmsnorm"
+        ],
+        "key_patterns": [
+          {
+            "pattern": "添加检查",
+            "file": "vllm_ascend/compilation/npu_graph_ex_pass_manager.py",
+            "count": 3
+          },
+          {
+            "pattern": "添加导入",
+            "file": "vllm_ascend/compilation/npu_graph_ex_pass_manager.py",
+            "count": 3
+          },
+          {
+            "pattern": "添加函数",
+            "file": "vllm_ascend/compilation/npugraph_ex_passes/graphex_allreduce_rmsnorm_fusion_pass.py",
+            "count": 13
+          },
+          {
+            "pattern": "添加类",
+            "file": "vllm_ascend/compilation/npugraph_ex_passes/graphex_allreduce_rmsnorm_fusion_pass.py",
+            "count": 3
+          },
+          {
+            "pattern": "添加导入",
+            "file": "vllm_ascend/compilation/npugraph_ex_passes/graphex_allreduce_rmsnorm_fusion_pass.py",
+            "count": 7
+          }
+        ],
+        "additions": 189,
+        "deletions": 4
+      },
+      "learned_at": "2026-05-22T13:12:39.683880"
+    },
+    {
+      "pr_number": 6296,
+      "pr_title": "[Refact.]: refactoring 310p ops ut",
+      "pr_user": "pu-zhe",
+      "pr_url": "https://github.com/vllm-project/vllm-ascend/pull/6296",
+      "merged_at": "2026-01-27T08:31:51Z",
+      "issue_number": null,
+      "issue_title": null,
+      "issue_labels": [],
+      "categories": [
+        "Test",
+        "Refactor"
+      ],
+      "solution": {
+        "files": [
+          {
+            "path": "tests/ut/attention/test_attention_v1.py",
+            "additions": 2,
+            "deletions": 6,
+            "change_type": "modified"
+          },
+          {
+            "path": "tests/ut/ops/test_activation.py",
+            "additions": 44,
+            "deletions": 25,
+            "change_type": "modified"
+          },
+          {
+            "path": "tests/ut/ops/test_layernorm.py",
+            "additions": 37,
+            "deletions": 34,
+            "change_type": "modified"
+          }
+        ],
+        "approaches": [
+          "add 310p ut",
+          "sign-off",
+          "cleancode",
+          "cleancode",
+          "cleancode",
+          "trigger",
+          "trigger",
+          "trigger",
+          "bugfix",
+          "bugfix"
+        ],
+        "key_patterns": [
+          {
+            "pattern": "添加函数",
+            "file": "tests/ut/attention/test_attention_v1.py",
+            "count": 2
+          },
+          {
+            "pattern": "添加检查",
+            "file": "tests/ut/ops/test_layernorm.py",
+            "count": 2
+          }
+        ],
+        "additions": 83,
+        "deletions": 65
+      },
+      "learned_at": "2026-05-22T13:12:44.011659"
+    },
+    {
+      "pr_number": 6270,
+      "pr_title": "[Refact.]: refactoring 310p-kv cache allocator, align with main branch",
+      "pr_user": "pu-zhe",
+      "pr_url": "https://github.com/vllm-project/vllm-ascend/pull/6270",
+      "merged_at": "2026-01-27T08:26:48Z",
+      "issue_number": null,
+      "issue_title": null,
+      "issue_labels": [],
+      "categories": [
+        "Refactor"
+      ],
+      "solution": {
+        "files": [
+          {
+            "path": "vllm_ascend/_310p/model_runner_310p.py",
+            "additions": 125,
+            "deletions": 124,
+            "change_type": "modified"
+          }
+        ],
+        "approaches": [
+          "rebase 310p-kv cache allocator to main",
+          "sign",
+          "cleancode",
+          "cleancode",
+          "cleancode",
+          "cleancode",
+          "cleancode",
+          "cleancode",
+          "cleancode",
+          "cleancode",
+          "cleancode",
+          "cleancode",
+          "cleancode",
+          "cleancode",
+          "Update model_runner_310p.py",
+          "Update model_runner_310p.py",
+          "Update model_runner_310p.py"
+        ],
+        "key_patterns": [
+          {
+            "pattern": "添加检查",
+            "file": "vllm_ascend/_310p/model_runner_310p.py",
+            "count": 9
+          },
+          {
+            "pattern": "添加函数",
+            "file": "vllm_ascend/_310p/model_runner_310p.py",
+            "count": 2
+          },
+          {
+            "pattern": "添加导入",
+            "file": "vllm_ascend/_310p/model_runner_310p.py",
+            "count": 3
+          }
+        ],
+        "additions": 125,
+        "deletions": 124
+      },
+      "learned_at": "2026-05-22T13:12:48.369802"
+    },
+    {
+      "pr_number": 5884,
+      "pr_title": "[Lint]Style: reformat markdown files via markdownlint",
+      "pr_user": "MrZ20",
+      "pr_url": "https://github.com/vllm-project/vllm-ascend/pull/5884",
+      "merged_at": "2026-01-15T01:06:02Z",
+      "issue_number": null,
+      "issue_title": null,
+      "issue_labels": [],
+      "categories": [
+        "Other"
+      ],
+      "solution": {
+        "files": [
+          {
+            "path": ".github/workflows/_pre_commit.yml",
+            "additions": 2,
+            "deletions": 0,
+            "change_type": "modified"
+          },
+          {
+            "path": ".github/workflows/matchers/markdownlint.json",
+            "additions": 17,
+            "deletions": 0,
+            "change_type": "added"
+          },
+          {
+            "path": ".markdownlint.yaml",
+            "additions": 15,
+            "deletions": 0,
+            "change_type": "added"
+          },
+          {
+            "path": ".pre-commit-config.yaml",
+            "additions": 5,
+            "deletions": 4,
+            "change_type": "modified"
+          },
+          {
+            "path": "README.md",
+            "additions": 10,
+            "deletions": 5,
+            "change_type": "modified"
+          },
+          {
+            "path": "README.zh.md",
+            "additions": 11,
+            "deletions": 5,
+            "change_type": "modified"
+          },
+          {
+            "path": "benchmarks/README.md",
+            "additions": 40,
+            "deletions": 29,
+            "change_type": "modified"
+          },
+          {
+            "path": "benchmarks/scripts/perf_result_template.md",
+            "additions": 1,
+            "deletions": 0,
+            "change_type": "modified"
+          },
+          {
+            "path": "docs/README.md",
+            "additions": 4,
+            "deletions": 3,
+            "change_type": "modified"
+          },
+          {
+            "path": "docs/source/community/governance.md",
+            "additions": 3,
+            "deletions": 0,
+            "change_type": "modified"
+          },
+          {
+            "path": "docs/source/community/versioning_policy.md",
+            "additions": 8,
+            "deletions": 1,
+            "change_type": "modified"
+          },
+          {
+            "path": "docs/source/developer_guide/contribution/index.md",
+            "additions": 1,
+            "deletions": 0,
+            "change_type": "modified"
+          },
+          {
+            "path": "docs/source/developer_guide/contribution/multi_node_test.md",
+            "additions": 3,
+            "deletions": 3,
+            "change_type": "modified"
+          },
+          {
+            "path": "docs/source/developer_guide/contribution/testing.md",
+            "additions": 1,
+            "deletions": 1,
+            "change_type": "modified"
+          },
+          {
+            "path": "docs/source/developer_guide/evaluation/using_ais_bench.md",
+            "additions": 6,
+            "deletions": 3,
+            "change_type": "modified"
+          },
+          {
+            "path": "docs/source/developer_guide/evaluation/using_evalscope.md",
+            "additions": 4,
+            "deletions": 4,
+            "change_type": "modified"
+          },
+          {
+            "path": "docs/source/developer_guide/evaluation/using_lm_eval.md",
+            "additions": 12,
+            "deletions": 7,
+            "change_type": "modified"
+          },
+          {
+            "path": "docs/source/developer_guide/evaluation/using_opencompass.md",
+            "additions": 6,
+            "deletions": 4,
+            "change_type": "modified"
+          },
+          {
+            "path": "docs/source/developer_guide/feature_guide/ACL_Graph.md",
+            "additions": 3,
+            "deletions": 2,
+            "change_type": "modified"
+          },
+          {
+            "path": "docs/source/developer_guide/feature_guide/KV_Cache_Pool_Guide.md",
+            "additions": 10,
+            "deletions": 2,
+            "change_type": "modified"
+          },
+          {
+            "path": "docs/source/developer_guide/feature_guide/ModelRunner_prepare_inputs.md",
+            "additions": 40,
+            "deletions": 13,
+            "change_type": "modified"
+          },
+          {
+            "path": "docs/source/developer_guide/feature_guide/context_parallel.md",
+            "additions": 1,
+            "deletions": 0,
+            "change_type": "modified"
+          },
+          {
+            "path": "docs/source/developer_guide/feature_guide/disaggregated_prefill.md",
+            "additions": 4,
+            "deletions": 2,
+            "change_type": "modified"
+          },
+          {
+            "path": "docs/source/developer_guide/feature_guide/eplb_swift_balancer.md",
+            "additions": 33,
+            "deletions": 6,
+            "change_type": "modified"
+          },
+          {
+            "path": "docs/source/developer_guide/feature_guide/patch.md",
+            "additions": 6,
+            "deletions": 5,
+            "change_type": "modified"
+          },
+          {
+            "path": "docs/source/developer_guide/performance_and_debug/msprobe_guide.md",
+            "additions": 5,
+            "deletions": 5,
+            "change_type": "modified"
+          },
+          {
+            "path": "docs/source/developer_guide/performance_and_debug/optimization_and_tuning.md",
+            "additions": 7,
+            "deletions": 0,
+            "change_type": "modified"
+          },
+          {
+            "path": "docs/source/developer_guide/performance_and_debug/performance_benchmark.md",
+            "additions": 4,
+            "deletions": 1,
+            "change_type": "modified"
+          },
+          {
+            "path": "docs/source/developer_guide/performance_and_debug/profile_execute_duration.md",
+            "additions": 3,
+            "deletions": 2,
+            "change_type": "modified"
+          },
+          {
+            "path": "docs/source/developer_guide/performance_and_debug/service_profiling_guide.md",
+            "additions": 7,
+            "deletions": 0,
+            "change_type": "modified"
+          }
+        ],
+        "approaches": [
+          "modify md file",
+          "modify md(manual)",
+          "--amend",
+          "--amend",
+          "re push"
+        ],
+        "key_patterns": [],
+        "additions": 272,
+        "deletions": 107
+      },
+      "learned_at": "2026-05-22T13:12:53.034297"
+    },
+    {
+      "pr_number": 6177,
+      "pr_title": "[Lint]Style: Convert `vllm-ascend/` to ruff format(Batch #12)",
+      "pr_user": "MrZ20",
+      "pr_url": "https://github.com/vllm-project/vllm-ascend/pull/6177",
+      "merged_at": "2026-01-23T06:59:19Z",
+      "issue_number": 12,
+      "issue_title": "[Hardware][Ascend] Add silu_and_mul, rope and reshape_and_cache ops; Remove cuda_graph related codes.",
+      "issue_labels": [],
+      "categories": [
+        "Other"
+      ],
+      "solution": {
+        "files": [
+          {
+            "path": "pyproject.toml",
+            "additions": 14,
+            "deletions": 1,
+            "change_type": "modified"
+          },
+          {
+            "path": "vllm_ascend/ops/triton/activation/swiglu_quant.py",
+            "additions": 11,
+            "deletions": 28,
+            "change_type": "modified"
+          },
+          {
+            "path": "vllm_ascend/ops/triton/batch_invariant/matmul.py",
+            "additions": 41,
+            "deletions": 54,
+            "change_type": "modified"
+          },
+          {
+            "path": "vllm_ascend/ops/triton/batch_invariant/mean.py",
+            "additions": 5,
+            "deletions": 9,
+            "change_type": "modified"
+          },
+          {
+            "path": "vllm_ascend/ops/triton/batch_invariant/rmsnorm.py",
+            "additions": 4,
+            "deletions": 5,
+            "change_type": "modified"
+          },
+          {
+            "path": "vllm_ascend/ops/triton/fla/chunk.py",
+            "additions": 52,
+            "deletions": 54,
+            "change_type": "modified"
+          },
+          {
+            "path": "vllm_ascend/ops/triton/fla/chunk_delta_h.py",
+            "additions": 30,
+            "deletions": 54,
+            "change_type": "modified"
+          },
+          {
+            "path": "vllm_ascend/ops/triton/fla/chunk_o.py",
+            "additions": 18,
+            "deletions": 23,
+            "change_type": "modified"
+          },
+          {
+            "path": "vllm_ascend/ops/triton/fla/chunk_scaled_dot_kkt.py",
+            "additions": 28,
+            "deletions": 29,
+            "change_type": "modified"
+          },
+          {
+            "path": "vllm_ascend/ops/triton/fla/cumsum.py",
+            "additions": 62,
+            "deletions": 64,
+            "change_type": "modified"
+          },
+          {
+            "path": "vllm_ascend/ops/triton/fla/fused_qkvzba_split_reshape.py",
+            "additions": 22,
+            "deletions": 22,
+            "change_type": "modified"
+          },
+          {
+            "path": "vllm_ascend/ops/triton/fla/l2norm.py",
+            "additions": 4,
+            "deletions": 8,
+            "change_type": "modified"
+          },
+          {
+            "path": "vllm_ascend/ops/triton/fla/layernorm_guard.py",
+            "additions": 17,
+            "deletions": 21,
+            "change_type": "modified"
+          },
+          {
+            "path": "vllm_ascend/ops/triton/fla/sigmoid_gating.py",
+            "additions": 27,
+            "deletions": 29,
+            "change_type": "modified"
+          },
+          {
+            "path": "vllm_ascend/ops/triton/fla/solve_tril.py",
+            "additions": 33,
+            "deletions": 60,
+            "change_type": "modified"
+          },
+          {
+            "path": "vllm_ascend/ops/triton/fla/utils.py",
+            "additions": 9,
+            "deletions": 23,
+            "change_type": "modified"
+          },
+          {
+            "path": "vllm_ascend/ops/triton/fla/wy_fast.py",
+            "additions": 37,
+            "deletions": 27,
+            "change_type": "modified"
+          },
+          {
+            "path": "vllm_ascend/ops/triton/fused_gdn_gating.py",
+            "additions": 8,
+            "deletions": 18,
+            "change_type": "modified"
+          },
+          {
+            "path": "vllm_ascend/ops/triton/layernorm_gated.py",
+            "additions": 3,
+            "deletions": 6,
+            "change_type": "modified"
+          },
+          {
+            "path": "vllm_ascend/ops/triton/linearnorm/split_qkv_rmsnorm_rope.py",
+            "additions": 37,
+            "deletions": 57,
+            "change_type": "modified"
+          },
+          {
+            "path": "vllm_ascend/ops/triton/mamba/causal_conv1d.py",
+            "additions": 151,
+            "deletions": 202,
+            "change_type": "modified"
+          },
+          {
+            "path": "vllm_ascend/ops/triton/reject_sample.py",
+            "additions": 106,
+            "deletions": 135,
+            "change_type": "modified"
+          },
+          {
+            "path": "vllm_ascend/ops/triton/rope.py",
+            "additions": 35,
+            "deletions": 56,
+            "change_type": "modified"
+          },
+          {
+            "path": "vllm_ascend/ops/triton/spec_decode/utils.py",
+            "additions": 4,
+            "deletions": 9,
+            "change_type": "modified"
+          },
+          {
+            "path": "vllm_ascend/ops/triton/triton_utils.py",
+            "additions": 4,
+            "deletions": 4,
+            "change_type": "modified"
+          }
+        ],
+        "approaches": [
+          "modify"
+        ],
+        "key_patterns": [
+          {
+            "pattern": "添加断言",
+            "file": "vllm_ascend/ops/triton/batch_invariant/matmul.py",
+            "count": 2
+          },
+          {
+            "pattern": "添加检查",
+            "file": "vllm_ascend/ops/triton/fla/chunk.py",
+            "count": 1
+          },
+          {
+            "pattern": "添加函数",
+            "file": "vllm_ascend/ops/triton/fla/l2norm.py",
+            "count": 2
+          },
+          {
+            "pattern": "添加检查",
+            "file": "vllm_ascend/ops/triton/fla/sigmoid_gating.py",
+            "count": 1
+          },
+          {
+            "pattern": "添加函数",
+            "file": "vllm_ascend/ops/triton/fla/utils.py",
+            "count": 3
+          },
+          {
+            "pattern": "添加导入",
+            "file": "vllm_ascend/ops/triton/fla/utils.py",
+            "count": 1
+          },
+          {
+            "pattern": "添加导入",
+            "file": "vllm_ascend/ops/triton/mamba/causal_conv1d.py",
+            "count": 1
+          },
+          {
+            "pattern": "添加检查",
+            "file": "vllm_ascend/ops/triton/reject_sample.py",
+            "count": 1
+          },
+          {
+            "pattern": "添加函数",
+            "file": "vllm_ascend/ops/triton/reject_sample.py",
+            "count": 1
+          },
+          {
+            "pattern": "添加导入",
+            "file": "vllm_ascend/ops/triton/rope.py",
+            "count": 1
+          },
+          {
+            "pattern": "添加导入",
+            "file": "vllm_ascend/ops/triton/triton_utils.py",
+            "count": 1
+          }
+        ],
+        "additions": 762,
+        "deletions": 998
+      },
+      "learned_at": "2026-05-22T13:12:59.596986"
+    },
+    {
+      "pr_number": 5977,
+      "pr_title": "[Lint]Style: Convert `vllm-ascend/` to ruff format(Batch #2)",
+      "pr_user": "MrZ20",
+      "pr_url": "https://github.com/vllm-project/vllm-ascend/pull/5977",
+      "merged_at": "2026-01-19T00:59:46Z",
+      "issue_number": 2,
+      "issue_title": "[Core]Init vllm-ascend",
+      "issue_labels": [],
+      "categories": [
+        "Other"
+      ],
+      "solution": {
+        "files": [
+          {
+            "path": "pyproject.toml",
+            "additions": 2,
+            "deletions": 6,
+            "change_type": "modified"
+          },
+          {
+            "path": "vllm_ascend/attention/attention_mask.py",
+            "additions": 11,
+            "deletions": 18,
+            "change_type": "modified"
+          },
+          {
+            "path": "vllm_ascend/attention/attention_v1.py",
+            "additions": 202,
+            "deletions": 166,
+            "change_type": "modified"
+          },
+          {
+            "path": "vllm_ascend/attention/context_parallel/attention_cp.py",
+            "additions": 322,
+            "deletions": 392,
+            "change_type": "modified"
+          },
+          {
+            "path": "vllm_ascend/attention/context_parallel/common_cp.py",
+            "additions": 28,
+            "deletions": 31,
+            "change_type": "modified"
+          },
+          {
+            "path": "vllm_ascend/attention/context_parallel/mla_cp.py",
+            "additions": 234,
+            "deletions": 270,
+            "change_type": "modified"
+          },
+          {
+            "path": "vllm_ascend/attention/utils.py",
+            "additions": 33,
+            "deletions": 44,
+            "change_type": "modified"
+          },
+          {
+            "path": "vllm_ascend/batch_invariant.py",
+            "additions": 10,
+            "deletions": 5,
+            "change_type": "modified"
+          },
+          {
+            "path": "vllm_ascend/device/device_op.py",
+            "additions": 10,
+            "deletions": 19,
+            "change_type": "modified"
+          },
+          {
+            "path": "vllm_ascend/device_allocator/camem.py",
+            "additions": 39,
+            "deletions": 45,
+            "change_type": "modified"
+          },
+          {
+            "path": "vllm_ascend/envs.py",
+            "additions": 33,
+            "deletions": 53,
+            "change_type": "modified"
+          }
+        ],
+        "approaches": [
+          "auto",
+          "manual"
+        ],
+        "key_patterns": [
+          {
+            "pattern": "修改返回值",
+            "file": "vllm_ascend/attention/attention_mask.py",
+            "count": 1
+          },
+          {
+            "pattern": "添加检查",
+            "file": "vllm_ascend/attention/attention_v1.py",
+            "count": 3
+          },
+          {
+            "pattern": "添加函数",
+            "file": "vllm_ascend/attention/attention_v1.py",
+            "count": 4
+          },
+          {
+            "pattern": "添加导入",
+            "file": "vllm_ascend/attention/attention_v1.py",
+            "count": 6
+          },
+          {
+            "pattern": "添加检查",
+            "file": "vllm_ascend/attention/context_parallel/attention_cp.py",
+            "count": 1
+          },
+          {
+            "pattern": "添加函数",
+            "file": "vllm_ascend/attention/context_parallel/attention_cp.py",
+            "count": 6
+          },
+          {
+            "pattern": "添加导入",
+            "file": "vllm_ascend/attention/context_parallel/attention_cp.py",
+            "count": 6
+          },
+          {
+            "pattern": "添加函数",
+            "file": "vllm_ascend/attention/context_parallel/common_cp.py",
+            "count": 1
+          },
+          {
+            "pattern": "添加导入",
+            "file": "vllm_ascend/attention/context_parallel/common_cp.py",
+            "count": 1
+          },
+          {
+            "pattern": "添加检查",
+            "file": "vllm_ascend/attention/context_parallel/mla_cp.py",
+            "count": 1
+          },
+          {
+            "pattern": "添加函数",
+            "file": "vllm_ascend/attention/context_parallel/mla_cp.py",
+            "count": 4
+          },
+          {
+            "pattern": "添加导入",
+            "file": "vllm_ascend/attention/context_parallel/mla_cp.py",
+            "count": 5
+          },
+          {
+            "pattern": "添加函数",
+            "file": "vllm_ascend/attention/utils.py",
+            "count": 1
+          },
+          {
+            "pattern": "添加导入",
+            "file": "vllm_ascend/attention/utils.py",
+            "count": 3
+          },
+          {
+            "pattern": "添加函数",
+            "file": "vllm_ascend/device/device_op.py",
+            "count": 2
+          },
+          {
+            "pattern": "添加类",
+            "file": "vllm_ascend/device/device_op.py",
+            "count": 1
+          },
+          {
+            "pattern": "添加函数",
+            "file": "vllm_ascend/device_allocator/camem.py",
+            "count": 4
+          },
+          {
+            "pattern": "添加导入",
+            "file": "vllm_ascend/device_allocator/camem.py",
+            "count": 3
+          },
+          {
+            "pattern": "添加断言",
+            "file": "vllm_ascend/device_allocator/camem.py",
+            "count": 2
+          },
+          {
+            "pattern": "添加日志",
+            "file": "vllm_ascend/device_allocator/camem.py",
+            "count": 1
+          },
+          {
+            "pattern": "添加导入",
+            "file": "vllm_ascend/envs.py",
+            "count": 2
+          }
+        ],
+        "additions": 924,
+        "deletions": 1049
+      },
+      "learned_at": "2026-05-22T13:13:06.646630"
+    },
+    {
+      "pr_number": 6281,
+      "pr_title": "[Misc][v0.13.0]Removes unnecessary graph size re-initialization",
+      "pr_user": "Angazenn",
+      "pr_url": "https://github.com/vllm-project/vllm-ascend/pull/6281",
+      "merged_at": "2026-01-27T06:38:16Z",
+      "issue_number": 6280,
+      "issue_title": "[Misc] Removes unnecessary graph size re-initialization",
+      "issue_labels": [
+        "ready",
+        "ready-for-test"
+      ],
+      "categories": [
+        "Other"
+      ],
+      "solution": {
+        "files": [
+          {
+            "path": "tests/ut/test_platform.py",
+            "additions": 1,
+            "deletions": 4,
+            "change_type": "modified"
+          },
+          {
+            "path": "vllm_ascend/platform.py",
+            "additions": 6,
+            "deletions": 9,
+            "change_type": "modified"
+          },
+          {
+            "path": "vllm_ascend/utils.py",
+            "additions": 0,
+            "deletions": 55,
+            "change_type": "modified"
+          }
+        ],
+        "approaches": [
+          "bugfix_",
+          "fix"
+        ],
+        "key_patterns": [
+          {
+            "pattern": "添加导入",
+            "file": "vllm_ascend/platform.py",
+            "count": 1
+          }
+        ],
+        "additions": 7,
+        "deletions": 68
+      },
+      "learned_at": "2026-05-22T13:13:12.940484"
+    },
+    {
+      "pr_number": 6280,
+      "pr_title": "[Misc] Removes unnecessary graph size re-initialization",
+      "pr_user": "Angazenn",
+      "pr_url": "https://github.com/vllm-project/vllm-ascend/pull/6280",
+      "merged_at": "2026-01-27T06:38:07Z",
+      "issue_number": null,
+      "issue_title": null,
+      "issue_labels": [],
+      "categories": [
+        "Other"
+      ],
+      "solution": {
+        "files": [
+          {
+            "path": "tests/ut/test_platform.py",
+            "additions": 1,
+            "deletions": 3,
+            "change_type": "modified"
+          },
+          {
+            "path": "vllm_ascend/platform.py",
+            "additions": 0,
+            "deletions": 5,
+            "change_type": "modified"
+          },
+          {
+            "path": "vllm_ascend/utils.py",
+            "additions": 0,
+            "deletions": 47,
+            "change_type": "modified"
+          }
+        ],
+        "approaches": [
+          "bugfix",
+          "fix"
+        ],
+        "key_patterns": [],
+        "additions": 1,
+        "deletions": 55
+      },
+      "learned_at": "2026-05-22T13:13:17.195206"
+    },
+    {
+      "pr_number": 6116,
+      "pr_title": "[Refactor] use the count of kv_cache_group to create multi_block_table",
+      "pr_user": "LookAround0301",
+      "pr_url": "https://github.com/vllm-project/vllm-ascend/pull/6116",
+      "merged_at": "2026-01-27T01:46:06Z",
+      "issue_number": null,
+      "issue_title": null,
+      "issue_labels": [],
+      "categories": [
+        "Refactor"
+      ],
+      "solution": {
+        "files": [
+          {
+            "path": "vllm_ascend/worker/block_table.py",
+            "additions": 44,
+            "deletions": 22,
+            "change_type": "modified"
+          },
+          {
+            "path": "vllm_ascend/worker/model_runner_v1.py",
+            "additions": 5,
+            "deletions": 3,
+            "change_type": "modified"
+          },
+          {
+            "path": "vllm_ascend/worker/npu_input_batch.py",
+            "additions": 3,
+            "deletions": 0,
+            "change_type": "modified"
+          }
+        ],
+        "approaches": [
+          "[Refactor] support multi_group to create multi_block_table",
+          "lint"
+        ],
+        "key_patterns": [
+          {
+            "pattern": "添加检查",
+            "file": "vllm_ascend/worker/block_table.py",
+            "count": 1
+          },
+          {
+            "pattern": "添加导入",
+            "file": "vllm_ascend/worker/block_table.py",
+            "count": 1
+          },
+          {
+            "pattern": "添加导入",
+            "file": "vllm_ascend/worker/npu_input_batch.py",
+            "count": 1
+          }
+        ],
+        "additions": 52,
+        "deletions": 25
+      },
+      "learned_at": "2026-05-22T13:13:21.433605"
+    },
+    {
+      "pr_number": 6260,
+      "pr_title": "[CI] migrate single card runner to hk",
+      "pr_user": "Potabk",
+      "pr_url": "https://github.com/vllm-project/vllm-ascend/pull/6260",
+      "merged_at": "2026-01-27T01:07:12Z",
+      "issue_number": null,
+      "issue_title": null,
+      "issue_labels": [],
+      "categories": [
+        "Other"
+      ],
+      "solution": {
+        "files": [
+          {
+            "path": ".github/actionlint.yaml",
+            "additions": 4,
+            "deletions": 0,
+            "change_type": "modified"
+          },
+          {
+            "path": ".github/workflows/_e2e_test.yaml",
+            "additions": 1,
+            "deletions": 1,
+            "change_type": "modified"
+          },
+          {
+            "path": "tests/e2e/singlecard/spec_decode/test_v1_spec_decode.py",
+            "additions": 4,
+            "deletions": 1,
+            "change_type": "modified"
+          },
+          {
+            "path": "tests/e2e/singlecard/test_aclgraph_accuracy.py",
+            "additions": 3,
+            "deletions": 3,
+            "change_type": "modified"
+          }
+        ],
+        "approaches": [
+          "migrate single card runner to hk",
+          "flush golden",
+          "flush golden"
+        ],
+        "key_patterns": [
+          {
+            "pattern": "添加检查",
+            "file": "tests/e2e/singlecard/spec_decode/test_v1_spec_decode.py",
+            "count": 1
+          }
+        ],
+        "additions": 12,
+        "deletions": 5
+      },
+      "learned_at": "2026-05-22T13:13:25.762993"
+    },
+    {
+      "pr_number": 6276,
+      "pr_title": "[BugFix] Fix wheel package build workflow",
+      "pr_user": "wxsIcey",
+      "pr_url": "https://github.com/vllm-project/vllm-ascend/pull/6276",
+      "merged_at": "2026-01-26T12:42:17Z",
+      "issue_number": null,
+      "issue_title": null,
+      "issue_labels": [],
+      "categories": [
+        "Bug Fix"
+      ],
+      "solution": {
+        "files": [
+          {
+            "path": ".github/workflows/schedule_release_code_and_wheel.yml",
+            "additions": 3,
+            "deletions": 1,
+            "change_type": "modified"
+          }
+        ],
+        "approaches": [
+          "[BugFix] Fix wheel package build workflow"
+        ],
+        "key_patterns": [],
+        "additions": 3,
+        "deletions": 1
+      },
+      "learned_at": "2026-05-22T13:13:30.060891"
     }
   ]
 }

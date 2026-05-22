@@ -1,304 +1,298 @@
-# vLLM-Ascend 数字员工
+# vLLM-Ascend 数字助手技能包
 
-## 🤖 一键拥有你的数字员工
-
-**克隆这个项目，运行一个命令，你就拥有了一个 24/7 不知疲倦的数字员工！**
-
-```bash
-# 克隆项目
-git clone https://github.com/nanxingMy/vllm-ascend-skill.git
-cd vllm-ascend-skill
-
-# 一键配置
-bash setup.sh
-
-# 启动 Hermes
-hermes
-
-# 开始工作
-帮我分析 Issue #8975
-```
-
-## ✨ 能做什么
-
-这个数字员工可以自动：
-
-- ✅ 分析 vLLM-Ascend GitHub Issue
-- ✅ 检查继承关系，避免重复实现
-- ✅ 修复代码问题
-- ✅ 编写单元测试
-- ✅ 提交 Pull Request
-- ✅ 处理 Gemini Code Assist 反馈
-- ✅ 监控 CI 状态并自动修复
-
-### 已完成的工作
-
-| PR | Issue | 类型 | 状态 |
-|----|-------|------|------|
-| #9149 | #8975 | BugFix | ✅ 已合并 |
-| #9199 | #9167 | BugFix | ✅ 已合并 |
-| #9216 | #4112 | Feature | ✅ 代码正确 |
-
-## 🚀 快速开始
-
-### 前置条件
-
-1. **Python 3.10-3.11**
-2. **Git**
-3. **GitHub Account**
-
-### 安装步骤
-
-```bash
-# 1. 安装 Hermes Agent
-pip install hermes-agent
-
-# 2. 克隆这个项目
-git clone https://github.com/nanxingMy/vllm-ascend-skill.git
-cd vllm-ascend-skill
-
-# 3. 运行配置脚本（自动完成所有配置）
-bash setup.sh
-
-# 4. 配置 GitHub Token
-git config --global credential.helper store
-echo 'https://YOUR-USERNAME:YOUR-TOKEN@github.com' > ~/.git-credentials
-
-# 5. 克隆 vLLM-Ascend 仓库
-git clone https://github.com/vllm-project/vllm-ascend.git
-cd vllm-ascend
-git remote add fork https://github.com/YOUR-USERNAME/vllm-ascend.git
-
-# 6. 启动 Hermes
-hermes
-
-# 7. 加载 skill
-/load-skill vllm-ascend-digital-employee
-
-# 8. 开始工作
-帮我分析 Issue #8975
-```
-
-## 📖 使用方法
-
-### 基础使用
-
-```
-用户: 帮我分析 Issue #8975
-
-数字员工: 我来分析 Issue #8975...
-【分析】BalanceScheduler 死锁问题
-【检查】继承关系 ✅
-【修复】添加互斥检查
-【测试】编写测试用例
-【提交】创建 PR #9149
-【状态】✅ CI 通过
-```
-
-### 自动监控
-
-```
-用户: 自动监控我的所有 PR
-
-数字员工: 我来设置监控...
-【监控】每 5 分钟检查一次
-【自动修复】CI 失败时自动处理
-✅ 监控已启动
-```
-
-### 批量处理
-
-```
-用户: 处理所有 Good First Issue
-
-数字员工: 找到 3 个 Issue...
-【处理】Issue #9151
-【处理】Issue #9099
-【处理】Issue #5336
-✅ 已创建 3 个 PR
-```
-
-## 🎓 核心知识
-
-### 继承关系（最重要！）
-
-**添加新接口前必须检查**：
-
-```bash
-# 检查 Platform 基类是否有某方法
-curl -s "https://raw.githubusercontent.com/vllm-project/vllm/main/vllm/platforms/interface.py" | grep "def <method_name>"
-```
-
-**判断规则**：
-- ✅ 基类没有 → 可以实现
-- ✅ 基类有，但需要不同逻辑 → 可以覆盖
-- ❌ 基类有，逻辑相同 → 不需要实现
-
-### 开发流程
-
-```
-1. 分析 Issue
-2. 检查继承关系
-3. 实现修复
-4. 编写测试
-5. 格式化代码
-6. 提交 PR
-7. 处理反馈
-8. 监控 CI
-```
-
-### 代码风格
-
-- 使用 `ValueError` 而不是 `assert`
-- 使用 `ruff format` 格式化
-- 添加单元测试
-- 处理所有 Gemini 反馈
-
-## 📚 知识库
-
-数字员工包含完整的知识库：
-
-### 核心文档
-- [架构详解](skill/references/architecture.md) - 工作原理
-- [继承关系](skill/references/inheritance.md) - **最重要！**
-- [开发指南](skill/references/development-guide.md) - 最佳实践
-- [经验教训](skill/references/lessons-learned.md) - 踩坑记录
-- [PR 示例](skill/references/pr-examples.md) - 实战案例
-- [使用示例](skill/references/examples.md) - 详细示例
-
-### Issue 处理工作流 ⭐ **新增！**
-完整的 5 阶段工作流文档：
-- [工作流总览](skill/references/workflow/README.md)
-- [快速参考](skill/references/workflow/QUICK-REFERENCE.md) - **常用命令速查**
-- [阶段 1: Issue 发现与分析](skill/references/workflow/workflow-01-issue-discovery.md)
-- [阶段 2: 分支创建与代码修改](skill/references/workflow/workflow-02-branch-and-code.md)
-- [阶段 3: PR 创建与 DCO 处理](skill/references/workflow/workflow-03-pr-and-dco.md)
-- [阶段 4: 检视意见处理](skill/references/workflow/workflow-04-review-feedback.md)
-- [阶段 5: CI 监控与合并](skill/references/workflow/workflow-05-ci-and-merge.md)
-
-## 🛠️ 配置
-
-### 环境变量（可选）
-
-```bash
-export GITHUB_USERNAME="your-username"
-export GITHUB_TOKEN="your-token"
-export HERMES_MODEL="claude-sonnet-4"
-```
-
-### Hermes 配置
-
-配置文件位于 `~/.hermes/config.yaml`，setup.sh 会自动创建。
-
-## 📊 性能
-
-### 效率对比
-
-| 任务 | 人类 | 数字员工 | 加速 |
-|------|------|---------|------|
-| 分析 Issue | 1-2h | 5-10m | 6-12x |
-| 修复代码 | 2-4h | 10-30m | 4-8x |
-| 编写测试 | 1-2h | 5-10m | 6-12x |
-| 提交 PR | 30m | 2-5m | 6-15x |
-| **总计** | **5-9h** | **20-55m** | **6-10x** |
-
-### 成功率
-
-- ✅ 简单 BugFix: 100%
-- ✅ 简单 Feature: 100%
-- ⚠️ 复杂问题: 需要人类介入
-
-## 🎯 最佳实践
-
-### DO ✅
-
-- 选择合适的 Issue（Good First Issue, Help Wanted）
-- 提供清晰的指令
-- 验证结果
-
-### DON'T ❌
-
-- 处理复杂的架构问题
-- 盲目信任结果
-- 忽略反馈
-
-## 🐛 故障排查
-
-### 常见问题
-
-**Q: Git 推送失败？**
-```bash
-# 检查网络
-ping github.com
-
-# 重新配置 token
-git config --global credential.helper store
-```
-
-**Q: CI 一直失败？**
-```
-用户: 查看 PR #XXX 的 CI 日志
-
-数字员工: [分析]
-发现是网络问题（IncompleteRead），不是代码问题。
-建议重试 CI。
-```
-
-**Q: 找不到相关代码？**
-```
-用户: Issue #XXX 涉及哪些文件？
-
-数字员工: [搜索]
-找到相关文件：
-- vllm_ascend/platform.py
-- tests/ut/test_platform.py
-```
-
-## 📈 进阶使用
-
-### 自定义工作流
-
-创建 `.hermes/workflows/my-workflow.yaml` 自定义工作流。
-
-### 批量处理
-
-```bash
-hermes run-batch --issues "good-first-issue" --max 5
-```
-
-### 监控和报警
-
-```bash
-hermes create-cron --name "monitor-prs" --schedule "*/5 * * * *"
-```
-
-## 🤝 贡献
-
-欢迎贡献！可以添加：
-
-- 新的知识文档
-- 新的工作流程
-- Bug 修复
-- 文档改进
-
-## 📄 许可证
-
-MIT License
-
-## 🙏 致谢
-
-- [Hermes Agent](https://github.com/nousresearch/hermes)
-- [vLLM-Ascend](https://github.com/vllm-project/vllm-ascend)
+> 让你的 Hermes Agent 拥有与训练有素的 vLLM-Ascend 数字助手相同的能力
 
 ---
 
-## 🎉 立即开始
+## 🎯 这个仓库是什么？
+
+这个仓库包含了训练 vLLM-Ascend 数字助手的所有技能、配置和知识。按照本 README 安装后，你的 Hermes Agent 将能够：
+
+- ✅ 自动分析 vLLM-Ascend Issue 并修复
+- ✅ 自动创建符合 DCO 要求的 PR
+- ✅ 自动处理 Gemini Code Assist 反馈
+- ✅ 自动监控 PR 状态并响应
+- ✅ 持续学习 vLLM-Ascend 历史 PR 积累经验
+- ✅ 掌握 vLLM-Ascend 架构、陷阱和最佳实践
+
+---
+
+## 📦 包含内容
+
+### 技能 (Skills)
+
+| 技能名称 | 用途 | 位置 |
+|---------|------|------|
+| **vllm-ascend** | vLLM-Ascend 开发核心技能（架构、PR规范、陷阱、最佳实践） | `skills/mlops/vllm-ascend/` |
+| **vllm-ascend-issue-workflow** | Issue 处理完整工作流（DCO修复、Lint修复、反馈处理） | `skills/devops/vllm-ascend-issue-workflow/` |
+| **learn-from-merged-prs** | 从历史 PR 学习模式和最佳实践 | `skills/mlops/learn-from-merged-prs/` |
+
+### 配置 (Config)
+
+| 文件 | 用途 |
+|------|------|
+| `config/memory.md` | 关键经验和知识（DCO规则、PR工作流、陷阱等） |
+| `config/fact_store.json` | 结构化事实存储 |
+| `config/cronjobs.md` | 定时任务配置（PR监控、每日学习等） |
+
+### 脚本 (Scripts)
+
+| 脚本 | 用途 |
+|------|------|
+| `learn_all_prs.py` | 批量学习所有历史 PR |
+| `learn_daily_prs.py` | 每日学习新合入的 PR |
+| `check_npu_env.sh` | NPU 环境检查 |
+
+---
+
+## 🚀 快速开始
+
+### 前置要求
+
+1. **Hermes Agent 已安装**
+   ```bash
+   # 检查 hermes 是否安装
+   hermes --version
+   ```
+
+2. **Git 配置正确**
+   ```bash
+   # 配置 Git（必须与你的 GitHub 账号匹配）
+   git config --global user.name "你的名字"
+   git config --global user.email "你的邮箱"
+   ```
+
+3. **GitHub Token 已配置**
+   ```bash
+   # 检查 GitHub 认证
+   git ls-remote https://github.com/vllm-project/vllm-ascend.git
+   ```
+
+### 安装步骤
+
+#### 方法 1: 自动安装（推荐）
 
 ```bash
+# 1. 克隆仓库
 git clone https://github.com/nanxingMy/vllm-ascend-skill.git
 cd vllm-ascend-skill
-bash setup.sh
-hermes
+
+# 2. 运行安装脚本
+bash scripts/install.sh
 ```
 
-**拥有你的数字员工，让开发效率提升 10 倍！** 🚀
+#### 方法 2: 手动安装
+
+```bash
+# 1. 克隆仓库
+git clone https://github.com/nanxingMy/vllm-ascend-skill.git
+cd vllm-ascend-skill
+
+# 2. 复制技能到 Hermes skills 目录
+HERMES_SKILLS=~/.hermes/skills  # 或 ~/AppData/Local/hermes/skills (Windows)
+
+# 复制 vllm-ascend 技能
+mkdir -p $HERMES_SKILLS/mlops/vllm-ascend
+cp -r skills/mlops/vllm-ascend/* $HERMES_SKILLS/mlops/vllm-ascend/
+
+# 复制 vllm-ascend-issue-workflow 技能
+mkdir -p $HERMES_SKILLS/devops/vllm-ascend-issue-workflow
+cp -r skills/devops/vllm-ascend-issue-workflow/* $HERMES_SKILLS/devops/vllm-ascend-issue-workflow/
+
+# 复制 learn-from-merged-prs 技能
+mkdir -p $HERMES_SKILLS/mlops/learn-from-merged-prs
+cp -r skills/mlops/learn-from-merged-prs/* $HERMES_SKILLS/mlops/learn-from-merged-prs/
+
+# 3. 导入 memory 配置
+# 方法 A: 手动添加到 Hermes memory
+# 打开 Hermes Agent，使用 memory 工具添加 config/memory.md 中的内容
+
+# 方法 B: 直接编辑 memory 文件（高级用户）
+# 找到 Hermes memory 文件位置，追加 config/memory.md 内容
+
+# 4. 导入 fact_store 配置
+# 使用 fact_store 工具导入 config/fact_store.json 中的事实
+
+# 5. 设置定时任务（可选）
+# 参考 config/cronjobs.md 创建 cronjob
+```
+
+---
+
+## 📚 使用指南
+
+### 1. 分析 Issue
+
+```
+用户: 分析 vLLM-Ascend Issue #8975
+Agent: [自动加载 vllm-ascend 技能，分析问题，提供解决方案]
+```
+
+### 2. 创建 PR
+
+```
+用户: 为 Issue #8975 创建 PR
+Agent: [自动创建分支、修改代码、提交、推送、创建 PR]
+```
+
+### 3. 处理反馈
+
+```
+用户: 检查 PR #9149 的反馈
+Agent: [自动读取 review comments，修复代码，回复]
+```
+
+### 4. 学习历史 PR
+
+```
+用户: 学习 vLLM-Ascend 历史 PR
+Agent: [运行 learn_all_prs.py，提取模式和最佳实践]
+```
+
+---
+
+## 🔧 高级配置
+
+### 自定义 Git 配置
+
+编辑 `config/memory.md` 中的 Git 配置：
+
+```markdown
+## DCO 要求
+
+Git 配置: user.name="你的名字", user.email="你的邮箱"
+```
+
+### 自定义定时任务
+
+编辑 `config/cronjobs.md` 调整执行频率：
+
+```yaml
+# PR 监控（默认每 5 分钟）
+schedule: "every 10m"
+
+# 每日学习（默认凌晨 0 点）
+schedule: "0 6 * * *"  # 改为早上 6 点
+```
+
+### 添加自定义技能
+
+在 `skills/` 目录下创建新技能：
+
+```bash
+mkdir -p skills/custom/my-skill
+# 创建 SKILL.md 文件
+```
+
+---
+
+## 🎓 学习路径
+
+安装完成后，建议按以下顺序学习：
+
+### 第 1 天：理解架构
+
+```bash
+# 阅读架构文档
+cat skills/mlops/vllm-ascend/references/architecture.md
+cat skills/mlops/vllm-ascend/references/how-vllm-ascend-works.md
+```
+
+### 第 2-3 天：学习 PR 工作流
+
+```bash
+# 阅读 PR 工作流文档
+cat skills/mlops/vllm-ascend/references/pr-workflow-overview.md
+cat skills/devops/vllm-ascend-issue-workflow/SKILL.md
+```
+
+### 第 4-7 天：学习历史 PR
+
+```bash
+# 学习所有历史 PR（约 1900 个）
+python skills/mlops/learn-from-merged-prs/scripts/learn_all_prs.py
+```
+
+### 持续学习
+
+定时任务会自动：
+- 每天学习新合入的 PR
+- 每天深入学习项目模块
+- 每 5 分钟监控你的 PR 状态
+
+---
+
+## 🐛 常见问题
+
+### Q: DCO 检查失败怎么办？
+
+A: 参考 `skills/devops/vllm-ascend-issue-workflow/references/dco-fix-patterns.md`
+
+关键：**不要关闭 PR**，使用 `git rebase --signoff origin/main` 修复。
+
+### Q: Lint 检查失败怎么办？
+
+A: 参考 `skills/devops/vllm-ascend-issue-workflow/references/lint-fix-patterns.md`
+
+通常需要添加文件到 `pyproject.toml` 的 exclude 列表。
+
+### Q: 如何验证安装成功？
+
+A: 在 Hermes Agent 中运行：
+
+```
+用户: 列出所有技能
+Agent: [应该显示 vllm-ascend, vllm-ascend-issue-workflow, learn-from-merged-prs]
+
+用户: 查看 vllm-ascend 技能
+Agent: [应该显示完整的技能内容]
+```
+
+---
+
+## 📊 统计数据
+
+- **技能数量**: 3 个核心技能
+- **参考文档**: 40+ 个
+- **脚本数量**: 3 个
+- **已学习 PR**: 1370+ 个
+- **已提交 PR**: 4 个
+- **知识条目**: 10+ 条
+
+---
+
+## 🤝 贡献
+
+欢迎贡献！你可以：
+
+1. **添加新技能** - 在 `skills/` 目录下创建
+2. **更新文档** - 改进参考文档和陷阱说明
+3. **分享经验** - 添加新的学习案例
+
+---
+
+## 📄 许可证
+
+Apache-2.0
+
+---
+
+## 🙏 致谢
+
+- vLLM-Ascend 项目团队
+- Hermes Agent 框架
+- 所有贡献者
+
+---
+
+## 📞 支持
+
+遇到问题？
+
+1. 查看 `skills/mlops/vllm-ascend/SKILL.md` 中的陷阱部分
+2. 查看 `skills/devops/vllm-ascend-issue-workflow/references/` 中的示例
+3. 提交 Issue 到本仓库
+
+---
+
+**祝你成为 vLLM-Ascend 贡献者！** 🎉

@@ -253,22 +253,24 @@ def save_results(prs_learned, total_prs):
     print(f"✅ 总结文档已保存: {summary_file}")
 
 def git_commit_and_push():
-    """Commit and push results with retry"""
+    """Commit and push results with infinite retry"""
     subprocess.run(['git', 'add', '.'], check=True)
     subprocess.run(['git', 'commit', '-m', f'[Learn] Learn from all merged PRs - {datetime.now().strftime("%Y-%m-%d")}'], check=True)
     
-    # Push with retry
-    max_retries = 5
-    for retry in range(max_retries):
+    # Push with infinite retry
+    retry_count = 0
+    while True:
         try:
             subprocess.run(['git', 'push', 'origin', 'main'], check=True)
             return True
         except Exception as e:
-            if retry < max_retries - 1:
-                print(f"  ⚠️ 推送失败，等待 10s 后重试... ({retry + 1}/{max_retries})")
-                time.sleep(10)
+            retry_count += 1
+            if retry_count <= 5:
+                wait_time = 10
             else:
-                raise e
+                wait_time = 60  # After 5 retries, wait 1 minute
+            print(f"  ⚠️ 推送失败，等待 {wait_time}s 后重试... (重试 #{retry_count})")
+            time.sleep(wait_time)
 
 def main():
     """Main learning loop"""

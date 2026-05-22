@@ -1,6 +1,6 @@
 {
   "date": "2026-05-22",
-  "total_prs": 1300,
+  "total_prs": 1350,
   "prs": [
     {
       "pr_number": 9433,
@@ -18980,6 +18980,727 @@
         "Feature"
       ],
       "url": "https://github.com/vllm-project/vllm-ascend/pull/6492"
+    },
+    {
+      "pr_number": 6505,
+      "title": "[Nightly][BugFix] Remove kv_cache nz test case for test_mla_preprocess_nq.py",
+      "author": "whx-sjtu",
+      "merged_at": "2026-02-03T10:26:51Z",
+      "issue_number": null,
+      "files_modified": 1,
+      "lines_added": 2,
+      "lines_deleted": 4,
+      "categories": [
+        "Bug Fix",
+        "Test"
+      ],
+      "url": "https://github.com/vllm-project/vllm-ascend/pull/6505"
+    },
+    {
+      "pr_number": 6383,
+      "title": "[0.13.0][Profiler] Fix profiler bug",
+      "author": "wangxiyuan",
+      "merged_at": "2026-01-29T11:13:31Z",
+      "issue_number": null,
+      "files_modified": 1,
+      "lines_added": 6,
+      "lines_deleted": 5,
+      "categories": [
+        "Bug Fix"
+      ],
+      "url": "https://github.com/vllm-project/vllm-ascend/pull/6383"
+    },
+    {
+      "pr_number": 6444,
+      "title": "[0.13.0][cherry-pick]pick from 6310 to fix rope op",
+      "author": "wangxiyuan",
+      "merged_at": "2026-01-30T15:46:16Z",
+      "issue_number": null,
+      "files_modified": 1,
+      "lines_added": 1,
+      "lines_deleted": 1,
+      "categories": [
+        "Bug Fix"
+      ],
+      "url": "https://github.com/vllm-project/vllm-ascend/pull/6444"
+    },
+    {
+      "pr_number": 6447,
+      "title": "[CI]Update gemini config",
+      "author": "wangxiyuan",
+      "merged_at": "2026-01-31T02:47:38Z",
+      "issue_number": null,
+      "files_modified": 2,
+      "lines_added": 55,
+      "lines_deleted": 1,
+      "categories": [
+        "Other"
+      ],
+      "url": "https://github.com/vllm-project/vllm-ascend/pull/6447"
+    },
+    {
+      "pr_number": 6458,
+      "title": "[CI]Update gemini guide",
+      "author": "wangxiyuan",
+      "merged_at": "2026-01-31T07:17:39Z",
+      "issue_number": null,
+      "files_modified": 1,
+      "lines_added": 40,
+      "lines_deleted": 1,
+      "categories": [
+        "Other"
+      ],
+      "url": "https://github.com/vllm-project/vllm-ascend/pull/6458"
+    },
+    {
+      "pr_number": 6463,
+      "title": "[CI] update gemini styleguide",
+      "author": "wangxiyuan",
+      "merged_at": "2026-01-31T10:02:49Z",
+      "issue_number": null,
+      "files_modified": 1,
+      "lines_added": 1,
+      "lines_deleted": 1,
+      "categories": [
+        "Other"
+      ],
+      "url": "https://github.com/vllm-project/vllm-ascend/pull/6463"
+    },
+    {
+      "pr_number": 6453,
+      "title": "[CI] support build wheel and docker image by workflow",
+      "author": "wangxiyuan",
+      "merged_at": "2026-02-01T12:06:23Z",
+      "issue_number": null,
+      "files_modified": 3,
+      "lines_added": 119,
+      "lines_deleted": 78,
+      "categories": [
+        "Feature",
+        "Documentation",
+        "Other"
+      ],
+      "url": "https://github.com/vllm-project/vllm-ascend/pull/6453"
+    },
+    {
+      "pr_number": 6461,
+      "title": "[Core][Misc] Clean up ProfileExecuteDuration",
+      "author": "wangxiyuan",
+      "merged_at": "2026-02-01T12:06:01Z",
+      "issue_number": null,
+      "files_modified": 10,
+      "lines_added": 12,
+      "lines_deleted": 244,
+      "categories": [
+        "Refactor",
+        "Test"
+      ],
+      "url": "https://github.com/vllm-project/vllm-ascend/pull/6461"
+    },
+    {
+      "pr_number": 6470,
+      "title": "[Main2Main][Deps][Misc] Upgrade vLLM to v0.15.0",
+      "author": "wangxiyuan",
+      "merged_at": "2026-02-02T07:57:55Z",
+      "issue_number": null,
+      "files_modified": 30,
+      "lines_added": 78,
+      "lines_deleted": 98,
+      "categories": [
+        "Other"
+      ],
+      "url": "https://github.com/vllm-project/vllm-ascend/pull/6470"
+    },
+    {
+      "pr_number": 6373,
+      "title": "[CI]Limit transformers version",
+      "author": "wangxiyuan",
+      "merged_at": "2026-01-29T06:10:50Z",
+      "issue_number": null,
+      "files_modified": 4,
+      "lines_added": 5,
+      "lines_deleted": 5,
+      "categories": [
+        "Other"
+      ],
+      "url": "https://github.com/vllm-project/vllm-ascend/pull/6373"
+    },
+    {
+      "pr_number": 6307,
+      "title": "[CI] Upgrade trasnformers version",
+      "author": "wangxiyuan",
+      "merged_at": "2026-01-28T06:06:39Z",
+      "issue_number": null,
+      "files_modified": 14,
+      "lines_added": 30,
+      "lines_deleted": 42,
+      "categories": [
+        "Other"
+      ],
+      "url": "https://github.com/vllm-project/vllm-ascend/pull/6307"
+    },
+    {
+      "pr_number": 6278,
+      "title": "[Doc] quick fix for vllm-ascend version",
+      "author": "wangxiyuan",
+      "merged_at": "2026-01-26T11:33:18Z",
+      "issue_number": null,
+      "files_modified": 1,
+      "lines_added": 1,
+      "lines_deleted": 1,
+      "categories": [
+        "Bug Fix",
+        "Documentation"
+      ],
+      "url": "https://github.com/vllm-project/vllm-ascend/pull/6278"
+    },
+    {
+      "pr_number": 6288,
+      "title": "[Misc] Drop deepseek patch",
+      "author": "wangxiyuan",
+      "merged_at": "2026-01-29T06:45:50Z",
+      "issue_number": null,
+      "files_modified": 3,
+      "lines_added": 16,
+      "lines_deleted": 90,
+      "categories": [
+        "Bug Fix"
+      ],
+      "url": "https://github.com/vllm-project/vllm-ascend/pull/6288"
+    },
+    {
+      "pr_number": 6287,
+      "title": "[CI] Update pta to 2.8.0.post2",
+      "author": "wangxiyuan",
+      "merged_at": "2026-01-27T23:34:58Z",
+      "issue_number": null,
+      "files_modified": 9,
+      "lines_added": 10,
+      "lines_deleted": 31,
+      "categories": [
+        "Other"
+      ],
+      "url": "https://github.com/vllm-project/vllm-ascend/pull/6287"
+    },
+    {
+      "pr_number": 6452,
+      "title": "[CI] Update doctest from 0.9.1 to 0.13.0, and copy doc test workflow to nightly CI for better monitor.",
+      "author": "menogrey",
+      "merged_at": "2026-02-03T07:19:03Z",
+      "issue_number": null,
+      "files_modified": 3,
+      "lines_added": 47,
+      "lines_deleted": 8,
+      "categories": [
+        "Documentation",
+        "Test",
+        "Other"
+      ],
+      "url": "https://github.com/vllm-project/vllm-ascend/pull/6452"
+    },
+    {
+      "pr_number": 5149,
+      "title": "[E2E] add E2E for Prefix Caching cp & Chunked Prefill cp",
+      "author": "ader47",
+      "merged_at": "2026-02-03T07:04:14Z",
+      "issue_number": null,
+      "files_modified": 6,
+      "lines_added": 404,
+      "lines_deleted": 123,
+      "categories": [
+        "Bug Fix",
+        "Feature",
+        "Test"
+      ],
+      "url": "https://github.com/vllm-project/vllm-ascend/pull/5149"
+    },
+    {
+      "pr_number": 6323,
+      "title": "[Doc] Contributing a Benchmark Tutorial for Suffix Speculative Decoding",
+      "author": "zhangguinan",
+      "merged_at": "2026-02-03T06:52:38Z",
+      "issue_number": null,
+      "files_modified": 2,
+      "lines_added": 180,
+      "lines_deleted": 0,
+      "categories": [
+        "Bug Fix",
+        "Documentation",
+        "Test"
+      ],
+      "url": "https://github.com/vllm-project/vllm-ascend/pull/6323"
+    },
+    {
+      "pr_number": 6047,
+      "title": "[Bugfix][CI]Add qwen3Next MTP+Full Decode",
+      "author": "SunnyLee151064",
+      "merged_at": "2026-02-03T06:26:21Z",
+      "issue_number": null,
+      "files_modified": 2,
+      "lines_added": 36,
+      "lines_deleted": 7,
+      "categories": [
+        "Bug Fix",
+        "Feature",
+        "Other"
+      ],
+      "url": "https://github.com/vllm-project/vllm-ascend/pull/6047"
+    },
+    {
+      "pr_number": 6366,
+      "title": "[Kernel] Add AscendC fused op transpose_kv_cache_by_block to speed up GQA transfer",
+      "author": "lidenghui1110",
+      "merged_at": "2026-02-03T06:10:01Z",
+      "issue_number": null,
+      "files_modified": 15,
+      "lines_added": 913,
+      "lines_deleted": 3,
+      "categories": [
+        "Feature",
+        "Performance"
+      ],
+      "url": "https://github.com/vllm-project/vllm-ascend/pull/6366"
+    },
+    {
+      "pr_number": 5697,
+      "title": "[doc](cp) correct the prefill of GQA and adjust desc of block table.",
+      "author": "pisceskkk",
+      "merged_at": "2026-01-19T10:53:48Z",
+      "issue_number": null,
+      "files_modified": 4,
+      "lines_added": 14,
+      "lines_deleted": 5,
+      "categories": [
+        "Documentation"
+      ],
+      "url": "https://github.com/vllm-project/vllm-ascend/pull/5697"
+    },
+    {
+      "pr_number": 6000,
+      "title": "[bugfix] align max_num_batched_tokens with tp*pcp when using FLASHCOMM1",
+      "author": "pisceskkk",
+      "merged_at": "2026-01-23T06:19:49Z",
+      "issue_number": null,
+      "files_modified": 4,
+      "lines_added": 33,
+      "lines_deleted": 3,
+      "categories": [
+        "Bug Fix"
+      ],
+      "url": "https://github.com/vllm-project/vllm-ascend/pull/6000"
+    },
+    {
+      "pr_number": 6317,
+      "title": "[bugfix](pcp,gqa) set kv_inverse_idx_for_chunk and cp_kv_recover_idx_for_chunk to None when dcp only",
+      "author": "pisceskkk",
+      "merged_at": "2026-01-29T11:35:52Z",
+      "issue_number": null,
+      "files_modified": 1,
+      "lines_added": 12,
+      "lines_deleted": 4,
+      "categories": [
+        "Bug Fix"
+      ],
+      "url": "https://github.com/vllm-project/vllm-ascend/pull/6317"
+    },
+    {
+      "pr_number": 6318,
+      "title": "[0.13.0][cherry-pick][bugfix](pcp,gqa) set kv_inverse_idx_for_chunk and cp_kv_recover_idx_for_chunk to None when dcp only",
+      "author": "pisceskkk",
+      "merged_at": "2026-01-29T11:35:54Z",
+      "issue_number": null,
+      "files_modified": 1,
+      "lines_added": 13,
+      "lines_deleted": 7,
+      "categories": [
+        "Bug Fix"
+      ],
+      "url": "https://github.com/vllm-project/vllm-ascend/pull/6318"
+    },
+    {
+      "pr_number": 6344,
+      "title": "[bugfix](CP,MLA) fix wrong slot_mapping of decode for mixed p/d batch",
+      "author": "pisceskkk",
+      "merged_at": "2026-01-29T08:48:37Z",
+      "issue_number": null,
+      "files_modified": 2,
+      "lines_added": 3,
+      "lines_deleted": 1,
+      "categories": [
+        "Bug Fix"
+      ],
+      "url": "https://github.com/vllm-project/vllm-ascend/pull/6344"
+    },
+    {
+      "pr_number": 6346,
+      "title": "[0.13.0][cherry-pick][bugfix](CP,MLA) fix wrong slot_mapping of decode for mixed p/d batch",
+      "author": "pisceskkk",
+      "merged_at": "2026-01-29T09:03:24Z",
+      "issue_number": null,
+      "files_modified": 1,
+      "lines_added": 1,
+      "lines_deleted": 1,
+      "categories": [
+        "Bug Fix"
+      ],
+      "url": "https://github.com/vllm-project/vllm-ascend/pull/6346"
+    },
+    {
+      "pr_number": 6241,
+      "title": "[CI] fix DS3.2 single node cudagraph_sizes config",
+      "author": "starmountain1997",
+      "merged_at": "2026-02-02T03:47:32Z",
+      "issue_number": null,
+      "files_modified": 1,
+      "lines_added": 6,
+      "lines_deleted": 7,
+      "categories": [
+        "Bug Fix",
+        "Other"
+      ],
+      "url": "https://github.com/vllm-project/vllm-ascend/pull/6241"
+    },
+    {
+      "pr_number": 6497,
+      "title": "Revert \"[CI] fix DS3.2 single node cudagraph_sizes config (#6241)\"",
+      "author": "starmountain1997",
+      "merged_at": "2026-02-03T00:42:58Z",
+      "issue_number": null,
+      "files_modified": 1,
+      "lines_added": 7,
+      "lines_deleted": 6,
+      "categories": [
+        "Bug Fix",
+        "Other"
+      ],
+      "url": "https://github.com/vllm-project/vllm-ascend/pull/6497"
+    },
+    {
+      "pr_number": 6479,
+      "title": "[0.13.0][Bugfix] fix npu memory is not released in cp",
+      "author": "weiguihua2",
+      "merged_at": "2026-02-02T15:06:57Z",
+      "issue_number": null,
+      "files_modified": 1,
+      "lines_added": 4,
+      "lines_deleted": 1,
+      "categories": [
+        "Bug Fix",
+        "Performance"
+      ],
+      "url": "https://github.com/vllm-project/vllm-ascend/pull/6479"
+    },
+    {
+      "pr_number": 6472,
+      "title": "Bugfix: Pre-compile EPLB algorithm successfully in subprocess under graph mode",
+      "author": "Mercykid-bash",
+      "merged_at": "2026-02-02T11:32:50Z",
+      "issue_number": null,
+      "files_modified": 1,
+      "lines_added": 3,
+      "lines_deleted": 0,
+      "categories": [
+        "Bug Fix"
+      ],
+      "url": "https://github.com/vllm-project/vllm-ascend/pull/6472"
+    },
+    {
+      "pr_number": 6457,
+      "title": "[v0.13.0][Lora][BugFix] Fix crash on base model requests with LoRA enabled",
+      "author": "SkychenLee",
+      "merged_at": "2026-02-02T11:31:58Z",
+      "issue_number": null,
+      "files_modified": 1,
+      "lines_added": 2,
+      "lines_deleted": 3,
+      "categories": [
+        "Bug Fix",
+        "Feature"
+      ],
+      "url": "https://github.com/vllm-project/vllm-ascend/pull/6457"
+    },
+    {
+      "pr_number": 6290,
+      "title": "[Bugfix]Fix the compatibility issue of may_reinitialize_input_batch",
+      "author": "huangazazaz",
+      "merged_at": "2026-02-02T11:16:27Z",
+      "issue_number": null,
+      "files_modified": 5,
+      "lines_added": 15,
+      "lines_deleted": 7,
+      "categories": [
+        "Bug Fix",
+        "Test"
+      ],
+      "url": "https://github.com/vllm-project/vllm-ascend/pull/6290"
+    },
+    {
+      "pr_number": 5889,
+      "title": "[Quantization][Feature] Support compressed tensors moe w4a8 dynamic weight",
+      "author": "LHXuuu",
+      "merged_at": "2026-02-02T08:39:32Z",
+      "issue_number": null,
+      "files_modified": 5,
+      "lines_added": 250,
+      "lines_deleted": 4,
+      "categories": [
+        "Feature"
+      ],
+      "url": "https://github.com/vllm-project/vllm-ascend/pull/5889"
+    },
+    {
+      "pr_number": 6229,
+      "title": "[Bugfix]The service fails to be started when the memcache pool is enabled",
+      "author": "luoxiaolin712",
+      "merged_at": "2026-02-02T08:26:18Z",
+      "issue_number": null,
+      "files_modified": 1,
+      "lines_added": 18,
+      "lines_deleted": 8,
+      "categories": [
+        "Bug Fix",
+        "Feature"
+      ],
+      "url": "https://github.com/vllm-project/vllm-ascend/pull/6229"
+    },
+    {
+      "pr_number": 6298,
+      "title": "[Misc] Print triton info in collect_env.py",
+      "author": "menogrey",
+      "merged_at": "2026-02-02T07:53:42Z",
+      "issue_number": null,
+      "files_modified": 1,
+      "lines_added": 2,
+      "lines_deleted": 0,
+      "categories": [
+        "Other"
+      ],
+      "url": "https://github.com/vllm-project/vllm-ascend/pull/6298"
+    },
+    {
+      "pr_number": 6135,
+      "title": "[Lint]Style: Convert `vllm-ascend/` to ruff format(Batch #9)",
+      "author": "MrZ20",
+      "merged_at": "2026-02-01T15:20:21Z",
+      "issue_number": null,
+      "files_modified": 3,
+      "lines_added": 803,
+      "lines_deleted": 1042,
+      "categories": [
+        "Other"
+      ],
+      "url": "https://github.com/vllm-project/vllm-ascend/pull/6135"
+    },
+    {
+      "pr_number": 6465,
+      "title": "[bugfix]fix some bug in dispatch_ffn_combine kernel",
+      "author": "LQLlulu",
+      "merged_at": "2026-02-02T00:32:42Z",
+      "issue_number": null,
+      "files_modified": 1,
+      "lines_added": 41,
+      "lines_deleted": 42,
+      "categories": [
+        "Bug Fix"
+      ],
+      "url": "https://github.com/vllm-project/vllm-ascend/pull/6465"
+    },
+    {
+      "pr_number": 6464,
+      "title": "[bugfix][0.13.0]fix bug in dispatch_ffn_combine kernel",
+      "author": "LQLlulu",
+      "merged_at": "2026-02-01T16:07:02Z",
+      "issue_number": null,
+      "files_modified": 1,
+      "lines_added": 43,
+      "lines_deleted": 43,
+      "categories": [
+        "Bug Fix"
+      ],
+      "url": "https://github.com/vllm-project/vllm-ascend/pull/6464"
+    },
+    {
+      "pr_number": 6451,
+      "title": "【main】【bugfix】fix: restrict default MLAPO activation to Decode nodes only",
+      "author": "fems14",
+      "merged_at": "2026-01-31T14:44:57Z",
+      "issue_number": null,
+      "files_modified": 2,
+      "lines_added": 8,
+      "lines_deleted": 4,
+      "categories": [
+        "Bug Fix"
+      ],
+      "url": "https://github.com/vllm-project/vllm-ascend/pull/6451"
+    },
+    {
+      "pr_number": 6399,
+      "title": "[CI] change ds32 cudagraph_sizes",
+      "author": "starmountain1997",
+      "merged_at": "2026-01-31T08:38:34Z",
+      "issue_number": null,
+      "files_modified": 1,
+      "lines_added": 6,
+      "lines_deleted": 5,
+      "categories": [
+        "Other"
+      ],
+      "url": "https://github.com/vllm-project/vllm-ascend/pull/6399"
+    },
+    {
+      "pr_number": 6459,
+      "title": "[ModelRunner] Revert \"[Fix] Pads query_start_loc to satisfy FIA/TND constraint",
+      "author": "Potabk",
+      "merged_at": "2026-01-31T08:33:34Z",
+      "issue_number": null,
+      "files_modified": 2,
+      "lines_added": 5,
+      "lines_deleted": 96,
+      "categories": [
+        "Bug Fix"
+      ],
+      "url": "https://github.com/vllm-project/vllm-ascend/pull/6459"
+    },
+    {
+      "pr_number": 5939,
+      "title": "[bugfix](CP) Fix and unify the PD request discrimination logic.",
+      "author": "pisceskkk",
+      "merged_at": "2026-01-31T02:26:02Z",
+      "issue_number": null,
+      "files_modified": 4,
+      "lines_added": 88,
+      "lines_deleted": 111,
+      "categories": [
+        "Bug Fix"
+      ],
+      "url": "https://github.com/vllm-project/vllm-ascend/pull/5939"
+    },
+    {
+      "pr_number": 6443,
+      "title": "[v0.13.0][Eagle3]Extend PR #5786 to eagle3",
+      "author": "Angazenn",
+      "merged_at": "2026-01-30T15:45:53Z",
+      "issue_number": null,
+      "files_modified": 2,
+      "lines_added": 2,
+      "lines_deleted": 3,
+      "categories": [
+        "Other"
+      ],
+      "url": "https://github.com/vllm-project/vllm-ascend/pull/6443"
+    },
+    {
+      "pr_number": 6441,
+      "title": "work around: reset the None reference count to prevent it from droppi…",
+      "author": "1092626063",
+      "merged_at": "2026-01-30T15:45:08Z",
+      "issue_number": null,
+      "files_modified": 1,
+      "lines_added": 10,
+      "lines_deleted": 0,
+      "categories": [
+        "Other"
+      ],
+      "url": "https://github.com/vllm-project/vllm-ascend/pull/6441"
+    },
+    {
+      "pr_number": 6310,
+      "title": "[Bugfix]Modify NPU rotary encoding parameter fields，fix RopeOperation setup failed in condition of self.rotary_dim < self.head_size",
+      "author": "wubin58",
+      "merged_at": "2026-01-30T13:25:04Z",
+      "issue_number": null,
+      "files_modified": 1,
+      "lines_added": 3,
+      "lines_deleted": 1,
+      "categories": [
+        "Bug Fix"
+      ],
+      "url": "https://github.com/vllm-project/vllm-ascend/pull/6310"
+    },
+    {
+      "pr_number": 6422,
+      "title": "fix: resolve sync bug in DispathFFNCombine when expert num per card is 32",
+      "author": "serlar",
+      "merged_at": "2026-01-30T13:21:38Z",
+      "issue_number": null,
+      "files_modified": 2,
+      "lines_added": 35,
+      "lines_deleted": 16,
+      "categories": [
+        "Bug Fix"
+      ],
+      "url": "https://github.com/vllm-project/vllm-ascend/pull/6422"
+    },
+    {
+      "pr_number": 6416,
+      "title": "fix: resolve sync bug in DispathFFNCombine when expert num per card is 32",
+      "author": "serlar",
+      "merged_at": "2026-01-30T13:21:21Z",
+      "issue_number": null,
+      "files_modified": 4,
+      "lines_added": 69,
+      "lines_deleted": 32,
+      "categories": [
+        "Bug Fix"
+      ],
+      "url": "https://github.com/vllm-project/vllm-ascend/pull/6416"
+    },
+    {
+      "pr_number": 5228,
+      "title": "[Feat]Xlite Qwen3-vl Support",
+      "author": "LJQ142857",
+      "merged_at": "2025-12-22T08:30:52Z",
+      "issue_number": null,
+      "files_modified": 4,
+      "lines_added": 19,
+      "lines_deleted": 9,
+      "categories": [
+        "Feature"
+      ],
+      "url": "https://github.com/vllm-project/vllm-ascend/pull/5228"
+    },
+    {
+      "pr_number": 6357,
+      "title": "[Fix] Pads query_start_loc to satisfy FIA/TND constraint",
+      "author": "yiz-liu",
+      "merged_at": "2026-01-30T08:41:44Z",
+      "issue_number": null,
+      "files_modified": 2,
+      "lines_added": 96,
+      "lines_deleted": 5,
+      "categories": [
+        "Bug Fix"
+      ],
+      "url": "https://github.com/vllm-project/vllm-ascend/pull/6357"
+    },
+    {
+      "pr_number": 6320,
+      "title": "[e2e Test][npugraph_ex]add static kernel e2e test case",
+      "author": "ChenCangtao",
+      "merged_at": "2026-01-30T08:24:48Z",
+      "issue_number": null,
+      "files_modified": 2,
+      "lines_added": 34,
+      "lines_deleted": 2,
+      "categories": [
+        "Feature",
+        "Test"
+      ],
+      "url": "https://github.com/vllm-project/vllm-ascend/pull/6320"
+    },
+    {
+      "pr_number": 6397,
+      "title": "[0.13.0]fix patch cudagraph size",
+      "author": "liziyu179",
+      "merged_at": "2026-01-30T08:08:18Z",
+      "issue_number": null,
+      "files_modified": 1,
+      "lines_added": 2,
+      "lines_deleted": 0,
+      "categories": [
+        "Bug Fix"
+      ],
+      "url": "https://github.com/vllm-project/vllm-ascend/pull/6397"
     }
   ]
 }

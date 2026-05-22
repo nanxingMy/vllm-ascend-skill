@@ -1,6 +1,6 @@
 {
   "date": "2026-05-22",
-  "total_prs": 700,
+  "total_prs": 750,
   "prs": [
     {
       "pr_number": 9433,
@@ -10234,6 +10234,740 @@
         "Documentation"
       ],
       "url": "https://github.com/vllm-project/vllm-ascend/pull/7638"
+    },
+    {
+      "pr_number": 9401,
+      "title": "[CI] Update PR description on new commits and skip duplicate comments",
+      "author": "jianzs",
+      "merged_at": "2026-05-22T10:13:33Z",
+      "issue_number": null,
+      "files_modified": 1,
+      "lines_added": 2,
+      "lines_deleted": 1,
+      "categories": [
+        "Documentation",
+        "Other"
+      ],
+      "url": "https://github.com/vllm-project/vllm-ascend/pull/9401"
+    },
+    {
+      "pr_number": 7918,
+      "title": "[Misc] Upgrade torch_npu to pre-release built version",
+      "author": "Potabk",
+      "merged_at": "2026-04-01T14:41:09Z",
+      "issue_number": null,
+      "files_modified": 8,
+      "lines_added": 94,
+      "lines_deleted": 11,
+      "categories": [
+        "Other"
+      ],
+      "url": "https://github.com/vllm-project/vllm-ascend/pull/7918"
+    },
+    {
+      "pr_number": 7881,
+      "title": "[Misc] Drop vllm v0.18.0 support",
+      "author": "Potabk",
+      "merged_at": "2026-04-01T14:15:56Z",
+      "issue_number": null,
+      "files_modified": 18,
+      "lines_added": 44,
+      "lines_deleted": 45,
+      "categories": [
+        "Feature"
+      ],
+      "url": "https://github.com/vllm-project/vllm-ascend/pull/7881"
+    },
+    {
+      "pr_number": 7798,
+      "title": "[Feature] [310p] Add npu_causal_conv1d_310 AscendC Custom Op",
+      "author": "pu-zhe",
+      "merged_at": "2026-03-30T08:09:34Z",
+      "issue_number": null,
+      "files_modified": 22,
+      "lines_added": 2582,
+      "lines_deleted": 31,
+      "categories": [
+        "Feature"
+      ],
+      "url": "https://github.com/vllm-project/vllm-ascend/pull/7798"
+    },
+    {
+      "pr_number": 7879,
+      "title": "[CI] Fixed nightly job triggering conditions to prevent unnecessary triggering.",
+      "author": "Potabk",
+      "merged_at": "2026-04-01T09:59:09Z",
+      "issue_number": null,
+      "files_modified": 4,
+      "lines_added": 7,
+      "lines_deleted": 4,
+      "categories": [
+        "Bug Fix",
+        "Test",
+        "Other"
+      ],
+      "url": "https://github.com/vllm-project/vllm-ascend/pull/7879"
+    },
+    {
+      "pr_number": 7734,
+      "title": "[Doc] link updates and formatting fixes",
+      "author": "herizhen",
+      "merged_at": "2026-04-01T09:33:34Z",
+      "issue_number": null,
+      "files_modified": 30,
+      "lines_added": 593,
+      "lines_deleted": 595,
+      "categories": [
+        "Bug Fix",
+        "Documentation"
+      ],
+      "url": "https://github.com/vllm-project/vllm-ascend/pull/7734"
+    },
+    {
+      "pr_number": 7894,
+      "title": "[BugFix][v0.18.0][cherry-pick] Fix embedding prefix caching for APC",
+      "author": "underfituu",
+      "merged_at": "2026-04-01T08:57:33Z",
+      "issue_number": null,
+      "files_modified": 2,
+      "lines_added": 38,
+      "lines_deleted": 29,
+      "categories": [
+        "Bug Fix"
+      ],
+      "url": "https://github.com/vllm-project/vllm-ascend/pull/7894"
+    },
+    {
+      "pr_number": 7452,
+      "title": "[BugFix][APC] Fix prefix caching support for embedding models",
+      "author": "underfituu",
+      "merged_at": "2026-03-28T03:15:55Z",
+      "issue_number": null,
+      "files_modified": 2,
+      "lines_added": 38,
+      "lines_deleted": 29,
+      "categories": [
+        "Bug Fix",
+        "Feature"
+      ],
+      "url": "https://github.com/vllm-project/vllm-ascend/pull/7452"
+    },
+    {
+      "pr_number": 7895,
+      "title": "[Doc] Fix wheelnext extra-index-url",
+      "author": "zhangxinyuehfad",
+      "merged_at": "2026-04-01T08:18:25Z",
+      "issue_number": null,
+      "files_modified": 1,
+      "lines_added": 2,
+      "lines_deleted": 2,
+      "categories": [
+        "Bug Fix",
+        "Documentation"
+      ],
+      "url": "https://github.com/vllm-project/vllm-ascend/pull/7895"
+    },
+    {
+      "pr_number": 7521,
+      "title": "[Bugfix] Fix get_rope_shape for Kimi-K2.5",
+      "author": "LoganJane",
+      "merged_at": "2026-03-22T13:06:32Z",
+      "issue_number": null,
+      "files_modified": 1,
+      "lines_added": 1,
+      "lines_deleted": 6,
+      "categories": [
+        "Bug Fix"
+      ],
+      "url": "https://github.com/vllm-project/vllm-ascend/pull/7521"
+    },
+    {
+      "pr_number": 7752,
+      "title": "[v0.18.0][BugFix][P/D]Fix layerwise connector out of memory during large buffer transfer",
+      "author": "nwpu-zxr",
+      "merged_at": "2026-03-31T14:16:54Z",
+      "issue_number": null,
+      "files_modified": 1,
+      "lines_added": 29,
+      "lines_deleted": 10,
+      "categories": [
+        "Bug Fix",
+        "Performance",
+        "Test"
+      ],
+      "url": "https://github.com/vllm-project/vllm-ascend/pull/7752"
+    },
+    {
+      "pr_number": 7506,
+      "title": "[BugFix][P/D] fix padding error on FullGraph mode && fix layerwise connector mamba accuracy",
+      "author": "nwpu-zxr",
+      "merged_at": "2026-03-24T07:15:55Z",
+      "issue_number": null,
+      "files_modified": 2,
+      "lines_added": 11,
+      "lines_deleted": 4,
+      "categories": [
+        "Bug Fix",
+        "Feature"
+      ],
+      "url": "https://github.com/vllm-project/vllm-ascend/pull/7506"
+    },
+    {
+      "pr_number": 7022,
+      "title": "[P/D]Mooncake Layerwise Connector supports hybrid attention manager with multiple kvcache groups",
+      "author": "nwpu-zxr",
+      "merged_at": "2026-03-10T15:59:21Z",
+      "issue_number": null,
+      "files_modified": 6,
+      "lines_added": 566,
+      "lines_deleted": 225,
+      "categories": [
+        "Feature"
+      ],
+      "url": "https://github.com/vllm-project/vllm-ascend/pull/7022"
+    },
+    {
+      "pr_number": 7796,
+      "title": "[v0.18.0][P/D][Feature]Layerwise connector supports Mamba prefill prefix caching",
+      "author": "nwpu-zxr",
+      "merged_at": "2026-03-31T01:25:22Z",
+      "issue_number": null,
+      "files_modified": 1,
+      "lines_added": 16,
+      "lines_deleted": 4,
+      "categories": [
+        "Bug Fix",
+        "Feature"
+      ],
+      "url": "https://github.com/vllm-project/vllm-ascend/pull/7796"
+    },
+    {
+      "pr_number": 7775,
+      "title": "[CI] Support branch-based nightly testing with dynamic vLLM version",
+      "author": "zhangxinyuehfad",
+      "merged_at": "2026-04-01T02:58:26Z",
+      "issue_number": null,
+      "files_modified": 8,
+      "lines_added": 242,
+      "lines_deleted": 44,
+      "categories": [
+        "Feature",
+        "Test",
+        "Other"
+      ],
+      "url": "https://github.com/vllm-project/vllm-ascend/pull/7775"
+    },
+    {
+      "pr_number": 7862,
+      "title": "[Releases/v0.18.0][CI] Updated the parameters for the single-node test to fix the OOM issue for DeepSeek-V3.2",
+      "author": "Nagisa125",
+      "merged_at": "2026-04-01T02:28:46Z",
+      "issue_number": null,
+      "files_modified": 1,
+      "lines_added": 8,
+      "lines_deleted": 8,
+      "categories": [
+        "Bug Fix",
+        "Test",
+        "Other"
+      ],
+      "url": "https://github.com/vllm-project/vllm-ascend/pull/7862"
+    },
+    {
+      "pr_number": 7841,
+      "title": "[CI][Misc] modify ds3.2+dcp ci",
+      "author": "weiguihua2",
+      "merged_at": "2026-04-01T00:58:21Z",
+      "issue_number": null,
+      "files_modified": 2,
+      "lines_added": 0,
+      "lines_deleted": 94,
+      "categories": [
+        "Other"
+      ],
+      "url": "https://github.com/vllm-project/vllm-ascend/pull/7841"
+    },
+    {
+      "pr_number": 7842,
+      "title": "[CI][Misc] remove ds3.2+dcp ci nightly test",
+      "author": "weiguihua2",
+      "merged_at": "2026-04-01T00:57:56Z",
+      "issue_number": null,
+      "files_modified": 2,
+      "lines_added": 0,
+      "lines_deleted": 94,
+      "categories": [
+        "Test",
+        "Other"
+      ],
+      "url": "https://github.com/vllm-project/vllm-ascend/pull/7842"
+    },
+    {
+      "pr_number": 7834,
+      "title": "[BugFix][P/D]Fix layerwise connector out of memory during large buffer transfer",
+      "author": "liziyu179",
+      "merged_at": "2026-03-31T14:16:00Z",
+      "issue_number": null,
+      "files_modified": 1,
+      "lines_added": 29,
+      "lines_deleted": 10,
+      "categories": [
+        "Bug Fix",
+        "Performance",
+        "Test"
+      ],
+      "url": "https://github.com/vllm-project/vllm-ascend/pull/7834"
+    },
+    {
+      "pr_number": 7843,
+      "title": "[v0.18.0][BugFix] Fix bug of precision when DSA-CP is enabled on GLM5 ",
+      "author": "yydyzr",
+      "merged_at": "2026-03-31T13:51:11Z",
+      "issue_number": null,
+      "files_modified": 2,
+      "lines_added": 22,
+      "lines_deleted": 1,
+      "categories": [
+        "Bug Fix",
+        "Feature",
+        "Other"
+      ],
+      "url": "https://github.com/vllm-project/vllm-ascend/pull/7843"
+    },
+    {
+      "pr_number": 7844,
+      "title": "[0.18.0][cherry-pick][BugFix]Fix compilation errors for operators dispatch_gmm_combine_decode/moe_combine_normal/moe_dispatch_normal",
+      "author": "wangyibo1005",
+      "merged_at": "2026-03-31T11:58:47Z",
+      "issue_number": null,
+      "files_modified": 8,
+      "lines_added": 294,
+      "lines_deleted": 9,
+      "categories": [
+        "Bug Fix"
+      ],
+      "url": "https://github.com/vllm-project/vllm-ascend/pull/7844"
+    },
+    {
+      "pr_number": 7422,
+      "title": "[main][Attention][Feature] Add support for Qwen3-next hybrid attention in piecewise & full_decode_only",
+      "author": "845473182",
+      "merged_at": "2026-03-31T11:49:35Z",
+      "issue_number": null,
+      "files_modified": 5,
+      "lines_added": 63,
+      "lines_deleted": 34,
+      "categories": [
+        "Feature"
+      ],
+      "url": "https://github.com/vllm-project/vllm-ascend/pull/7422"
+    },
+    {
+      "pr_number": 6927,
+      "title": "[CI] Add label and comment to run e2e test",
+      "author": "zhangxinyuehfad",
+      "merged_at": "2026-03-31T11:07:08Z",
+      "issue_number": null,
+      "files_modified": 3,
+      "lines_added": 232,
+      "lines_deleted": 15,
+      "categories": [
+        "Feature",
+        "Documentation",
+        "Test",
+        "Other"
+      ],
+      "url": "https://github.com/vllm-project/vllm-ascend/pull/6927"
+    },
+    {
+      "pr_number": 7822,
+      "title": "[CI]: Auto-update estimated test times in config.yaml",
+      "author": "vllm-ascend-ci",
+      "merged_at": "2026-03-31T11:05:52Z",
+      "issue_number": null,
+      "files_modified": 1,
+      "lines_added": 74,
+      "lines_deleted": 74,
+      "categories": [
+        "Test",
+        "Other"
+      ],
+      "url": "https://github.com/vllm-project/vllm-ascend/pull/7822"
+    },
+    {
+      "pr_number": 7812,
+      "title": "[CI] fetch log from pod",
+      "author": "Potabk",
+      "merged_at": "2026-03-31T11:05:39Z",
+      "issue_number": null,
+      "files_modified": 7,
+      "lines_added": 356,
+      "lines_deleted": 388,
+      "categories": [
+        "Other"
+      ],
+      "url": "https://github.com/vllm-project/vllm-ascend/pull/7812"
+    },
+    {
+      "pr_number": 7835,
+      "title": "fix(platform): reimplement MiniMax usage accounting patch",
+      "author": "QwertyJack",
+      "merged_at": "2026-03-31T08:27:01Z",
+      "issue_number": null,
+      "files_modified": 2,
+      "lines_added": 191,
+      "lines_deleted": 234,
+      "categories": [
+        "Bug Fix",
+        "Feature"
+      ],
+      "url": "https://github.com/vllm-project/vllm-ascend/pull/7835"
+    },
+    {
+      "pr_number": 7794,
+      "title": "[releases/v0.18.0][Triton][Sampler] Add penalty-related Triton kernel for better performance of penalties",
+      "author": "linfeng-yuan",
+      "merged_at": "2026-03-31T11:01:51Z",
+      "issue_number": null,
+      "files_modified": 5,
+      "lines_added": 477,
+      "lines_deleted": 0,
+      "categories": [
+        "Feature",
+        "Performance"
+      ],
+      "url": "https://github.com/vllm-project/vllm-ascend/pull/7794"
+    },
+    {
+      "pr_number": 7857,
+      "title": "[BugFix][v0.18.0]Adjust request map pop time",
+      "author": "wangxiaoteng888",
+      "merged_at": "2026-03-31T10:55:36Z",
+      "issue_number": null,
+      "files_modified": 1,
+      "lines_added": 22,
+      "lines_deleted": 7,
+      "categories": [
+        "Bug Fix"
+      ],
+      "url": "https://github.com/vllm-project/vllm-ascend/pull/7857"
+    },
+    {
+      "pr_number": 7839,
+      "title": "[0.18.0][BugFix] Disable block verify to avoid incorrect verification on NPU …",
+      "author": "FutureSkyFly",
+      "merged_at": "2026-03-31T01:36:48Z",
+      "issue_number": null,
+      "files_modified": 1,
+      "lines_added": 3,
+      "lines_deleted": 1,
+      "categories": [
+        "Bug Fix"
+      ],
+      "url": "https://github.com/vllm-project/vllm-ascend/pull/7839"
+    },
+    {
+      "pr_number": 7836,
+      "title": "[Test]repair for test_compute_slot_mapping",
+      "author": "ZT-AIA",
+      "merged_at": "2026-03-31T08:52:59Z",
+      "issue_number": null,
+      "files_modified": 1,
+      "lines_added": 1,
+      "lines_deleted": 2,
+      "categories": [
+        "Test"
+      ],
+      "url": "https://github.com/vllm-project/vllm-ascend/pull/7836"
+    },
+    {
+      "pr_number": 7833,
+      "title": "[Test] repair custom ops for test_compute_slot_mapping",
+      "author": "ZT-AIA",
+      "merged_at": "2026-03-31T08:52:16Z",
+      "issue_number": null,
+      "files_modified": 1,
+      "lines_added": 1,
+      "lines_deleted": 2,
+      "categories": [
+        "Test"
+      ],
+      "url": "https://github.com/vllm-project/vllm-ascend/pull/7833"
+    },
+    {
+      "pr_number": 7776,
+      "title": "[v0.18.0][CI] Close build image by pr",
+      "author": "zhangxinyuehfad",
+      "merged_at": "2026-03-31T08:38:43Z",
+      "issue_number": null,
+      "files_modified": 1,
+      "lines_added": 1,
+      "lines_deleted": 32,
+      "categories": [
+        "Other"
+      ],
+      "url": "https://github.com/vllm-project/vllm-ascend/pull/7776"
+    },
+    {
+      "pr_number": 7855,
+      "title": "[BugFix][P/D]Adjust request map pop time",
+      "author": "wangxiaoteng888",
+      "merged_at": "2026-03-31T08:19:38Z",
+      "issue_number": null,
+      "files_modified": 1,
+      "lines_added": 22,
+      "lines_deleted": 7,
+      "categories": [
+        "Bug Fix"
+      ],
+      "url": "https://github.com/vllm-project/vllm-ascend/pull/7855"
+    },
+    {
+      "pr_number": 7737,
+      "title": "[Performance]Optimize DeepSeekOCR2 RelPosAttention and CustomQwen2Decoder",
+      "author": "Wangbei25",
+      "merged_at": "2026-03-31T06:49:29Z",
+      "issue_number": null,
+      "files_modified": 4,
+      "lines_added": 432,
+      "lines_deleted": 2,
+      "categories": [
+        "Performance"
+      ],
+      "url": "https://github.com/vllm-project/vllm-ascend/pull/7737"
+    },
+    {
+      "pr_number": 7679,
+      "title": "[BUG][CI]Fix qwen3next nightly ci && add tp size constraint in faq for Qwen3Next",
+      "author": "SunnyLee151064",
+      "merged_at": "2026-03-31T06:23:10Z",
+      "issue_number": null,
+      "files_modified": 4,
+      "lines_added": 10,
+      "lines_deleted": 6,
+      "categories": [
+        "Bug Fix",
+        "Feature",
+        "Test",
+        "Other"
+      ],
+      "url": "https://github.com/vllm-project/vllm-ascend/pull/7679"
+    },
+    {
+      "pr_number": 6107,
+      "title": "[Feature] Batch invariant torch.compile",
+      "author": "huangfeifei1995",
+      "merged_at": "2026-01-26T01:15:06Z",
+      "issue_number": null,
+      "files_modified": 3,
+      "lines_added": 691,
+      "lines_deleted": 2,
+      "categories": [
+        "Feature"
+      ],
+      "url": "https://github.com/vllm-project/vllm-ascend/pull/6107"
+    },
+    {
+      "pr_number": 7793,
+      "title": "[CI] Updated the parameters for the single-node test to fix the OOM issue for DeepSeek-V3.2",
+      "author": "Nagisa125",
+      "merged_at": "2026-03-31T04:06:54Z",
+      "issue_number": null,
+      "files_modified": 1,
+      "lines_added": 8,
+      "lines_deleted": 8,
+      "categories": [
+        "Bug Fix",
+        "Test",
+        "Other"
+      ],
+      "url": "https://github.com/vllm-project/vllm-ascend/pull/7793"
+    },
+    {
+      "pr_number": 7674,
+      "title": "[Feature][310P] support shared experts path in fused MoE for qwen3.5",
+      "author": "Tflowers-0129",
+      "merged_at": "2026-03-31T02:33:51Z",
+      "issue_number": null,
+      "files_modified": 5,
+      "lines_added": 151,
+      "lines_deleted": 5,
+      "categories": [
+        "Feature"
+      ],
+      "url": "https://github.com/vllm-project/vllm-ascend/pull/7674"
+    },
+    {
+      "pr_number": 7814,
+      "title": "[P/D][Feature]Layerwise connector supports Mamba prefill prefix caching",
+      "author": "Angazenn",
+      "merged_at": "2026-03-31T01:25:10Z",
+      "issue_number": null,
+      "files_modified": 1,
+      "lines_added": 16,
+      "lines_deleted": 4,
+      "categories": [
+        "Bug Fix",
+        "Feature"
+      ],
+      "url": "https://github.com/vllm-project/vllm-ascend/pull/7814"
+    },
+    {
+      "pr_number": 4355,
+      "title": "[Bugfix][KV Pool]fix get_ip import in mooncake_store",
+      "author": "Pz1116",
+      "merged_at": "2025-11-22T10:52:49Z",
+      "issue_number": null,
+      "files_modified": 1,
+      "lines_added": 7,
+      "lines_deleted": 1,
+      "categories": [
+        "Bug Fix"
+      ],
+      "url": "https://github.com/vllm-project/vllm-ascend/pull/4355"
+    },
+    {
+      "pr_number": 7830,
+      "title": "[Doc][Kvpool]Fix default_kv_lease_ttl setting in kv pool doc",
+      "author": "Pz1116",
+      "merged_at": "2026-03-30T11:20:20Z",
+      "issue_number": null,
+      "files_modified": 1,
+      "lines_added": 2,
+      "lines_deleted": 3,
+      "categories": [
+        "Bug Fix",
+        "Documentation"
+      ],
+      "url": "https://github.com/vllm-project/vllm-ascend/pull/7830"
+    },
+    {
+      "pr_number": 7456,
+      "title": "[Doc][KV Pool]Revision KV Pool User Guide [2/2]",
+      "author": "Pz1116",
+      "merged_at": "2026-03-19T08:17:34Z",
+      "issue_number": null,
+      "files_modified": 1,
+      "lines_added": 21,
+      "lines_deleted": 15,
+      "categories": [
+        "Documentation"
+      ],
+      "url": "https://github.com/vllm-project/vllm-ascend/pull/7456"
+    },
+    {
+      "pr_number": 7146,
+      "title": "[KV Pool]get_num_new_matched_tokens return 0 if token length < block_size",
+      "author": "Pz1116",
+      "merged_at": "2026-03-11T07:05:34Z",
+      "issue_number": null,
+      "files_modified": 1,
+      "lines_added": 3,
+      "lines_deleted": 0,
+      "categories": [
+        "Other"
+      ],
+      "url": "https://github.com/vllm-project/vllm-ascend/pull/7146"
+    },
+    {
+      "pr_number": 7025,
+      "title": "[Doc][KV Pool]Update Memcache local service config example: increase default world size to 256 and update description",
+      "author": "Pz1116",
+      "merged_at": "2026-03-06T02:23:55Z",
+      "issue_number": null,
+      "files_modified": 1,
+      "lines_added": 3,
+      "lines_deleted": 3,
+      "categories": [
+        "Documentation"
+      ],
+      "url": "https://github.com/vllm-project/vllm-ascend/pull/7025"
+    },
+    {
+      "pr_number": 6731,
+      "title": "[Doc][Skill] Introduce AI-assisted model-adaptation workflow for vllm-ascend",
+      "author": "QwertyJack",
+      "merged_at": "2026-02-26T00:48:16Z",
+      "issue_number": null,
+      "files_modified": 7,
+      "lines_added": 838,
+      "lines_deleted": 0,
+      "categories": [
+        "Documentation"
+      ],
+      "url": "https://github.com/vllm-project/vllm-ascend/pull/6731"
+    },
+    {
+      "pr_number": 7828,
+      "title": "[Refactor] Remove redundant conditional in broadcast method",
+      "author": "idouba",
+      "merged_at": "2026-03-30T13:07:13Z",
+      "issue_number": null,
+      "files_modified": 1,
+      "lines_added": 1,
+      "lines_deleted": 4,
+      "categories": [
+        "Refactor"
+      ],
+      "url": "https://github.com/vllm-project/vllm-ascend/pull/7828"
+    },
+    {
+      "pr_number": 7832,
+      "title": "[releases/v0.18.0][BugFix] Fix server init error when set max_num_seqs not a multiple of tp while FLASHCOMM is on",
+      "author": "linfeng-yuan",
+      "merged_at": "2026-03-30T12:24:53Z",
+      "issue_number": null,
+      "files_modified": 1,
+      "lines_added": 4,
+      "lines_deleted": 0,
+      "categories": [
+        "Bug Fix"
+      ],
+      "url": "https://github.com/vllm-project/vllm-ascend/pull/7832"
+    },
+    {
+      "pr_number": 7040,
+      "title": "[CI] Image build from cache",
+      "author": "Potabk",
+      "merged_at": "2026-03-30T12:18:52Z",
+      "issue_number": null,
+      "files_modified": 8,
+      "lines_added": 149,
+      "lines_deleted": 135,
+      "categories": [
+        "Other"
+      ],
+      "url": "https://github.com/vllm-project/vllm-ascend/pull/7040"
+    },
+    {
+      "pr_number": 7801,
+      "title": "[BugFix] Fix server init error when set max_num_seqs not a multiple of tp while FLASHCOMM is on",
+      "author": "SparrowMu",
+      "merged_at": "2026-03-30T11:02:52Z",
+      "issue_number": null,
+      "files_modified": 1,
+      "lines_added": 4,
+      "lines_deleted": 0,
+      "categories": [
+        "Bug Fix"
+      ],
+      "url": "https://github.com/vllm-project/vllm-ascend/pull/7801"
+    },
+    {
+      "pr_number": 7783,
+      "title": "[Doc][main][KV Pool]add mooncake rdma timeout",
+      "author": "Pz1116",
+      "merged_at": "2026-03-30T09:41:58Z",
+      "issue_number": null,
+      "files_modified": 1,
+      "lines_added": 14,
+      "lines_deleted": 0,
+      "categories": [
+        "Feature",
+        "Documentation",
+        "Test"
+      ],
+      "url": "https://github.com/vllm-project/vllm-ascend/pull/7783"
     }
   ]
 }

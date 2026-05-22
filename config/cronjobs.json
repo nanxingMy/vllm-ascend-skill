@@ -1,0 +1,207 @@
+{
+  "jobs": [
+    {
+      "id": "36178bfb6a15",
+      "name": "vllm-ascend-pr-monitor",
+      "prompt": "\u4f60\u662f vLLM-Ascend PR \u76d1\u63a7\u673a\u5668\u4eba\u3002\u4f60\u7684\u4efb\u52a1\u662f\u76d1\u63a7 PR #9149 \u7684\u72b6\u6001\uff0c\u8bfb\u53d6\u53cd\u9988\uff0c\u5e76\u6839\u636e\u53cd\u9988\u81ea\u52a8\u4fee\u590d\u4ee3\u7801\u3002\n\n## \u5de5\u4f5c\u6d41\u7a0b\n\n1. **\u68c0\u67e5 PR \u72b6\u6001**\n   - \u4f7f\u7528 curl \u8c03\u7528 GitHub API \u83b7\u53d6 PR #9149 \u7684\u6700\u65b0\u72b6\u6001\n   - API: `https://api.github.com/repos/vllm-project/vllm-ascend/pulls/9149`\n   - \u83b7\u53d6\u6700\u65b0 commit SHA\u3001\u66f4\u65b0\u65f6\u95f4\u3001\u5408\u5e76\u72b6\u6001\n\n2. **\u83b7\u53d6\u65b0\u8bc4\u8bba**\n   - \u83b7\u53d6 PR reviews: `https://api.github.com/repos/vllm-project/vllm-ascend/pulls/9149/reviews`\n   - \u83b7\u53d6 PR \u884c\u5185\u8bc4\u8bba: `https://api.github.com/repos/vllm-project/vllm-ascend/pulls/9149/comments`\n   - \u83b7\u53d6 Issue \u8bc4\u8bba: `https://api.github.com/repos/vllm-project/vllm-ascend/issues/9149/comments`\n   - \u6bd4\u8f83\u8bc4\u8bba\u65f6\u95f4\u4e0e\u4e0a\u6b21\u68c0\u67e5\u65f6\u95f4\uff0c\u8bc6\u522b\u65b0\u8bc4\u8bba\n\n3. **\u5206\u6790\u53cd\u9988**\n   - \u5982\u679c\u6709\u65b0\u7684\u8d1f\u9762\u53cd\u9988\uff08CHANGES_REQUESTED \u6216\u6307\u51fa\u95ee\u9898\u7684\u8bc4\u8bba\uff09\n   - \u5206\u6790\u95ee\u9898\u7c7b\u578b\uff1a\n     - \u4ee3\u7801\u4f4d\u7f6e\u95ee\u9898\uff1a\u9700\u8981\u79fb\u52a8\u4ee3\u7801\u4f4d\u7f6e\n     - \u903b\u8f91\u95ee\u9898\uff1a\u9700\u8981\u4fee\u6539\u903b\u8f91\n     - \u6d4b\u8bd5\u95ee\u9898\uff1a\u9700\u8981\u6dfb\u52a0/\u4fee\u6539\u6d4b\u8bd5\n     - \u6587\u6863\u95ee\u9898\uff1a\u9700\u8981\u66f4\u65b0\u6587\u6863/PR\u63cf\u8ff0\n     - CI \u5931\u8d25\uff1a\u9700\u8981\u68c0\u67e5\u9519\u8bef\u65e5\u5fd7\u5e76\u4fee\u590d\n\n4. **\u81ea\u52a8\u4fee\u590d**\n   - \u6839\u636e\u53cd\u9988\u7c7b\u578b\u6267\u884c\u4fee\u590d\n   - \u5de5\u4f5c\u76ee\u5f55: C:/Users/HuaWei/vllm-ascend\n   - \u5206\u652f: bugfix/scheduler-mutex-check-8975\n   - \u4fee\u590d\u540e\u63d0\u4ea4\u5e76\u63a8\u9001\u5230 fork remote\n\n5. **\u62a5\u544a\u72b6\u6001**\n   - \u8f93\u51fa\u5f53\u524d PR \u72b6\u6001\u6458\u8981\n   - \u5982\u679c\u6709\u65b0\u53cd\u9988\uff0c\u8bf4\u660e\u5df2\u5904\u7406\u6216\u9700\u8981\u4eba\u5de5\u5e72\u9884\n   - \u5982\u679c\u6ca1\u6709\u65b0\u53cd\u9988\uff0c\u8bf4\u660e PR \u7b49\u5f85\u5ba1\u67e5\u4e2d\n\n## \u91cd\u8981\u4fe1\u606f\n\n- PR \u94fe\u63a5: https://github.com/vllm-project/vllm-ascend/pull/9149\n- Issue \u94fe\u63a5: https://github.com/vllm-project/vllm-ascend/issues/8975\n- Fork: nanxingMy/vllm-ascend\n- \u5206\u652f: bugfix/scheduler-mutex-check-8975\n- \u4fee\u6539\u6587\u4ef6: vllm_ascend/platform.py, tests/ut/test_platform.py\n\n## \u8f93\u51fa\u683c\u5f0f\n\n\u8bf7\u4ee5\u7b80\u6d01\u7684\u683c\u5f0f\u8f93\u51fa\uff1a\n```\n## PR #9149 \u76d1\u63a7\u62a5\u544a\n\u65f6\u95f4: YYYY-MM-DD HH:MM\n\u72b6\u6001: open/closed/merged\n\u6700\u65b0 commit: xxx\n\n### \u65b0\u53cd\u9988\n- [\u6709/\u65e0]\n\n### \u5df2\u5904\u7406\n- [\u5217\u51fa\u5df2\u5904\u7406\u7684\u53cd\u9988]\n\n### \u5f85\u5904\u7406\n- [\u5217\u51fa\u9700\u8981\u4eba\u5de5\u5e72\u9884\u7684\u95ee\u9898]\n\n### \u4e0b\u4e00\u6b65\n- [\u5efa\u8bae\u7684\u64cd\u4f5c]\n```\n\n\u5982\u679c\u53d1\u73b0\u9700\u8981\u4fee\u590d\u7684\u95ee\u9898\uff0c\u7acb\u5373\u6267\u884c\u4fee\u590d\u5e76\u63a8\u9001\u3002",
+      "skills": [],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "base_url": null,
+      "script": null,
+      "no_agent": false,
+      "context_from": null,
+      "schedule": {
+        "kind": "interval",
+        "minutes": 5,
+        "display": "every 5m"
+      },
+      "schedule_display": "every 5m",
+      "repeat": {
+        "times": null,
+        "completed": 0
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-05-14T14:55:18.372566+08:00",
+      "next_run_at": "2026-05-15T10:47:41.764038+08:00",
+      "last_run_at": null,
+      "last_status": null,
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "origin",
+      "origin": null,
+      "enabled_toolsets": [
+        "web",
+        "terminal",
+        "file"
+      ],
+      "workdir": null
+    },
+    {
+      "id": "9564e0443dd6",
+      "name": "update-memory-to-vllm-ascend-skill",
+      "prompt": "\u6bcf\u5929\u51cc\u6668\u81ea\u52a8\u66f4\u65b0 memory \u5230 vllm-ascend-skill \u4ed3\u5e93\n\n\u4efb\u52a1\uff1a\n1. \u8bfb\u53d6\u5f53\u524d\u7684 memory \u6587\u4ef6\n2. \u63d0\u53d6\u6709\u4ef7\u503c\u7684\u7ecf\u9a8c\u6559\u8bad\u548c\u77e5\u8bc6\u70b9\n3. \u66f4\u65b0\u5230 vllm-ascend-skill \u4ed3\u5e93\u7684 skill/references/ \u76ee\u5f55\n4. \u63a8\u9001\u5230 GitHub main \u5206\u652f\n\nMemory \u6587\u4ef6\u4f4d\u7f6e\uff1a\n- C:/Users/HuaWei/AppData/Local/hermes/memory/memory.md\n- C:/Users/HuaWei/AppData/Local/hermes/memory/user.md\n\n\u76ee\u6807\u4ed3\u5e93\uff1a\n- C:/Users/HuaWei/vllm-ascend-skill\n- GitHub: nanxingMy/vllm-ascend-skill\n\n\u66f4\u65b0\u5185\u5bb9\uff1a\n- \u7ecf\u9a8c\u6559\u8bad (lessons-learned.md)\n- \u5f00\u53d1\u6307\u5357 (development-guide.md)\n- PR \u793a\u4f8b (pr-examples.md)\n\nGit \u914d\u7f6e\uff1a\n- user.name: nanxingMy\n- user.email: 1014662416@qq.com\n- \u5206\u652f: main\n\n\u6ce8\u610f\uff1a\n- \u53ea\u63d0\u53d6\u6709\u4ef7\u503c\u7684\u3001\u6301\u4e45\u7684\u4fe1\u606f\n- \u4e0d\u8981\u5305\u542b\u4e34\u65f6\u72b6\u6001\u6216\u4f1a\u8fc7\u671f\u7684\u4fe1\u606f\n- \u4f7f\u7528\u6e05\u6670\u7684\u683c\u5f0f\u548c\u7ed3\u6784",
+      "skills": [],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "base_url": null,
+      "script": "scripts/update_memory.py",
+      "no_agent": false,
+      "context_from": null,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 0 * * *",
+        "display": "0 0 * * *"
+      },
+      "schedule_display": "0 0 * * *",
+      "repeat": {
+        "times": null,
+        "completed": 0
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-05-21T20:57:10.174623+08:00",
+      "next_run_at": "2026-05-22T00:00:00+08:00",
+      "last_run_at": null,
+      "last_status": null,
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "local",
+      "origin": null,
+      "enabled_toolsets": [
+        "terminal",
+        "file"
+      ],
+      "workdir": null
+    },
+    {
+      "id": "b08c0f796e21",
+      "name": "deep-learn-vllm-ascend",
+      "prompt": "\u6bcf\u5929\u51cc\u6668\u81ea\u52a8\u6df1\u5165\u5b66\u4e60 vllm-ascend \u9879\u76ee\uff0c\u6210\u4e3a\u7528\u6237\u7684\u5206\u8eab\u52a9\u624b\n\n\u5b66\u4e60\u5185\u5bb9\uff1a\n1. \u5206\u6790\u9879\u76ee\u7ed3\u6784\u548c\u67b6\u6784\n2. \u5b66\u4e60\u5173\u952e\u6a21\u5757\u548c\u7c7b\n3. \u63d0\u53d6\u6700\u4f73\u5b9e\u8df5\u548c\u8bbe\u8ba1\u6a21\u5f0f\n4. \u7406\u89e3\u4ee3\u7801\u7ee7\u627f\u5173\u7cfb\n5. \u5206\u6790\u6d4b\u8bd5\u8986\u76d6\u60c5\u51b5\n6. \u63d0\u53d6\u6587\u6863\u548c\u6ce8\u91ca\n\n\u76ee\u6807\uff1a\n- \u6df1\u5165\u7406\u89e3 vllm-ascend \u9879\u76ee\n- \u79ef\u7d2f\u9886\u57df\u77e5\u8bc6\n- \u63d0\u53d6\u6700\u4f73\u5b9e\u8df5\n- \u6210\u4e3a\u7528\u6237\u7684\u5206\u8eab\u52a9\u624b\n\n\u8f93\u51fa\uff1a\n- \u66f4\u65b0\u67b6\u6784\u6587\u6863 (architecture.md)\n- \u66f4\u65b0\u7ee7\u627f\u5173\u7cfb (inheritance.md)\n- \u66f4\u65b0\u5f00\u53d1\u6307\u5357 (development-guide.md)\n- \u63a8\u9001\u5230 vllm-ascend-skill \u4ed3\u5e93\n\n\u9879\u76ee\u8def\u5f84\uff1aC:/Users/HuaWei/vllm-ascend\n\u6280\u80fd\u4ed3\u5e93\uff1aC:/Users/HuaWei/vllm-ascend-skill\nGit \u914d\u7f6e\uff1auser.name=nanxingMy, user.email=1014662416@qq.com",
+      "skills": [],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "base_url": null,
+      "script": "scripts/comprehensive_learn.py",
+      "no_agent": false,
+      "context_from": null,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 0 * * *",
+        "display": "0 0 * * *"
+      },
+      "schedule_display": "0 0 * * *",
+      "repeat": {
+        "times": null,
+        "completed": 0
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-05-21T21:04:57.331818+08:00",
+      "next_run_at": "2026-05-22T00:00:00+08:00",
+      "last_run_at": null,
+      "last_status": null,
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "local",
+      "origin": null,
+      "enabled_toolsets": [
+        "terminal",
+        "file"
+      ],
+      "workdir": null
+    },
+    {
+      "id": "9751048d8ca2",
+      "name": "module-learn-vllm-ascend",
+      "prompt": "\u6bcf\u5929\u51cc\u6668\u5206\u6a21\u5757\u5b66\u4e60 vllm-ascend\uff0c\u8ba9\u6bcf\u4e2a\u4eba\u90fd\u80fd\u5feb\u901f\u4e86\u89e3\u9879\u76ee\n\n\u5b66\u4e60\u8ba1\u5212\uff1a\n- Monday: \u67b6\u6784\u6982\u89c8\n- Tuesday: \u6838\u5fc3\u7ec4\u4ef6\n- Wednesday: \u5e73\u53f0\u9002\u914d\n- Thursday: \u7b97\u5b50\u5b9e\u73b0\n- Friday: \u5206\u5e03\u5f0f\u7cfb\u7edf\n- Saturday: \u6d4b\u8bd5\u4f53\u7cfb\n- Sunday: \u6700\u4f73\u5b9e\u8df5\n\n\u76ee\u6807\uff1a\n- \u5206\u6a21\u5757\u3001\u5206\u6279\u6b21\u5b66\u4e60\n- \u751f\u6210\u6613\u4e8e\u7406\u89e3\u7684\u6587\u6863\n- \u8ba9\u5176\u4ed6\u4eba\u4e5f\u80fd\u5feb\u901f\u4e86\u89e3 vllm-ascend\n- \u6301\u7eed\u66f4\u65b0\u5230 vllm-ascend-skill \u4ed3\u5e93\n\n\u8f93\u51fa\uff1a\n- skill/references/learned/01-architecture.md\n- skill/references/learned/02-core-components.md\n- skill/references/learned/03-platform-adaptation.md\n- skill/references/learned/04-operators.md\n- skill/references/learned/05-distributed.md\n- skill/references/learned/06-testing.md\n- skill/references/learned/07-best-practices.md\n\n\u9879\u76ee\u8def\u5f84\uff1aC:/Users/HuaWei/vllm-ascend\n\u6280\u80fd\u4ed3\u5e93\uff1aC:/Users/HuaWei/vllm-ascend-skill\nGit \u914d\u7f6e\uff1auser.name=nanxingMy, user.email=1014662416@qq.com",
+      "skills": [],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "base_url": null,
+      "script": "scripts/module_learn.py",
+      "no_agent": false,
+      "context_from": null,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 0 * * *",
+        "display": "0 0 * * *"
+      },
+      "schedule_display": "0 0 * * *",
+      "repeat": {
+        "times": null,
+        "completed": 0
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-05-22T09:16:33.160908+08:00",
+      "next_run_at": "2026-05-23T00:00:00+08:00",
+      "last_run_at": null,
+      "last_status": null,
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "local",
+      "origin": null,
+      "enabled_toolsets": [
+        "terminal",
+        "file"
+      ],
+      "workdir": null
+    },
+    {
+      "id": "a12bed96709a",
+      "name": "learn-daily-merged-prs",
+      "prompt": "\u6bcf\u5929\u51cc\u6668\u5b66\u4e60\u5f53\u5929\u5408\u5165\u7684 PR\n\n\u5b66\u4e60\u5185\u5bb9\uff1a\n1. \u83b7\u53d6\u4eca\u5929\u5408\u5165\u7684 PR\n2. \u5206\u6790\u6bcf\u4e2a PR \u7684\u89e3\u51b3\u65b9\u6848\n3. \u67e5\u627e\u5bf9\u5e94\u7684 Issue\n4. \u63d0\u53d6\u7ecf\u9a8c\u548c\u6700\u4f73\u5b9e\u8df5\n5. \u7d2f\u79ef\u5230\u5df2\u6709\u77e5\u8bc6\u5e93\n\n\u76ee\u6807\uff1a\n- \u6301\u7eed\u5b66\u4e60\u65b0\u7684\u89e3\u51b3\u65b9\u6848\n- \u79ef\u7d2f\u7ecf\u9a8c\u548c\u6700\u4f73\u5b9e\u8df5\n- \u4fdd\u6301\u77e5\u8bc6\u5e93\u66f4\u65b0\n\n\u8f93\u51fa\uff1a\n- skill/references/learned-from-prs/prs-data-{date}.json\n\n\u9879\u76ee\u8def\u5f84\uff1aC:/Users/HuaWei/vllm-ascend\n\u6280\u80fd\u4ed3\u5e93\uff1aC:/Users/HuaWei/vllm-ascend-skill\nGit \u914d\u7f6e\uff1auser.name=nanxingMy, user.email=1014662416@qq.com",
+      "skills": [],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "base_url": null,
+      "script": "scripts/learn_daily_prs.py",
+      "no_agent": false,
+      "context_from": null,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 0 * * *",
+        "display": "0 0 * * *"
+      },
+      "schedule_display": "0 0 * * *",
+      "repeat": {
+        "times": null,
+        "completed": 0
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-05-22T10:24:11.612013+08:00",
+      "next_run_at": "2026-05-23T00:00:00+08:00",
+      "last_run_at": null,
+      "last_status": null,
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "local",
+      "origin": null,
+      "enabled_toolsets": [
+        "terminal",
+        "file",
+        "web"
+      ],
+      "workdir": null
+    }
+  ],
+  "updated_at": "2026-05-22T10:24:11.613667+08:00"
+}

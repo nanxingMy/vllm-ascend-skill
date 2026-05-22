@@ -19,29 +19,29 @@
 
 ## 📦 包含内容
 
-### 技能 (Skills)
+### 技能 (Skills) - 5 个核心技能
 
 | 技能名称 | 用途 | 位置 |
 |---------|------|------|
 | **vllm-ascend** | vLLM-Ascend 开发核心技能（架构、PR规范、陷阱、最佳实践） | `skills/mlops/vllm-ascend/` |
 | **vllm-ascend-issue-workflow** | Issue 处理完整工作流（DCO修复、Lint修复、反馈处理） | `skills/devops/vllm-ascend-issue-workflow/` |
 | **learn-from-merged-prs** | 从历史 PR 学习模式和最佳实践 | `skills/mlops/learn-from-merged-prs/` |
+| **pr-feedback-handler** | 自动监控 PR 反馈并修复代码 | `skills/github/pr-feedback-handler/` |
+| **continuous-learning** | 持续学习机制（每日更新、模块学习） | `skills/devops/continuous-learning/` |
 
-### 配置 (Config)
+### 配置文件 (Config) - 真实的 Hermes 配置
 
-| 文件 | 用途 |
-|------|------|
-| `config/memory.md` | 关键经验和知识（DCO规则、PR工作流、陷阱等） |
-| `config/fact_store.json` | 结构化事实存储 |
-| `config/cronjobs.md` | 定时任务配置（PR监控、每日学习等） |
+| 文件 | 用途 | 说明 |
+|------|------|------|
+| `config/MEMORY.md` | 系统记忆 | vLLM-Ascend 相关的经验和知识（36行） |
+| `config/USER.md` | 用户配置 | GitHub 账号、偏好设置（28行） |
+| `config/cronjobs.json` | 定时任务 | 5 个自动学习任务配置 |
 
 ### 脚本 (Scripts)
 
 | 脚本 | 用途 |
 |------|------|
-| `learn_all_prs.py` | 批量学习所有历史 PR |
-| `learn_daily_prs.py` | 每日学习新合入的 PR |
-| `check_npu_env.sh` | NPU 环境检查 |
+| `scripts/install.sh` | 自动安装脚本 |
 
 ---
 
@@ -51,22 +51,16 @@
 
 1. **Hermes Agent 已安装**
    ```bash
-   # 检查 hermes 是否安装
    hermes --version
    ```
 
 2. **Git 配置正确**
    ```bash
-   # 配置 Git（必须与你的 GitHub 账号匹配）
    git config --global user.name "你的名字"
    git config --global user.email "你的邮箱"
    ```
 
 3. **GitHub Token 已配置**
-   ```bash
-   # 检查 GitHub 认证
-   git ls-remote https://github.com/vllm-project/vllm-ascend.git
-   ```
 
 ### 安装步骤
 
@@ -88,33 +82,35 @@ bash scripts/install.sh
 git clone https://github.com/nanxingMy/vllm-ascend-skill.git
 cd vllm-ascend-skill
 
-# 2. 复制技能到 Hermes skills 目录
-HERMES_SKILLS=~/.hermes/skills  # 或 ~/AppData/Local/hermes/skills (Windows)
+# 2. 设置 Hermes 目录（根据你的系统）
+# Windows:
+HERMES_DIR="$HOME/AppData/Local/hermes"
+# Linux/Mac:
+HERMES_DIR="$HOME/.hermes"
 
-# 复制 vllm-ascend 技能
-mkdir -p $HERMES_SKILLS/mlops/vllm-ascend
-cp -r skills/mlops/vllm-ascend/* $HERMES_SKILLS/mlops/vllm-ascend/
+# 3. 复制技能
+mkdir -p "$HERMES_DIR/skills/mlops/vllm-ascend"
+mkdir -p "$HERMES_DIR/skills/devops/vllm-ascend-issue-workflow"
+mkdir -p "$HERMES_DIR/skills/mlops/learn-from-merged-prs"
+mkdir -p "$HERMES_DIR/skills/github/pr-feedback-handler"
+mkdir -p "$HERMES_DIR/skills/devops/continuous-learning"
 
-# 复制 vllm-ascend-issue-workflow 技能
-mkdir -p $HERMES_SKILLS/devops/vllm-ascend-issue-workflow
-cp -r skills/devops/vllm-ascend-issue-workflow/* $HERMES_SKILLS/devops/vllm-ascend-issue-workflow/
+cp -r skills/mlops/vllm-ascend/* "$HERMES_DIR/skills/mlops/vllm-ascend/"
+cp -r skills/devops/vllm-ascend-issue-workflow/* "$HERMES_DIR/skills/devops/vllm-ascend-issue-workflow/"
+cp -r skills/mlops/learn-from-merged-prs/* "$HERMES_DIR/skills/mlops/learn-from-merged-prs/"
+cp -r skills/github/pr-feedback-handler/* "$HERMES_DIR/skills/github/pr-feedback-handler/"
+cp -r skills/devops/continuous-learning/* "$HERMES_DIR/skills/devops/continuous-learning/"
 
-# 复制 learn-from-merged-prs 技能
-mkdir -p $HERMES_SKILLS/mlops/learn-from-merged-prs
-cp -r skills/mlops/learn-from-merged-prs/* $HERMES_SKILLS/mlops/learn-from-merged-prs/
+# 4. 导入 Memory 配置
+mkdir -p "$HERMES_DIR/memories"
+cp config/MEMORY.md "$HERMES_DIR/memories/MEMORY.md"
+cp config/USER.md "$HERMES_DIR/memories/USER.md"
 
-# 3. 导入 memory 配置
-# 方法 A: 手动添加到 Hermes memory
-# 打开 Hermes Agent，使用 memory 工具添加 config/memory.md 中的内容
+# 5. 导入 Cronjob 配置
+mkdir -p "$HERMES_DIR/cron"
+cp config/cronjobs.json "$HERMES_DIR/cron/jobs.json"
 
-# 方法 B: 直接编辑 memory 文件（高级用户）
-# 找到 Hermes memory 文件位置，追加 config/memory.md 内容
-
-# 4. 导入 fact_store 配置
-# 使用 fact_store 工具导入 config/fact_store.json 中的事实
-
-# 5. 设置定时任务（可选）
-# 参考 config/cronjobs.md 创建 cronjob
+echo "✓ 安装完成！"
 ```
 
 ---
@@ -151,38 +147,63 @@ Agent: [运行 learn_all_prs.py，提取模式和最佳实践]
 
 ---
 
+## ⚙️ 配置说明
+
+### Memory 配置
+
+**MEMORY.md** 包含：
+- DCO 要求和规则
+- PR 工作流规则
+- 已完成的贡献记录
+- 关键学习和陷阱
+- 代码风格说明
+
+**USER.md** 包含：
+- GitHub 账号信息
+- 用户偏好设置
+- 工作流规则
+
+### Cronjob 配置
+
+**cronjobs.json** 包含 5 个定时任务：
+
+1. **vllm-ascend-pr-monitor** (每 5 分钟)
+   - 监控 PR 状态
+   - 读取 review comments
+   - 自动修复代码
+
+2. **update-memory-to-vllm-ascend-skill** (每天凌晨)
+   - 更新 memory 到仓库
+   - 提取有价值的经验
+
+3. **deep-learn-vllm-ascend** (每天凌晨)
+   - 深度学习项目结构
+   - 提取最佳实践
+
+4. **module-learn-vllm-ascend** (每天凌晨)
+   - 分模块学习
+   - 生成学习文档
+
+5. **learn-daily-merged-prs** (每天凌晨)
+   - 学习新合入的 PR
+   - 累积经验
+
+---
+
 ## 🔧 高级配置
 
 ### 自定义 Git 配置
 
-编辑 `config/memory.md` 中的 Git 配置：
+编辑 `config/USER.md`：
 
 ```markdown
-## DCO 要求
-
-Git 配置: user.name="你的名字", user.email="你的邮箱"
+GitHub 账号: 你的账号 (fork: https://github.com/你的账号/vllm-ascend.git)
+邮箱: 你的邮箱
 ```
 
 ### 自定义定时任务
 
-编辑 `config/cronjobs.md` 调整执行频率：
-
-```yaml
-# PR 监控（默认每 5 分钟）
-schedule: "every 10m"
-
-# 每日学习（默认凌晨 0 点）
-schedule: "0 6 * * *"  # 改为早上 6 点
-```
-
-### 添加自定义技能
-
-在 `skills/` 目录下创建新技能：
-
-```bash
-mkdir -p skills/custom/my-skill
-# 创建 SKILL.md 文件
-```
+编辑 `config/cronjobs.json` 调整执行频率。
 
 ---
 
@@ -193,7 +214,6 @@ mkdir -p skills/custom/my-skill
 ### 第 1 天：理解架构
 
 ```bash
-# 阅读架构文档
 cat skills/mlops/vllm-ascend/references/architecture.md
 cat skills/mlops/vllm-ascend/references/how-vllm-ascend-works.md
 ```
@@ -201,7 +221,6 @@ cat skills/mlops/vllm-ascend/references/how-vllm-ascend-works.md
 ### 第 2-3 天：学习 PR 工作流
 
 ```bash
-# 阅读 PR 工作流文档
 cat skills/mlops/vllm-ascend/references/pr-workflow-overview.md
 cat skills/devops/vllm-ascend-issue-workflow/SKILL.md
 ```
@@ -209,7 +228,6 @@ cat skills/devops/vllm-ascend-issue-workflow/SKILL.md
 ### 第 4-7 天：学习历史 PR
 
 ```bash
-# 学习所有历史 PR（约 1900 个）
 python skills/mlops/learn-from-merged-prs/scripts/learn_all_prs.py
 ```
 
@@ -242,7 +260,7 @@ A: 在 Hermes Agent 中运行：
 
 ```
 用户: 列出所有技能
-Agent: [应该显示 vllm-ascend, vllm-ascend-issue-workflow, learn-from-merged-prs]
+Agent: [应该显示 vllm-ascend, vllm-ascend-issue-workflow, learn-from-merged-prs, pr-feedback-handler, continuous-learning]
 
 用户: 查看 vllm-ascend 技能
 Agent: [应该显示完整的技能内容]
@@ -252,12 +270,13 @@ Agent: [应该显示完整的技能内容]
 
 ## 📊 统计数据
 
-- **技能数量**: 3 个核心技能
+- **技能数量**: 5 个核心技能
 - **参考文档**: 40+ 个
-- **脚本数量**: 3 个
+- **脚本数量**: 5 个
 - **已学习 PR**: 1370+ 个
 - **已提交 PR**: 4 个
-- **知识条目**: 10+ 条
+- **Memory 条目**: 36 条
+- **定时任务**: 5 个
 
 ---
 

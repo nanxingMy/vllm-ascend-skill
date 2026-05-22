@@ -1,0 +1,1298 @@
+[
+  {
+    "number": 9362,
+    "title": "[CI][eagle3] Remove speculative decode tests in e2e",
+    "author": "lilinsiman",
+    "files": 8,
+    "lines_added": 103,
+    "lines_deleted": 681,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/9362"
+  },
+  {
+    "number": 9357,
+    "title": "[CI] update weekly cases: Deepseekv3.2-w8a8 ; Glm-5.1-w8a8 ; Qwen3.5-397B-w8a8",
+    "author": "guxin108",
+    "files": 4,
+    "lines_added": 896,
+    "lines_deleted": 0,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/9357"
+  },
+  {
+    "number": 9380,
+    "title": "[CI] add weekly case",
+    "author": "chen-commits",
+    "files": 13,
+    "lines_added": 1274,
+    "lines_deleted": 71,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/9380"
+  },
+  {
+    "number": 9407,
+    "title": "[CI] set `MAX_JOBS` for vllm-ascend install in workflows",
+    "author": "MrZ20",
+    "files": 2,
+    "lines_added": 14,
+    "lines_deleted": 2,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/9407"
+  },
+  {
+    "number": 9353,
+    "title": "[CI][E2E] Limit `MAX_JOBS` in vllm-ascend install",
+    "author": "MrZ20",
+    "files": 2,
+    "lines_added": 6,
+    "lines_deleted": 0,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/9353"
+  },
+  {
+    "number": 6744,
+    "title": "[CI]Style: Convert `test/` to ruff format(Batch #3)",
+    "author": "MrZ20",
+    "files": 30,
+    "lines_added": 1333,
+    "lines_deleted": 1182,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/6744"
+  },
+  {
+    "number": 9050,
+    "title": "[CI] Bump actions/download-artifact from 4 to 8",
+    "author": "dependabot[bot]",
+    "files": 3,
+    "lines_added": 3,
+    "lines_deleted": 3,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/9050"
+  },
+  {
+    "number": 9051,
+    "title": "[CI] Bump actions/setup-python from 5 to 6",
+    "author": "dependabot[bot]",
+    "files": 1,
+    "lines_added": 1,
+    "lines_deleted": 1,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/9051"
+  },
+  {
+    "number": 9345,
+    "title": "[CI] replace mirror with CDN",
+    "author": "tfhddd",
+    "files": 9,
+    "lines_added": 16,
+    "lines_deleted": 16,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/9345"
+  },
+  {
+    "number": 9332,
+    "title": "[CI] Use HF_HUB_OFFLINE for UT",
+    "author": "zhangxinyuehfad",
+    "files": 2,
+    "lines_added": 1,
+    "lines_deleted": 1,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/9332"
+  },
+  {
+    "number": 9304,
+    "title": "[CI] Solve the problems of slow download speed and UV",
+    "author": "tfhddd",
+    "files": 16,
+    "lines_added": 89,
+    "lines_deleted": 77,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/9304"
+  },
+  {
+    "number": 9210,
+    "title": "[CI] Move part of nightly test to weekly",
+    "author": "Potabk",
+    "files": 14,
+    "lines_added": 239,
+    "lines_deleted": 23,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/9210"
+  },
+  {
+    "number": 9176,
+    "title": "[CI]Main2main 0515",
+    "author": "Potabk",
+    "files": 8,
+    "lines_added": 69,
+    "lines_deleted": 15,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/9176"
+  },
+  {
+    "number": 9160,
+    "title": "[CI]Remove quantization e2e test case",
+    "author": "kunpengW-code",
+    "files": 8,
+    "lines_added": 91,
+    "lines_deleted": 348,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/9160"
+  },
+  {
+    "number": 9190,
+    "title": "[CI] mock for torch event",
+    "author": "Potabk",
+    "files": 1,
+    "lines_added": 1,
+    "lines_deleted": 1,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/9190"
+  },
+  {
+    "number": 9155,
+    "title": "[CI] Main2main 0514",
+    "author": "Potabk",
+    "files": 30,
+    "lines_added": 170,
+    "lines_deleted": 83,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/9155"
+  },
+  {
+    "number": 9153,
+    "title": "[CI] Clean up env set",
+    "author": "wangxiyuan",
+    "files": 6,
+    "lines_added": 0,
+    "lines_deleted": 78,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/9153"
+  },
+  {
+    "number": 9037,
+    "title": "[CI] Add csrc cache for image build",
+    "author": "Potabk",
+    "files": 10,
+    "lines_added": 147,
+    "lines_deleted": 43,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/9037"
+  },
+  {
+    "number": 9062,
+    "title": "[CI]: Auto-update estimated test times in config.yaml",
+    "author": "vllm-ascend-ci",
+    "files": 1,
+    "lines_added": 74,
+    "lines_deleted": 74,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/9062"
+  },
+  {
+    "number": 9033,
+    "title": "[CI][eagle3] Add new ut funciton and more case",
+    "author": "lilinsiman",
+    "files": 1,
+    "lines_added": 323,
+    "lines_deleted": 23,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/9033"
+  },
+  {
+    "number": 8946,
+    "title": "[CI] Increase max-parallel for nightly test",
+    "author": "zhangxinyuehfad",
+    "files": 1,
+    "lines_added": 2,
+    "lines_deleted": 2,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/8946"
+  },
+  {
+    "number": 8681,
+    "title": "[CI] add nightly MiniMax-M2.5-w8a8-QuaRot",
+    "author": "weixinAc",
+    "files": 7,
+    "lines_added": 222,
+    "lines_deleted": 16,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/8681"
+  },
+  {
+    "number": 8680,
+    "title": "[CI] Add nightly case:GLM-5_1-W8A8;GLM-5.1-W8A8;Qwen3.5-397B-w8a8;Qwen3.5-397B-w4a8;deepseekv3.2",
+    "author": "guxin108",
+    "files": 11,
+    "lines_added": 592,
+    "lines_deleted": 54,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/8680"
+  },
+  {
+    "number": 3861,
+    "title": "[CI]pin vllm commit id",
+    "author": "Meihan-chen",
+    "files": 3,
+    "lines_added": 5,
+    "lines_deleted": 6,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/3861"
+  },
+  {
+    "number": 5392,
+    "title": "[CI]update triton ascend version",
+    "author": "Meihan-chen",
+    "files": 6,
+    "lines_added": 44,
+    "lines_deleted": 33,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/5392"
+  },
+  {
+    "number": 5716,
+    "title": "[CI] Add triton ascend in nightly CI",
+    "author": "Meihan-chen",
+    "files": 3,
+    "lines_added": 28,
+    "lines_deleted": 4,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/5716"
+  },
+  {
+    "number": 6067,
+    "title": "[CI]Update triton ascend version in 3.2.0",
+    "author": "Meihan-chen",
+    "files": 7,
+    "lines_added": 10,
+    "lines_deleted": 9,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/6067"
+  },
+  {
+    "number": 4409,
+    "title": "[CI]Install clang in dokerfile for triton ascend",
+    "author": "Meihan-chen",
+    "files": 9,
+    "lines_added": 41,
+    "lines_deleted": 39,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/4409"
+  },
+  {
+    "number": 6105,
+    "title": "[0.13.0][CI]Add triton ascend version to 3.2.0",
+    "author": "Meihan-chen",
+    "files": 14,
+    "lines_added": 65,
+    "lines_deleted": 120,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/6105"
+  },
+  {
+    "number": 7202,
+    "title": "[CI]Add CI summary log",
+    "author": "Meihan-chen",
+    "files": 6,
+    "lines_added": 1154,
+    "lines_deleted": 14,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/7202"
+  },
+  {
+    "number": 6587,
+    "title": "[CI][Misc] Some improvement for github action",
+    "author": "wangxiyuan",
+    "files": 11,
+    "lines_added": 4,
+    "lines_deleted": 19,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/6587"
+  },
+  {
+    "number": 6489,
+    "title": "[CI] Add workflow support for lint image build",
+    "author": "wangxiyuan",
+    "files": 1,
+    "lines_added": 23,
+    "lines_deleted": 1,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/6489"
+  },
+  {
+    "number": 7799,
+    "title": "[CI] add pr title lint check",
+    "author": "wangxiyuan",
+    "files": 1,
+    "lines_added": 31,
+    "lines_deleted": 0,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/7799"
+  },
+  {
+    "number": 8874,
+    "title": "[CI] Remove releases/v0.18.0 branch from nightly test workflows",
+    "author": "zhangxinyuehfad",
+    "files": 3,
+    "lines_added": 4,
+    "lines_deleted": 7,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/8874"
+  },
+  {
+    "number": 8790,
+    "title": "[CI] add nightly case: Kimi-K2.5-W4A8, Qwen3.5-122B-A10B-w8a8",
+    "author": "chen-commits",
+    "files": 10,
+    "lines_added": 329,
+    "lines_deleted": 17,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/8790"
+  },
+  {
+    "number": 8854,
+    "title": "[CI] Add v0.18.0 and vv0.19.1rc1 options to build  and push image",
+    "author": "zhangxinyuehfad",
+    "files": 2,
+    "lines_added": 4,
+    "lines_deleted": 0,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/8854"
+  },
+  {
+    "number": 8800,
+    "title": "[CI][eagle3] Add ut with run_merged_draft_function",
+    "author": "lilinsiman",
+    "files": 1,
+    "lines_added": 561,
+    "lines_deleted": 0,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/8800"
+  },
+  {
+    "number": 8714,
+    "title": "[CI]Add timeout check for custom op CI and optimize test parameters",
+    "author": "ZT-AIA",
+    "files": 7,
+    "lines_added": 95,
+    "lines_deleted": 10,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/8714"
+  },
+  {
+    "number": 8755,
+    "title": "[CI ][Misc] Add timeout check for custom op CI and optimize test parameters",
+    "author": "ZT-AIA",
+    "files": 2,
+    "lines_added": 42,
+    "lines_deleted": 5,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/8755"
+  },
+  {
+    "number": 8557,
+    "title": "[CI][1/N] Add hardware-awared test gating and CI routing",
+    "author": "Potabk",
+    "files": 13,
+    "lines_added": 1709,
+    "lines_deleted": 186,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/8557"
+  },
+  {
+    "number": 8683,
+    "title": "[CI][Main] Relax TTFT benefits threshold from 0.4 to 0.5 to account for DP load imbalance",
+    "author": "underfituu",
+    "files": 1,
+    "lines_added": 1,
+    "lines_deleted": 1,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/8683"
+  },
+  {
+    "number": 8684,
+    "title": "[CI][Cherry-pick] Relax TTFT benefits threshold from 0.4 to 0.5 to account for DP load imbalance",
+    "author": "underfituu",
+    "files": 1,
+    "lines_added": 1,
+    "lines_deleted": 1,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/8684"
+  },
+  {
+    "number": 8741,
+    "title": "[CI] Bump actions/upload-artifact from 4 to 7",
+    "author": "dependabot[bot]",
+    "files": 1,
+    "lines_added": 1,
+    "lines_deleted": 1,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/8741"
+  },
+  {
+    "number": 8707,
+    "title": "[CI] Repair custom op nightly",
+    "author": "ZT-AIA",
+    "files": 5,
+    "lines_added": 43,
+    "lines_deleted": 7,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/8707"
+  },
+  {
+    "number": 8542,
+    "title": "[CI] Remove hardcoded CANN version from wheel build config",
+    "author": "zhangxinyuehfad",
+    "files": 1,
+    "lines_added": 3,
+    "lines_deleted": 6,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/8542"
+  },
+  {
+    "number": 8571,
+    "title": "[CI] repair ci custom op ",
+    "author": "ZT-AIA",
+    "files": 1,
+    "lines_added": 12,
+    "lines_deleted": 4,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/8571"
+  },
+  {
+    "number": 8593,
+    "title": "[CI] Skip broken tests to make CI happy",
+    "author": "Potabk",
+    "files": 1,
+    "lines_added": 1,
+    "lines_deleted": 0,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/8593"
+  },
+  {
+    "number": 8489,
+    "title": "[CI][310P] Optimize multicard E2E light",
+    "author": "csoulnd",
+    "files": 4,
+    "lines_added": 6,
+    "lines_deleted": 28,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/8489"
+  },
+  {
+    "number": 8496,
+    "title": "[CI] Ds32 ep aime2025",
+    "author": "starmountain1997",
+    "files": 2,
+    "lines_added": 222,
+    "lines_deleted": 0,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/8496"
+  },
+  {
+    "number": 8499,
+    "title": "[CI] repair ci custom op ",
+    "author": "ZT-AIA",
+    "files": 1,
+    "lines_added": 1,
+    "lines_deleted": 1,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/8499"
+  },
+  {
+    "number": 8333,
+    "title": "[CI] Cache build artifacts with GitHub Actions-Caches",
+    "author": "tfhddd",
+    "files": 4,
+    "lines_added": 138,
+    "lines_deleted": 31,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/8333"
+  },
+  {
+    "number": 8322,
+    "title": "[v0.18.0][Test][Misc] Update CI for GLM-5 configuration on vllm-ascend/releases/v0.18.0 branch",
+    "author": "yangjiuhua",
+    "files": 1,
+    "lines_added": 3,
+    "lines_deleted": 4,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/8322"
+  },
+  {
+    "number": 7816,
+    "title": "[CI] Bump dorny/paths-filter from 3 to 4",
+    "author": "dependabot[bot]",
+    "files": 3,
+    "lines_added": 3,
+    "lines_deleted": 3,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/7816"
+  },
+  {
+    "number": 7817,
+    "title": "[CI] Bump actions/upload-artifact from 4 to 7",
+    "author": "dependabot[bot]",
+    "files": 5,
+    "lines_added": 9,
+    "lines_deleted": 9,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/7817"
+  },
+  {
+    "number": 7438,
+    "title": "[CI]Style: Convert `test/` to ruff format(Batch #8)",
+    "author": "MrZ20",
+    "files": 30,
+    "lines_added": 1648,
+    "lines_deleted": 1661,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/7438"
+  },
+  {
+    "number": 7437,
+    "title": "[CI]Style: Convert `test/` to ruff format(Batch #7)",
+    "author": "MrZ20",
+    "files": 10,
+    "lines_added": 804,
+    "lines_deleted": 1007,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/7437"
+  },
+  {
+    "number": 7141,
+    "title": "[CI]Style: Convert `test/` to ruff format(Batch #6)",
+    "author": "MrZ20",
+    "files": 18,
+    "lines_added": 816,
+    "lines_deleted": 916,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/7141"
+  },
+  {
+    "number": 6743,
+    "title": "[CI]Style: Convert `test/` to ruff format(Batch #4)",
+    "author": "MrZ20",
+    "files": 13,
+    "lines_added": 843,
+    "lines_deleted": 1041,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/6743"
+  },
+  {
+    "number": 6739,
+    "title": "[CI]Style: Convert `test/` to ruff format(Batch #2)",
+    "author": "MrZ20",
+    "files": 24,
+    "lines_added": 1043,
+    "lines_deleted": 993,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/6739"
+  },
+  {
+    "number": 8455,
+    "title": "[CI]repair ci for custom op",
+    "author": "ZT-AIA",
+    "files": 3,
+    "lines_added": 10,
+    "lines_deleted": 3,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/8455"
+  },
+  {
+    "number": 8103,
+    "title": "[CI] Add OBS-based artifact upload alongside official actions in nightly workflows",
+    "author": "Goalina",
+    "files": 5,
+    "lines_added": 79,
+    "lines_deleted": 2,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/8103"
+  },
+  {
+    "number": 8226,
+    "title": "[Test][Misc] Update CI for GLM-5 configuration",
+    "author": "yangjiuhua",
+    "files": 1,
+    "lines_added": 4,
+    "lines_deleted": 4,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/8226"
+  },
+  {
+    "number": 8300,
+    "title": "[CI] Add toleration for dedicated=night taint in multi-node LWS template",
+    "author": "zhangxinyuehfad",
+    "files": 1,
+    "lines_added": 10,
+    "lines_deleted": 0,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/8300"
+  },
+  {
+    "number": 8069,
+    "title": "[CI][Test] Add rank0 process count check for DeepSeek-R1-W8A8-HBM test",
+    "author": "zhangxinyuehfad",
+    "files": 2,
+    "lines_added": 30,
+    "lines_deleted": 0,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/8069"
+  },
+  {
+    "number": 8072,
+    "title": "[v0.18.0][CI]Add rank0 process count check for DeepSeek-R1-W8A8-HBM test",
+    "author": "zhangxinyuehfad",
+    "files": 2,
+    "lines_added": 30,
+    "lines_deleted": 0,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/8072"
+  },
+  {
+    "number": 8262,
+    "title": "[CI] change a3 nightly  test parallel",
+    "author": "zhangxinyuehfad",
+    "files": 1,
+    "lines_added": 2,
+    "lines_deleted": 2,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/8262"
+  },
+  {
+    "number": 7882,
+    "title": "[CI] Ds32 ep aime2025",
+    "author": "starmountain1997",
+    "files": 2,
+    "lines_added": 222,
+    "lines_deleted": 0,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/7882"
+  },
+  {
+    "number": 7071,
+    "title": "[CI] support all benchmark cases in nightly test",
+    "author": "zhangxinyuehfad",
+    "files": 5,
+    "lines_added": 63,
+    "lines_deleted": 16,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/7071"
+  },
+  {
+    "number": 7966,
+    "title": "[CI] upgrade main2main to vllm v0.19.0",
+    "author": "zhangxinyuehfad",
+    "files": 14,
+    "lines_added": 17,
+    "lines_deleted": 17,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/7966"
+  },
+  {
+    "number": 8044,
+    "title": "[CI]reapir custom op ci",
+    "author": "ZT-AIA",
+    "files": 3,
+    "lines_added": 10,
+    "lines_deleted": 3,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/8044"
+  },
+  {
+    "number": 7873,
+    "title": "[CI] runs-on/cache accelerates build speed",
+    "author": "tfhddd",
+    "files": 3,
+    "lines_added": 202,
+    "lines_deleted": 13,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/7873"
+  },
+  {
+    "number": 8034,
+    "title": "[CI] Optimize nightly test scheduling strategy",
+    "author": "zhangxinyuehfad",
+    "files": 5,
+    "lines_added": 55,
+    "lines_deleted": 12,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/8034"
+  },
+  {
+    "number": 8014,
+    "title": "[CI][eagle3] Add decode case for eagle_proposer ut",
+    "author": "lilinsiman",
+    "files": 1,
+    "lines_added": 95,
+    "lines_deleted": 37,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/8014"
+  },
+  {
+    "number": 7962,
+    "title": "[CI] Main2main upgrade vllm to 0330",
+    "author": "22dimensions",
+    "files": 20,
+    "lines_added": 470,
+    "lines_deleted": 647,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/7962"
+  },
+  {
+    "number": 7147,
+    "title": "[CI] Skip `test_mooncake_layerwise_connector.py` in `ut`",
+    "author": "MrZ20",
+    "files": 1,
+    "lines_added": 2,
+    "lines_deleted": 1,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/7147"
+  },
+  {
+    "number": 8006,
+    "title": "[CI] Optimize e2e_test logs in GitHub Actions output",
+    "author": "MrZ20",
+    "files": 4,
+    "lines_added": 80,
+    "lines_deleted": 35,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/8006"
+  },
+  {
+    "number": 7939,
+    "title": "[CI][Lint] Restrict python-init check to tracked package directories",
+    "author": "SijieFu",
+    "files": 1,
+    "lines_added": 29,
+    "lines_deleted": 4,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/7939"
+  },
+  {
+    "number": 7102,
+    "title": "[CI] Support artifact collection and dashboard reporting for nightly tests",
+    "author": "zhangxinyuehfad",
+    "files": 9,
+    "lines_added": 625,
+    "lines_deleted": 12,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/7102"
+  },
+  {
+    "number": 7787,
+    "title": "[CI] Main2main upgrade to 0324 ",
+    "author": "leo-pony",
+    "files": 25,
+    "lines_added": 138,
+    "lines_deleted": 54,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/7787"
+  },
+  {
+    "number": 7745,
+    "title": "[CI] add nightly Qwen3.5_27B_w8a8;MiniMax-M2.5-w8a8;Qwen3.5-397B-w8a8-mtp ",
+    "author": "guxin108",
+    "files": 5,
+    "lines_added": 206,
+    "lines_deleted": 1,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/7745"
+  },
+  {
+    "number": 7968,
+    "title": "【CI】add nightly cases: MiniMax-M2.5-W8A8 Qwen3.5-27B-w8a8 Qwen3.5-397B-A1…",
+    "author": "guxin108",
+    "files": 5,
+    "lines_added": 206,
+    "lines_deleted": 1,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/7968"
+  },
+  {
+    "number": 7913,
+    "title": "[v0.18.0][CI] add nightly ci test for qwen3vl",
+    "author": "jiangmengyu18",
+    "files": 4,
+    "lines_added": 140,
+    "lines_deleted": 0,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/7913"
+  },
+  {
+    "number": 7914,
+    "title": "[CI] add nightly ci test for qwen3vl",
+    "author": "jiangmengyu18",
+    "files": 4,
+    "lines_added": 145,
+    "lines_deleted": 0,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/7914"
+  },
+  {
+    "number": 7915,
+    "title": "[v0.18.0][CI] add qwen3vl weights download",
+    "author": "jiangmengyu18",
+    "files": 1,
+    "lines_added": 2,
+    "lines_deleted": 0,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/7915"
+  },
+  {
+    "number": 7917,
+    "title": "[CI] add qwen3vl weights download",
+    "author": "jiangmengyu18",
+    "files": 1,
+    "lines_added": 2,
+    "lines_deleted": 0,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/7917"
+  },
+  {
+    "number": 7880,
+    "title": "[CI][eagle3] Add ut for eagle3 common_attn_metadata",
+    "author": "lilinsiman",
+    "files": 1,
+    "lines_added": 246,
+    "lines_deleted": 2,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/7880"
+  },
+  {
+    "number": 5407,
+    "title": "[CI] skip xlite-decode-only e2e test",
+    "author": "changdawei1",
+    "files": 1,
+    "lines_added": 2,
+    "lines_deleted": 0,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/5407"
+  },
+  {
+    "number": 7775,
+    "title": "[CI] Support branch-based nightly testing with dynamic vLLM version",
+    "author": "zhangxinyuehfad",
+    "files": 8,
+    "lines_added": 242,
+    "lines_deleted": 44,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/7775"
+  },
+  {
+    "number": 7841,
+    "title": "[CI][Misc] modify ds3.2+dcp ci",
+    "author": "weiguihua2",
+    "files": 2,
+    "lines_added": 0,
+    "lines_deleted": 94,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/7841"
+  },
+  {
+    "number": 7842,
+    "title": "[CI][Misc] remove ds3.2+dcp ci nightly test",
+    "author": "weiguihua2",
+    "files": 2,
+    "lines_added": 0,
+    "lines_deleted": 94,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/7842"
+  },
+  {
+    "number": 7822,
+    "title": "[CI]: Auto-update estimated test times in config.yaml",
+    "author": "vllm-ascend-ci",
+    "files": 1,
+    "lines_added": 74,
+    "lines_deleted": 74,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/7822"
+  },
+  {
+    "number": 7812,
+    "title": "[CI] fetch log from pod",
+    "author": "Potabk",
+    "files": 7,
+    "lines_added": 356,
+    "lines_deleted": 388,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/7812"
+  },
+  {
+    "number": 7776,
+    "title": "[v0.18.0][CI] Close build image by pr",
+    "author": "zhangxinyuehfad",
+    "files": 1,
+    "lines_added": 1,
+    "lines_deleted": 32,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/7776"
+  },
+  {
+    "number": 7040,
+    "title": "[CI] Image build from cache",
+    "author": "Potabk",
+    "files": 8,
+    "lines_added": 149,
+    "lines_deleted": 135,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/7040"
+  },
+  {
+    "number": 7761,
+    "title": "[CI][310p] add qwen3.5-4B model weight for edge-device 310p",
+    "author": "Tflowers-0129",
+    "files": 1,
+    "lines_added": 1,
+    "lines_deleted": 0,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/7761"
+  },
+  {
+    "number": 7688,
+    "title": "[CI] Enforce torchaudio and torchvison compatible with pta",
+    "author": "Potabk",
+    "files": 3,
+    "lines_added": 6,
+    "lines_deleted": 2,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/7688"
+  },
+  {
+    "number": 7660,
+    "title": "[CI] Nightly test for releases/v0.18.0",
+    "author": "zhangxinyuehfad",
+    "files": 3,
+    "lines_added": 5,
+    "lines_deleted": 2,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/7660"
+  },
+  {
+    "number": 7662,
+    "title": "[CI][v0.18.0] Build nightly image for releases/v0.18.0 per pr",
+    "author": "zhangxinyuehfad",
+    "files": 2,
+    "lines_added": 36,
+    "lines_deleted": 9,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/7662"
+  },
+  {
+    "number": 7505,
+    "title": "[CI] Recover pd disaggregated encoder test case that been incorrectly skipped",
+    "author": "leo-pony",
+    "files": 1,
+    "lines_added": 0,
+    "lines_deleted": 3,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/7505"
+  },
+  {
+    "number": 7429,
+    "title": "[CI] Add nightly CI test cases for the GLM-5",
+    "author": "liuhy1213-cell",
+    "files": 5,
+    "lines_added": 26,
+    "lines_deleted": 10,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/7429"
+  },
+  {
+    "number": 7416,
+    "title": "[CI] Add nightly CI test cases for the Kimi-K2.5",
+    "author": "LoganJane",
+    "files": 2,
+    "lines_added": 65,
+    "lines_deleted": 0,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/7416"
+  },
+  {
+    "number": 7501,
+    "title": "[CI] Add git safe repo",
+    "author": "Potabk",
+    "files": 4,
+    "lines_added": 10,
+    "lines_deleted": 0,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/7501"
+  },
+  {
+    "number": 7413,
+    "title": "[CI]: Auto-update estimated test times in config.yaml",
+    "author": "vllm-ascend-ci",
+    "files": 1,
+    "lines_added": 158,
+    "lines_deleted": 165,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/7413"
+  },
+  {
+    "number": 7461,
+    "title": "[CI]repair for ci custom ops",
+    "author": "ZT-AIA",
+    "files": 15,
+    "lines_added": 87,
+    "lines_deleted": 5,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/7461"
+  },
+  {
+    "number": 7391,
+    "title": "[CI] Add nightly CI test cases for the GLM-4.7 model.",
+    "author": "aipaes",
+    "files": 2,
+    "lines_added": 70,
+    "lines_deleted": 0,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/7391"
+  },
+  {
+    "number": 7395,
+    "title": "[CI] add glm4.7 weights download",
+    "author": "aipaes",
+    "files": 1,
+    "lines_added": 1,
+    "lines_deleted": 0,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/7395"
+  },
+  {
+    "number": 7312,
+    "title": "[CI] Add multi-hardware wheel build and release workflow",
+    "author": "zhangxinyuehfad",
+    "files": 8,
+    "lines_added": 829,
+    "lines_deleted": 4,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/7312"
+  },
+  {
+    "number": 6577,
+    "title": "[0.13.0][CI] Change A2 Runner",
+    "author": "zhangxinyuehfad",
+    "files": 10,
+    "lines_added": 23,
+    "lines_deleted": 24,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/6577"
+  },
+  {
+    "number": 6557,
+    "title": "[CI] Change A2 runner",
+    "author": "zhangxinyuehfad",
+    "files": 10,
+    "lines_added": 22,
+    "lines_deleted": 23,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/6557"
+  },
+  {
+    "number": 5922,
+    "title": "[CI] Add DeepSeek-V3.2-W8A8-Pruning e2e test",
+    "author": "zhangxinyuehfad",
+    "files": 4,
+    "lines_added": 32,
+    "lines_deleted": 2,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/5922"
+  },
+  {
+    "number": 5386,
+    "title": "[CI] Add nightly ci test for deepseek v3.1",
+    "author": "zhangxinyuehfad",
+    "files": 2,
+    "lines_added": 85,
+    "lines_deleted": 0,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/5386"
+  },
+  {
+    "number": 5246,
+    "title": "[CI] refect e2e ci test",
+    "author": "zhangxinyuehfad",
+    "files": 20,
+    "lines_added": 61,
+    "lines_deleted": 88,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/5246"
+  },
+  {
+    "number": 7406,
+    "title": "[CI] add Kimi-K2.5 weights download",
+    "author": "LoganJane",
+    "files": 1,
+    "lines_added": 1,
+    "lines_deleted": 0,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/7406"
+  },
+  {
+    "number": 7400,
+    "title": "[CI] Add PAT_TOKEN when checkout",
+    "author": "Potabk",
+    "files": 1,
+    "lines_added": 1,
+    "lines_deleted": 6,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/7400"
+  },
+  {
+    "number": 7133,
+    "title": "[CI] Add test_qwen3_5.py",
+    "author": "ppppeng",
+    "files": 2,
+    "lines_added": 77,
+    "lines_deleted": 0,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/7133"
+  },
+  {
+    "number": 7179,
+    "title": "[CI][Misc] Use offline mode for model downloads",
+    "author": "Potabk",
+    "files": 7,
+    "lines_added": 31,
+    "lines_deleted": 8,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/7179"
+  },
+  {
+    "number": 7127,
+    "title": "feat: [CI] Introduce uv to accelerate pip install",
+    "author": "tfhddd",
+    "files": 5,
+    "lines_added": 82,
+    "lines_deleted": 33,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/7127"
+  },
+  {
+    "number": 7035,
+    "title": "[CI]Upgrade niglty multi-node-tests max-parallel to 2",
+    "author": "zhangxinyuehfad",
+    "files": 5,
+    "lines_added": 71,
+    "lines_deleted": 23,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/7035"
+  },
+  {
+    "number": 6115,
+    "title": "[CI] Enable FLASHCOMM1 with layer_sharding and FULL_DECODE_ONLY in ds32 testing",
+    "author": "starmountain1997",
+    "files": 3,
+    "lines_added": 13,
+    "lines_deleted": 5,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/6115"
+  },
+  {
+    "number": 6483,
+    "title": "[CI] support nightly ci for per pr by labels",
+    "author": "zhangxinyuehfad",
+    "files": 8,
+    "lines_added": 490,
+    "lines_deleted": 32,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/6483"
+  },
+  {
+    "number": 6912,
+    "title": "[CI] nightly test timeout",
+    "author": "starmountain1997",
+    "files": 1,
+    "lines_added": 1,
+    "lines_deleted": 0,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/6912"
+  },
+  {
+    "number": 6378,
+    "title": "[CI] Add DeepSeek-V3.2 large EP nightly ci",
+    "author": "zhangxinyuehfad",
+    "files": 3,
+    "lines_added": 239,
+    "lines_deleted": 2,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/6378"
+  },
+  {
+    "number": 6840,
+    "title": "[CI] Enable auto upgrade e2e estimated time for auto-partition suites",
+    "author": "Potabk",
+    "files": 5,
+    "lines_added": 585,
+    "lines_deleted": 272,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/6840"
+  },
+  {
+    "number": 6897,
+    "title": "[CI] Upgrade CANN to 8.5.1",
+    "author": "wxsIcey",
+    "files": 19,
+    "lines_added": 34,
+    "lines_deleted": 34,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/6897"
+  },
+  {
+    "number": 6865,
+    "title": "[v0.13.0][CI] Upgrade to CANN 8.5.1",
+    "author": "wxsIcey",
+    "files": 17,
+    "lines_added": 20,
+    "lines_deleted": 20,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/6865"
+  },
+  {
+    "number": 6923,
+    "title": "[CI][310P] Add 310p tracked files in CI light.",
+    "author": "pu-zhe",
+    "files": 1,
+    "lines_added": 2,
+    "lines_deleted": 0,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/6923"
+  },
+  {
+    "number": 6891,
+    "title": "[CI] Revert speedup image building and CI Installation related PRs",
+    "author": "wjunLu",
+    "files": 13,
+    "lines_added": 212,
+    "lines_deleted": 415,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/6891"
+  },
+  {
+    "number": 6867,
+    "title": "[CI] Revert auto rebase",
+    "author": "wjunLu",
+    "files": 1,
+    "lines_added": 0,
+    "lines_deleted": 42,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/6867"
+  },
+  {
+    "number": 5441,
+    "title": "[CI] Add nightly test for Qwen3-235B-A22B with  mooncake layerwise connector",
+    "author": "wjunLu",
+    "files": 2,
+    "lines_added": 118,
+    "lines_deleted": 0,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/5441"
+  },
+  {
+    "number": 6536,
+    "title": "[CI] Add long and short prompt tests for DeepSeek-V3.2",
+    "author": "starmountain1997",
+    "files": 3,
+    "lines_added": 63,
+    "lines_deleted": 15,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/6536"
+  },
+  {
+    "number": 6771,
+    "title": "[CI] unlock when load model",
+    "author": "leo-pony",
+    "files": 1,
+    "lines_added": 1,
+    "lines_deleted": 0,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/6771"
+  },
+  {
+    "number": 6502,
+    "title": "[CI]Nightly test use `main`",
+    "author": "MrZ20",
+    "files": 1,
+    "lines_added": 0,
+    "lines_deleted": 3,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/6502"
+  },
+  {
+    "number": 6482,
+    "title": "[CI]Disable early exit to complete all tests",
+    "author": "MrZ20",
+    "files": 3,
+    "lines_added": 10,
+    "lines_deleted": 2,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/6482"
+  },
+  {
+    "number": 6564,
+    "title": "[CI] Update UT CANN version to 8.5.0 for main branch",
+    "author": "leo-pony",
+    "files": 8,
+    "lines_added": 47,
+    "lines_deleted": 3,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/6564"
+  },
+  {
+    "number": 6556,
+    "title": "[CI] v0.13.0 Make UT does not compile and run custom kernels examples",
+    "author": "leo-pony",
+    "files": 8,
+    "lines_added": 48,
+    "lines_deleted": 2,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/6556"
+  },
+  {
+    "number": 6343,
+    "title": "[CI]: add production safeguards for 300I",
+    "author": "Tflowers-0129",
+    "files": 1,
+    "lines_added": 2,
+    "lines_deleted": 0,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/6343"
+  },
+  {
+    "number": 6499,
+    "title": "[CI] Add long and short prompt tests for DeepSeek-V3.2",
+    "author": "starmountain1997",
+    "files": 1,
+    "lines_added": 10,
+    "lines_deleted": 4,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/6499"
+  },
+  {
+    "number": 6447,
+    "title": "[CI]Update gemini config",
+    "author": "wangxiyuan",
+    "files": 2,
+    "lines_added": 55,
+    "lines_deleted": 1,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/6447"
+  },
+  {
+    "number": 6458,
+    "title": "[CI]Update gemini guide",
+    "author": "wangxiyuan",
+    "files": 1,
+    "lines_added": 40,
+    "lines_deleted": 1,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/6458"
+  },
+  {
+    "number": 6463,
+    "title": "[CI] update gemini styleguide",
+    "author": "wangxiyuan",
+    "files": 1,
+    "lines_added": 1,
+    "lines_deleted": 1,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/6463"
+  },
+  {
+    "number": 6373,
+    "title": "[CI]Limit transformers version",
+    "author": "wangxiyuan",
+    "files": 4,
+    "lines_added": 5,
+    "lines_deleted": 5,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/6373"
+  },
+  {
+    "number": 6307,
+    "title": "[CI] Upgrade trasnformers version",
+    "author": "wangxiyuan",
+    "files": 14,
+    "lines_added": 30,
+    "lines_deleted": 42,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/6307"
+  },
+  {
+    "number": 6287,
+    "title": "[CI] Update pta to 2.8.0.post2",
+    "author": "wangxiyuan",
+    "files": 9,
+    "lines_added": 10,
+    "lines_deleted": 31,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/6287"
+  },
+  {
+    "number": 6399,
+    "title": "[CI] change ds32 cudagraph_sizes",
+    "author": "starmountain1997",
+    "files": 1,
+    "lines_added": 6,
+    "lines_deleted": 5,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/6399"
+  }
+]

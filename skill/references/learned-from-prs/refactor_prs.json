@@ -1,0 +1,452 @@
+[
+  {
+    "number": 9064,
+    "title": "[Refactor]: migrate env vars to AscendConfig",
+    "author": "lizy124",
+    "files": 30,
+    "lines_added": 876,
+    "lines_deleted": 438,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/9064"
+  },
+  {
+    "number": 9251,
+    "title": "[Refactor][SpecDecode] Move AscendSpecDecodeBaseProposer to llm_base_proposer.py",
+    "author": "zhaomingyu13",
+    "files": 4,
+    "lines_added": 1964,
+    "lines_deleted": 1956,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/9251"
+  },
+  {
+    "number": 8756,
+    "title": "[Refactor][Misc] Use lazy formatting for log",
+    "author": "MrZ20",
+    "files": 30,
+    "lines_added": 336,
+    "lines_deleted": 255,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/8756"
+  },
+  {
+    "number": 9352,
+    "title": "[Test][Misc] refactor set_inputs_first_pass tests to use actual NPU operations",
+    "author": "zhaomingyu13",
+    "files": 1,
+    "lines_added": 127,
+    "lines_deleted": 174,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/9352"
+  },
+  {
+    "number": 9059,
+    "title": "[CI] Refactor light test cases and update test coverage",
+    "author": "MrZ20",
+    "files": 13,
+    "lines_added": 960,
+    "lines_deleted": 14,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/9059"
+  },
+  {
+    "number": 9213,
+    "title": "[Test][Misc] Refactor TestEagleProposerSetInputsFirstPass to pytest style",
+    "author": "zhaomingyu13",
+    "files": 1,
+    "lines_added": 290,
+    "lines_deleted": 247,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/9213"
+  },
+  {
+    "number": 9123,
+    "title": "[Test][SpecDecode] Refactor prepare_inputs tests for AscendEagleProposer",
+    "author": "zhaomingyu13",
+    "files": 1,
+    "lines_added": 368,
+    "lines_deleted": 350,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/9123"
+  },
+  {
+    "number": 8611,
+    "title": "[Ops][Misc] Refactor 310P W8A8 quantization methods to use a common base class",
+    "author": "wenjinhust",
+    "files": 5,
+    "lines_added": 53,
+    "lines_deleted": 63,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/8611"
+  },
+  {
+    "number": 6442,
+    "title": "[Refactor] MLP weight prefetch to consistency with MoE Model's prefetching",
+    "author": "leo-pony",
+    "files": 18,
+    "lines_added": 250,
+    "lines_deleted": 171,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/6442"
+  },
+  {
+    "number": 5928,
+    "title": "[Refactor] Migrate profiler config from env vars to explicit ProfilerConfig",
+    "author": "Meihan-chen",
+    "files": 3,
+    "lines_added": 68,
+    "lines_deleted": 38,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/5928"
+  },
+  {
+    "number": 6523,
+    "title": "[Ops][Refactor] Remove custom rotary_embedding operator",
+    "author": "wangxiyuan",
+    "files": 8,
+    "lines_added": 58,
+    "lines_deleted": 1391,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/6523"
+  },
+  {
+    "number": 8581,
+    "title": "[Ops][Misc] Refactor GDN recurrent attention logic",
+    "author": "mazhixin000",
+    "files": 2,
+    "lines_added": 80,
+    "lines_deleted": 189,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/8581"
+  },
+  {
+    "number": 8431,
+    "title": "[Misc][refactor][xlite] Refactor xlite model adapter structure and introduce shared utils",
+    "author": "SijieFu",
+    "files": 2,
+    "lines_added": 448,
+    "lines_deleted": 192,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/8431"
+  },
+  {
+    "number": 8410,
+    "title": "[Refactor] Unify _sync_metadata_across_dp and _sync_batch_across_dp",
+    "author": "wangbj127",
+    "files": 2,
+    "lines_added": 27,
+    "lines_deleted": 88,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/8410"
+  },
+  {
+    "number": 8269,
+    "title": "[EPLB][Refactor] Delete DynamicConfig",
+    "author": "shenchuxiaofugui",
+    "files": 12,
+    "lines_added": 81,
+    "lines_deleted": 217,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/8269"
+  },
+  {
+    "number": 6996,
+    "title": "[Refactor] Replace npu_ring_mla with FIA in mla_cp prefill",
+    "author": "dsxsteven",
+    "files": 9,
+    "lines_added": 449,
+    "lines_deleted": 435,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/6996"
+  },
+  {
+    "number": 7372,
+    "title": "[Refactor] [310p] Support Mamba Cache and support attn_head_size larger than 128",
+    "author": "pu-zhe",
+    "files": 5,
+    "lines_added": 314,
+    "lines_deleted": 97,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/7372"
+  },
+  {
+    "number": 7716,
+    "title": "[v0.18.0][Refactor] Use forward mapping instead of reverse mapping in AscendModelSlimConfig (#7596)",
+    "author": "Feng-xiaosuo",
+    "files": 1,
+    "lines_added": 11,
+    "lines_deleted": 128,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/7716"
+  },
+  {
+    "number": 7828,
+    "title": "[Refactor] Remove redundant conditional in broadcast method",
+    "author": "idouba",
+    "files": 1,
+    "lines_added": 1,
+    "lines_deleted": 4,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/7828"
+  },
+  {
+    "number": 7596,
+    "title": "[Refactor] Use forward mapping instead of reverse mapping in AscendModelSlimConfig",
+    "author": "Feng-xiaosuo",
+    "files": 1,
+    "lines_added": 11,
+    "lines_deleted": 128,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/7596"
+  },
+  {
+    "number": 7495,
+    "title": "[Ops][Misc] Refactor and optimize CausalConv1d for Ascend",
+    "author": "wenba0",
+    "files": 16,
+    "lines_added": 912,
+    "lines_deleted": 559,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/7495"
+  },
+  {
+    "number": 7455,
+    "title": "[Misc] Refactor aclgraph accuracy test to use logprob-based comparison",
+    "author": "Potabk",
+    "files": 5,
+    "lines_added": 231,
+    "lines_deleted": 148,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/7455"
+  },
+  {
+    "number": 7024,
+    "title": "[refactor] replace scattered business kwargs with typed request objects and explicit stage boundaries",
+    "author": "linfeng-yuan",
+    "files": 30,
+    "lines_added": 2066,
+    "lines_deleted": 918,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/7024"
+  },
+  {
+    "number": 7210,
+    "title": "Refactor duplicated code into a common method to reduce redundancy",
+    "author": "idouba",
+    "files": 1,
+    "lines_added": 12,
+    "lines_deleted": 27,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/7210"
+  },
+  {
+    "number": 5735,
+    "title": "[Refactor] Provide a framework to accommodate operators for different hardware devices",
+    "author": "weijinqian0",
+    "files": 3,
+    "lines_added": 67,
+    "lines_deleted": 24,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/5735"
+  },
+  {
+    "number": 7237,
+    "title": "Revert \"Refactor quantization layer name mapping to leverage vLLM built-in mappers\"",
+    "author": "whx-sjtu",
+    "files": 1,
+    "lines_added": 31,
+    "lines_deleted": 73,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/7237"
+  },
+  {
+    "number": 5704,
+    "title": "[Refactor] Replace npu_ring_mla with FIA in MLA prefill",
+    "author": "LICO1314",
+    "files": 6,
+    "lines_added": 183,
+    "lines_deleted": 79,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/5704"
+  },
+  {
+    "number": 7050,
+    "title": "Refactor quantization layer name mapping to leverage vLLM built-in mappers",
+    "author": "Feng-xiaosuo",
+    "files": 1,
+    "lines_added": 73,
+    "lines_deleted": 31,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/7050"
+  },
+  {
+    "number": 7186,
+    "title": "refactor: add a check before layer_sharding logging",
+    "author": "pisceskkk",
+    "files": 1,
+    "lines_added": 6,
+    "lines_deleted": 5,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/7186"
+  },
+  {
+    "number": 7033,
+    "title": "[Refactor][EAGLE] 8/N delete mtp_proposer (re-pull)",
+    "author": "slippersss",
+    "files": 6,
+    "lines_added": 19,
+    "lines_deleted": 931,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/7033"
+  },
+  {
+    "number": 7030,
+    "title": "Revert \"[Refactor][EAGLE] 8/N delete mtp_proposer\"",
+    "author": "wangxiyuan",
+    "files": 6,
+    "lines_added": 931,
+    "lines_deleted": 19,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/7030"
+  },
+  {
+    "number": 7016,
+    "title": "[Refactor][EAGLE] 8/N delete mtp_proposer",
+    "author": "slippersss",
+    "files": 6,
+    "lines_added": 19,
+    "lines_deleted": 931,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/7016"
+  },
+  {
+    "number": 6349,
+    "title": "[Refactor][EAGLE] 6/N route mtp to eagle except pcp/dcp+mtp",
+    "author": "lilinsiman",
+    "files": 4,
+    "lines_added": 90,
+    "lines_deleted": 24,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/6349"
+  },
+  {
+    "number": 6874,
+    "title": "[perf][refactor] Refactor and optimize sfa_v1.py for dsv3.2/glm5",
+    "author": "rjg-lyh",
+    "files": 4,
+    "lines_added": 663,
+    "lines_deleted": 502,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/6874"
+  },
+  {
+    "number": 6503,
+    "title": "[Nightly][Refactor]Migrate nightly single-node model tests from `.py` to `.yaml`",
+    "author": "MrZ20",
+    "files": 30,
+    "lines_added": 2250,
+    "lines_deleted": 262,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/6503"
+  },
+  {
+    "number": 5518,
+    "title": "[Triton][Config] Add muls_add triton kernel and refactor AscendCompilationConfig",
+    "author": "whx-sjtu",
+    "files": 14,
+    "lines_added": 288,
+    "lines_deleted": 96,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/5518"
+  },
+  {
+    "number": 6708,
+    "title": "[CI] Refactor to speedup image building and CI Installation",
+    "author": "wjunLu",
+    "files": 13,
+    "lines_added": 456,
+    "lines_deleted": 213,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/6708"
+  },
+  {
+    "number": 6811,
+    "title": "[Refactor][EAGLE] 7/N Merged PCP and disable_padded interface ",
+    "author": "lilinsiman",
+    "files": 6,
+    "lines_added": 245,
+    "lines_deleted": 60,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/6811"
+  },
+  {
+    "number": 6785,
+    "title": "[Refactor] Modify the binding logic, added memory migration and interrupt core binding functions.",
+    "author": "Rozwel-dx",
+    "files": 2,
+    "lines_added": 86,
+    "lines_deleted": 5,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/6785"
+  },
+  {
+    "number": 6732,
+    "title": "Refactor the ops PyTorch adapter，cleanup for csrc/torch_binding.cpp",
+    "author": "luomin2005",
+    "files": 15,
+    "lines_added": 1037,
+    "lines_deleted": 735,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/6732"
+  },
+  {
+    "number": 6543,
+    "title": "[EPLB][Nightly] Refactor UT",
+    "author": "Spicy-Stick",
+    "files": 4,
+    "lines_added": 61,
+    "lines_deleted": 121,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/6543"
+  },
+  {
+    "number": 6534,
+    "title": "[MOE Refactor] Remove QuantType in prepare_finalize.py",
+    "author": "shenchuxiaofugui",
+    "files": 4,
+    "lines_added": 9,
+    "lines_deleted": 24,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/6534"
+  },
+  {
+    "number": 5738,
+    "title": "[main][Refactor] Quantization Module Refactor",
+    "author": "SlightwindSec",
+    "files": 30,
+    "lines_added": 1448,
+    "lines_deleted": 705,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/5738"
+  },
+  {
+    "number": 6610,
+    "title": "[refactor]Optimized the kvcache usage of Deepseek v3.2",
+    "author": "kunpengW-code",
+    "files": 1,
+    "lines_added": 29,
+    "lines_deleted": 14,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/6610"
+  },
+  {
+    "number": 6591,
+    "title": "[Refactor]refactor 310p ops and add ut",
+    "author": "pu-zhe",
+    "files": 6,
+    "lines_added": 173,
+    "lines_deleted": 28,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/6591"
+  },
+  {
+    "number": 6539,
+    "title": "[Refactor]310p_e2e test case update",
+    "author": "pu-zhe",
+    "files": 8,
+    "lines_added": 144,
+    "lines_deleted": 142,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/6539"
+  },
+  {
+    "number": 6579,
+    "title": "[Refactor]refactor 310p attention impl and add ut",
+    "author": "pu-zhe",
+    "files": 5,
+    "lines_added": 494,
+    "lines_deleted": 142,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/6579"
+  },
+  {
+    "number": 6551,
+    "title": "[Refactor]refactor p2p connector",
+    "author": "luoxiaolin712",
+    "files": 2,
+    "lines_added": 42,
+    "lines_deleted": 134,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/6551"
+  },
+  {
+    "number": 6043,
+    "title": "[refactor] refactor excute_model and _dymmy_run method ",
+    "author": "kunpengW-code",
+    "files": 4,
+    "lines_added": 822,
+    "lines_deleted": 647,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/6043"
+  },
+  {
+    "number": 6425,
+    "title": "[Refact.]: Refactor some leftover implementations of 300I DUO in the main branch.",
+    "author": "Tflowers-0129",
+    "files": 7,
+    "lines_added": 94,
+    "lines_deleted": 23,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/6425"
+  }
+]

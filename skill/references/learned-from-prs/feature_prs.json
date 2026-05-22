@@ -1,0 +1,1136 @@
+[
+  {
+    "number": 9433,
+    "title": "[Attention][Feature] Add mla prolog cv parallel for dsv4",
+    "author": "Shelleyaaa",
+    "files": 4,
+    "lines_added": 378,
+    "lines_deleted": 74,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/9433"
+  },
+  {
+    "number": 9121,
+    "title": "[Doc] add feature x feature matrix",
+    "author": "zouyida2052",
+    "files": 2,
+    "lines_added": 46,
+    "lines_deleted": 0,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/9121"
+  },
+  {
+    "number": 9429,
+    "title": "[Feature] support ffncombine swiglulimit",
+    "author": "GDzhu01",
+    "files": 12,
+    "lines_added": 41,
+    "lines_deleted": 16,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/9429"
+  },
+  {
+    "number": 9394,
+    "title": "[Feature][Model] Enable W4A8 per-channel GMM Swiglu quant",
+    "author": "maoxx241",
+    "files": 8,
+    "lines_added": 144,
+    "lines_deleted": 6,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/9394"
+  },
+  {
+    "number": 8627,
+    "title": "[Feature] add Dflash support for Qwen3.5",
+    "author": "chenaoxuan",
+    "files": 3,
+    "lines_added": 37,
+    "lines_deleted": 5,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/8627"
+  },
+  {
+    "number": 9328,
+    "title": "[Ascend950][Feature][quant] enable mc2 combine mxfp8 quant in A5",
+    "author": "zzzzzz198",
+    "files": 3,
+    "lines_added": 24,
+    "lines_deleted": 6,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/9328"
+  },
+  {
+    "number": 9396,
+    "title": "[Feature][Model] Switch DeepSeekV4 hc_pre to fused op",
+    "author": "maoxx241",
+    "files": 3,
+    "lines_added": 126,
+    "lines_deleted": 14,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/9396"
+  },
+  {
+    "number": 9385,
+    "title": "[Feature][main][new] The DeepSeek V4 model supports kv pool adaptation.",
+    "author": "Pz1116",
+    "files": 6,
+    "lines_added": 1451,
+    "lines_deleted": 344,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/9385"
+  },
+  {
+    "number": 9280,
+    "title": "[Ascend950] [Feature]EPLB support W8A8_MXFP and W4A4_MXFP",
+    "author": "Eric-dot",
+    "files": 1,
+    "lines_added": 9,
+    "lines_deleted": 0,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/9280"
+  },
+  {
+    "number": 8842,
+    "title": "[Feature]Replace Triton-based conv1d update operator with AscendC implementation",
+    "author": "ZhuQi-seu",
+    "files": 6,
+    "lines_added": 607,
+    "lines_deleted": 44,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/8842"
+  },
+  {
+    "number": 9270,
+    "title": "[Feature] Support DeepseekV4",
+    "author": "GDzhu01",
+    "files": 30,
+    "lines_added": 6441,
+    "lines_deleted": 4,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/9270"
+  },
+  {
+    "number": 6961,
+    "title": "[Doc][Misc] Add KV Cache CPU Offload feature guide",
+    "author": "NJX-njx",
+    "files": 2,
+    "lines_added": 109,
+    "lines_deleted": 0,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/6961"
+  },
+  {
+    "number": 7886,
+    "title": "[Ops][Feature] Add vLLM Ascend Support for Qwen2.5-Math-RM-72B",
+    "author": "yuhongming-2026",
+    "files": 5,
+    "lines_added": 148,
+    "lines_deleted": 0,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/7886"
+  },
+  {
+    "number": 7804,
+    "title": "[Feature] Verify and support Qwen3-ASR-1.7B",
+    "author": "lihaokun-2026",
+    "files": 4,
+    "lines_added": 116,
+    "lines_deleted": 0,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/7804"
+  },
+  {
+    "number": 9271,
+    "title": "[Feature][Ops] Add A5 custom operator build support",
+    "author": "maoxx241",
+    "files": 30,
+    "lines_added": 3759,
+    "lines_deleted": 4,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/9271"
+  },
+  {
+    "number": 6263,
+    "title": "[EPLB][Feature] EPLB Support w4a8",
+    "author": "shenchuxiaofugui",
+    "files": 6,
+    "lines_added": 66,
+    "lines_deleted": 12,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/6263"
+  },
+  {
+    "number": 7222,
+    "title": "[Feature]Supports DSv3.1 PD separation and C8 quantization",
+    "author": "pichangping",
+    "files": 15,
+    "lines_added": 1113,
+    "lines_deleted": 162,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/7222"
+  },
+  {
+    "number": 9228,
+    "title": "[Ops][Feature] Add DeepSeek V4 custom operators",
+    "author": "maoxx241",
+    "files": 30,
+    "lines_added": 11508,
+    "lines_deleted": 0,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/9228"
+  },
+  {
+    "number": 9192,
+    "title": "[Feature] Xlite MiniMaxM2 Support",
+    "author": "changdawei1",
+    "files": 1,
+    "lines_added": 78,
+    "lines_deleted": 0,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/9192"
+  },
+  {
+    "number": 9060,
+    "title": "[Feature] support Flash Attention 3 (FA3) for training-inference consistency.",
+    "author": "wangx700",
+    "files": 7,
+    "lines_added": 725,
+    "lines_deleted": 7,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/9060"
+  },
+  {
+    "number": 9161,
+    "title": "[v0.18.0][Feature][P/D] Mooncake Connector v1 add support for qwen3.5",
+    "author": "nwpu-zxr",
+    "files": 1,
+    "lines_added": 284,
+    "lines_deleted": 83,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/9161"
+  },
+  {
+    "number": 8425,
+    "title": "[Ascend950][Feature][quant] Add allgatherEP quantization support for Ascend950",
+    "author": "zzzzzz198",
+    "files": 5,
+    "lines_added": 32,
+    "lines_deleted": 13,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/8425"
+  },
+  {
+    "number": 8215,
+    "title": "[Feature]Optimized version of the causal conv1d operator",
+    "author": "mazhixin000",
+    "files": 18,
+    "lines_added": 3084,
+    "lines_deleted": 1673,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/8215"
+  },
+  {
+    "number": 9008,
+    "title": "[Feature] ngram_npu implement compatilble with aync scheduler",
+    "author": "HF-001",
+    "files": 18,
+    "lines_added": 1916,
+    "lines_deleted": 1,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/9008"
+  },
+  {
+    "number": 8715,
+    "title": "[Feature] support w8a8 quantization for Xlite",
+    "author": "wwwumr",
+    "files": 1,
+    "lines_added": 113,
+    "lines_deleted": 0,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/8715"
+  },
+  {
+    "number": 3433,
+    "title": "[Feat] add native kvcache offload",
+    "author": "HF-001",
+    "files": 4,
+    "lines_added": 304,
+    "lines_deleted": 0,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/3433"
+  },
+  {
+    "number": 8953,
+    "title": "[Feature] Support max_iterations and delay_iterations for Ascend profiler",
+    "author": "mengchengTang",
+    "files": 5,
+    "lines_added": 416,
+    "lines_deleted": 221,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/8953"
+  },
+  {
+    "number": 9074,
+    "title": "[Feature] Support the merged graph for dflash",
+    "author": "ccc000-cell",
+    "files": 2,
+    "lines_added": 32,
+    "lines_deleted": 25,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/9074"
+  },
+  {
+    "number": 8443,
+    "title": "[Feature] support structure output for model runner v2",
+    "author": "Meihan-chen",
+    "files": 3,
+    "lines_added": 86,
+    "lines_deleted": 3,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/8443"
+  },
+  {
+    "number": 9090,
+    "title": "[Feature] A5 npu_gather_pa_kv_cache operator adaptation for pcp",
+    "author": "lenghuixing0330",
+    "files": 4,
+    "lines_added": 7,
+    "lines_deleted": 7,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/9090"
+  },
+  {
+    "number": 8313,
+    "title": "[Feature] Rope triton head tiling",
+    "author": "realliujiaxu",
+    "files": 2,
+    "lines_added": 117,
+    "lines_deleted": 77,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/8313"
+  },
+  {
+    "number": 9058,
+    "title": "[Feature]Deepseek pcp/dcp adaptation",
+    "author": "Eric-dot",
+    "files": 2,
+    "lines_added": 4,
+    "lines_deleted": 2,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/9058"
+  },
+  {
+    "number": 9023,
+    "title": "[Feature] Support LoRA with Qwen3.5 dense model. ",
+    "author": "paulyu12",
+    "files": 5,
+    "lines_added": 126,
+    "lines_deleted": 144,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/9023"
+  },
+  {
+    "number": 8146,
+    "title": "[Feature] Update custom op build framework",
+    "author": "maoxx241",
+    "files": 30,
+    "lines_added": 487,
+    "lines_deleted": 481,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/8146"
+  },
+  {
+    "number": 8398,
+    "title": "[Feature] IndexCache support for DSA models",
+    "author": "ChefWu551",
+    "files": 2,
+    "lines_added": 47,
+    "lines_deleted": 10,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/8398"
+  },
+  {
+    "number": 8706,
+    "title": "[Feature][Doc] Add AI QoS module, tuning tool, and user guide",
+    "author": "Maybe2191",
+    "files": 10,
+    "lines_added": 1057,
+    "lines_deleted": 2,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/8706"
+  },
+  {
+    "number": 8799,
+    "title": "[SpecDecode][Feature] Implement AscendExtractHiddenStatesProposer for speculative decoding",
+    "author": "Lin-Qingyang-Alec",
+    "files": 7,
+    "lines_added": 683,
+    "lines_deleted": 8,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/8799"
+  },
+  {
+    "number": 6797,
+    "title": "[Doc][Feature] Add vLLM Ascend development guidelines AGETNS.md",
+    "author": "wangxiyuan",
+    "files": 3,
+    "lines_added": 369,
+    "lines_deleted": 0,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/6797"
+  },
+  {
+    "number": 8648,
+    "title": "[v0.13.0][Feature] Add DeepSeek v4 initial support",
+    "author": "wangxiyuan",
+    "files": 30,
+    "lines_added": 10058,
+    "lines_deleted": 441,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/8648"
+  },
+  {
+    "number": 8709,
+    "title": "[Ops][Feature] Support Bailing quantization",
+    "author": "alex101-ops",
+    "files": 1,
+    "lines_added": 13,
+    "lines_deleted": 1,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/8709"
+  },
+  {
+    "number": 9145,
+    "title": "[Feature]Add Support for hybrid model",
+    "author": "UnifiedCacheManager",
+    "files": 1,
+    "lines_added": 86,
+    "lines_deleted": 4,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/9145"
+  },
+  {
+    "number": 8564,
+    "title": "[Feature] Hamming-based sparse attention inference framework part",
+    "author": "linsheng1",
+    "files": 9,
+    "lines_added": 1212,
+    "lines_deleted": 1,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/8564"
+  },
+  {
+    "number": 8338,
+    "title": "[Doc][Feature] PD Disaggregation with UCM and Mooncake",
+    "author": "UnifiedCacheManager",
+    "files": 1,
+    "lines_added": 833,
+    "lines_deleted": 87,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/8338"
+  },
+  {
+    "number": 7188,
+    "title": "Feature: Support Unified Placement for Shared & Router Experts",
+    "author": "Mercykid-bash",
+    "files": 6,
+    "lines_added": 82,
+    "lines_deleted": 9,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/7188"
+  },
+  {
+    "number": 8657,
+    "title": "[Attention][Feature]  adapt bailing_moe_linear on Ascend",
+    "author": "ghphotoframe",
+    "files": 9,
+    "lines_added": 1034,
+    "lines_deleted": 16,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/8657"
+  },
+  {
+    "number": 8698,
+    "title": "[Doc][Feature] Add DeepSeek-V4 A2 Multi-node Deployment",
+    "author": "nmgliangwei",
+    "files": 1,
+    "lines_added": 126,
+    "lines_deleted": 0,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/8698"
+  },
+  {
+    "number": 9165,
+    "title": "[Feature]add fiav2 into acl_graph",
+    "author": "shikang-hangzhou",
+    "files": 7,
+    "lines_added": 437,
+    "lines_deleted": 4,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/9165"
+  },
+  {
+    "number": 8174,
+    "title": "[Feature] Supports GLM4.7 C8 scenarios",
+    "author": "pichangping",
+    "files": 9,
+    "lines_added": 323,
+    "lines_deleted": 229,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/8174"
+  },
+  {
+    "number": 7924,
+    "title": "[Feature] Support eagle+pcp+full",
+    "author": "slippersss",
+    "files": 4,
+    "lines_added": 146,
+    "lines_deleted": 42,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/7924"
+  },
+  {
+    "number": 8516,
+    "title": "[Feature] add FULL_DECODE_ONLY support for Dflash",
+    "author": "chenaoxuan",
+    "files": 4,
+    "lines_added": 79,
+    "lines_deleted": 30,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/8516"
+  },
+  {
+    "number": 7912,
+    "title": "[Doc][Feature] Add LLaVA-OneVision-Qwen2-0.5B-OV tutorial",
+    "author": "baoxuebin-2026",
+    "files": 3,
+    "lines_added": 160,
+    "lines_deleted": 0,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/7912"
+  },
+  {
+    "number": 8157,
+    "title": "[Feature]: Verify / Support nvidia/Minitron-8B-Base",
+    "author": "lihaokun-2026",
+    "files": 6,
+    "lines_added": 158,
+    "lines_deleted": 2,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/8157"
+  },
+  {
+    "number": 8055,
+    "title": "[Feature] Add recurrent ascendc ops",
+    "author": "mazhixin000",
+    "files": 19,
+    "lines_added": 3076,
+    "lines_deleted": 32,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/8055"
+  },
+  {
+    "number": 7381,
+    "title": "[Feature] Support and verify Hunyuan-A13B-Instruct on Ascend NPU",
+    "author": "anning-2026",
+    "files": 6,
+    "lines_added": 269,
+    "lines_deleted": 1,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/7381"
+  },
+  {
+    "number": 8038,
+    "title": "[Feature][PCP][MM] Support multimodel reasoning when prefill context parallel feature is on",
+    "author": "leijie-ww",
+    "files": 3,
+    "lines_added": 583,
+    "lines_deleted": 16,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/8038"
+  },
+  {
+    "number": 7797,
+    "title": "[Feature][A5] Support MXFP8 MLAPO",
+    "author": "lijiahang226",
+    "files": 3,
+    "lines_added": 180,
+    "lines_deleted": 93,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/7797"
+  },
+  {
+    "number": 8346,
+    "title": "[Feature] Hamming-based sparse attention operators",
+    "author": "linsheng1",
+    "files": 27,
+    "lines_added": 5003,
+    "lines_deleted": 2,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/8346"
+  },
+  {
+    "number": 8289,
+    "title": "[Feature] Account for Graph Capture Memory in KV Cache Planning",
+    "author": "wxsIcey",
+    "files": 3,
+    "lines_added": 128,
+    "lines_deleted": 11,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/8289"
+  },
+  {
+    "number": 7896,
+    "title": "[Feature][PP] Support Dynamic Chunk for Chunked Pipeline Parallelism",
+    "author": "gjc0824",
+    "files": 11,
+    "lines_added": 2013,
+    "lines_deleted": 8,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/7896"
+  },
+  {
+    "number": 8019,
+    "title": "[Feature] Initialize VLLM metrics in EPLB worker",
+    "author": "freyfwt",
+    "files": 1,
+    "lines_added": 9,
+    "lines_deleted": 0,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/8019"
+  },
+  {
+    "number": 8046,
+    "title": "[Feature][xlite] Support `Qwen3VLMoeForConditionalGeneration` architecture in xlite backend",
+    "author": "SijieFu",
+    "files": 1,
+    "lines_added": 8,
+    "lines_deleted": 24,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/8046"
+  },
+  {
+    "number": 8118,
+    "title": "[Feature] add DFlash Support",
+    "author": "chenaoxuan",
+    "files": 9,
+    "lines_added": 450,
+    "lines_deleted": 36,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/8118"
+  },
+  {
+    "number": 8035,
+    "title": "[EPLB][Feature] Swift balancer policy supports mix placement",
+    "author": "shenchuxiaofugui",
+    "files": 3,
+    "lines_added": 604,
+    "lines_deleted": 741,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/8035"
+  },
+  {
+    "number": 7922,
+    "title": "[MRv2][Feature] Add initial MoE models support for MRv2",
+    "author": "linfeng-yuan",
+    "files": 7,
+    "lines_added": 217,
+    "lines_deleted": 10,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/7922"
+  },
+  {
+    "number": 7756,
+    "title": "[Feature] Optimize GDN non-spec prefill fallback metadata",
+    "author": "maoxx241",
+    "files": 9,
+    "lines_added": 1403,
+    "lines_deleted": 290,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/7756"
+  },
+  {
+    "number": 8084,
+    "title": "[CI][Feature] Add a automated main2main bisect tool",
+    "author": "Meihan-chen",
+    "files": 4,
+    "lines_added": 1600,
+    "lines_deleted": 99,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/8084"
+  },
+  {
+    "number": 7935,
+    "title": "[Feature] Xlite GLM-4.7 Support",
+    "author": "changdawei1",
+    "files": 2,
+    "lines_added": 82,
+    "lines_deleted": 1,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/7935"
+  },
+  {
+    "number": 8009,
+    "title": "[Feature][310P]: 310P Qwen3.5 model adaptation synchronized with the main",
+    "author": "YangShuai52",
+    "files": 5,
+    "lines_added": 52,
+    "lines_deleted": 46,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/8009"
+  },
+  {
+    "number": 7926,
+    "title": "[Feature] [310p] Add recurrent_gated_delta_rule_310 AscendC Custom Op",
+    "author": "pu-zhe",
+    "files": 23,
+    "lines_added": 3077,
+    "lines_deleted": 2,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/7926"
+  },
+  {
+    "number": 7743,
+    "title": "[EPLB][Feature] eplb adaptation to multimodal models",
+    "author": "shenchuxiaofugui",
+    "files": 4,
+    "lines_added": 21,
+    "lines_deleted": 5,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/7743"
+  },
+  {
+    "number": 7725,
+    "title": "[Feature][310P]: 310P support W8A8 dynamic linear method",
+    "author": "YangShuai52",
+    "files": 3,
+    "lines_added": 146,
+    "lines_deleted": 5,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/7725"
+  },
+  {
+    "number": 7967,
+    "title": "[Feature] Optimize host-device sync problem in prefill phase for Qwen3Next/Qwen3.5",
+    "author": "AyiStar",
+    "files": 4,
+    "lines_added": 99,
+    "lines_deleted": 2,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/7967"
+  },
+  {
+    "number": 7877,
+    "title": "[Ascend950][quant][Feature] Add W4A4 MXFP4 quantization support for Ascend950",
+    "author": "lcfenglinwan",
+    "files": 13,
+    "lines_added": 527,
+    "lines_deleted": 131,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/7877"
+  },
+  {
+    "number": 6971,
+    "title": "[Feature] Add end-to-end release management skill",
+    "author": "gcanlin",
+    "files": 15,
+    "lines_added": 3161,
+    "lines_deleted": 79,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/6971"
+  },
+  {
+    "number": 7893,
+    "title": "[v0.18.0][Feature] Support Flash Comm V1 for Qwen3-VL models",
+    "author": "jiangmengyu18",
+    "files": 1,
+    "lines_added": 26,
+    "lines_deleted": 0,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/7893"
+  },
+  {
+    "number": 7897,
+    "title": "[Feature] Support Flash Comm V1 for Qwen3-VL models",
+    "author": "jiangmengyu18",
+    "files": 1,
+    "lines_added": 26,
+    "lines_deleted": 0,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/7897"
+  },
+  {
+    "number": 7762,
+    "title": "[Feature] support qkv_rmsnorm_mrope for qwen3vl",
+    "author": "jiangmengyu18",
+    "files": 3,
+    "lines_added": 65,
+    "lines_deleted": 0,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/7762"
+  },
+  {
+    "number": 7885,
+    "title": "[Feature] Adapted eagle for model_runner_v2",
+    "author": "drslark",
+    "files": 7,
+    "lines_added": 125,
+    "lines_deleted": 62,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/7885"
+  },
+  {
+    "number": 7852,
+    "title": "[v0.18.0][Feature] support qkv_rmsnorm_mrope for qwen3vl",
+    "author": "jiangmengyu18",
+    "files": 3,
+    "lines_added": 65,
+    "lines_deleted": 1,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/7852"
+  },
+  {
+    "number": 6860,
+    "title": "[Feature] Support the merged graph for mtp",
+    "author": "slippersss",
+    "files": 6,
+    "lines_added": 115,
+    "lines_deleted": 48,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/6860"
+  },
+  {
+    "number": 7798,
+    "title": "[Feature] [310p] Add npu_causal_conv1d_310 AscendC Custom Op",
+    "author": "pu-zhe",
+    "files": 22,
+    "lines_added": 2582,
+    "lines_deleted": 31,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/7798"
+  },
+  {
+    "number": 7422,
+    "title": "[main][Attention][Feature] Add support for Qwen3-next hybrid attention in piecewise & full_decode_only",
+    "author": "845473182",
+    "files": 5,
+    "lines_added": 63,
+    "lines_deleted": 34,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/7422"
+  },
+  {
+    "number": 6107,
+    "title": "[Feature] Batch invariant torch.compile",
+    "author": "huangfeifei1995",
+    "files": 3,
+    "lines_added": 691,
+    "lines_deleted": 2,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/6107"
+  },
+  {
+    "number": 7674,
+    "title": "[Feature][310P] support shared experts path in fused MoE for qwen3.5",
+    "author": "Tflowers-0129",
+    "files": 5,
+    "lines_added": 151,
+    "lines_deleted": 5,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/7674"
+  },
+  {
+    "number": 9450,
+    "title": "[Feature] Implement multistream parallelism overlap feature in DSA compressor process for DeepSeek-V4",
+    "author": "MosCloud",
+    "files": 2,
+    "lines_added": 790,
+    "lines_deleted": 138,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/9450"
+  },
+  {
+    "number": 2913,
+    "title": "[Feat] A Connector that supports Mooncake store",
+    "author": "LCAIZJ",
+    "files": 9,
+    "lines_added": 2033,
+    "lines_deleted": 9,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/2913"
+  },
+  {
+    "number": 6869,
+    "title": "[Feature] Add Yuanrong backend support to KV Pool.",
+    "author": "yangsonglin13",
+    "files": 3,
+    "lines_added": 295,
+    "lines_deleted": 1,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/6869"
+  },
+  {
+    "number": 7654,
+    "title": "[Feature] Reuse equivalent HCCL process groups on Ascend",
+    "author": "maoxx241",
+    "files": 4,
+    "lines_added": 1477,
+    "lines_deleted": 148,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/7654"
+  },
+  {
+    "number": 7631,
+    "title": "[Feat] Support MXFP8 rollout for veRL on Ascend 950",
+    "author": "zhijie-os",
+    "files": 2,
+    "lines_added": 153,
+    "lines_deleted": 1,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/7631"
+  },
+  {
+    "number": 7392,
+    "title": "[ModelLoader][Feature] Add rfork support for fast model loading",
+    "author": "GoMarck",
+    "files": 11,
+    "lines_added": 1510,
+    "lines_deleted": 0,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/7392"
+  },
+  {
+    "number": 7044,
+    "title": "[Feat][SP] Suport SP for VL MoE models",
+    "author": "realliujiaxu",
+    "files": 21,
+    "lines_added": 947,
+    "lines_deleted": 54,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/7044"
+  },
+  {
+    "number": 7574,
+    "title": "[Feat] Add npugraph_ex enablement logging",
+    "author": "panchao-hub",
+    "files": 1,
+    "lines_added": 5,
+    "lines_deleted": 3,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/7574"
+  },
+  {
+    "number": 7368,
+    "title": "[features]support split qkv rmsnorm rmope for qwen3.5",
+    "author": "ZhuQi-seu",
+    "files": 1,
+    "lines_added": 51,
+    "lines_deleted": 0,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/7368"
+  },
+  {
+    "number": 7390,
+    "title": "[Feature] Support Flash Comm V1 for VL models (with MLA)",
+    "author": "SlightwindSec",
+    "files": 4,
+    "lines_added": 49,
+    "lines_deleted": 17,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/7390"
+  },
+  {
+    "number": 7487,
+    "title": "[Feature]  Optimize Qwen3.5/Qwen3Next GDN prefill by prebuilding chunk metadata",
+    "author": "maoxx241",
+    "files": 13,
+    "lines_added": 824,
+    "lines_deleted": 21,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/7487"
+  },
+  {
+    "number": 7342,
+    "title": "[Feat] Support separate attention backend for target and draft model.",
+    "author": "SidaoY",
+    "files": 3,
+    "lines_added": 177,
+    "lines_deleted": 49,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/7342"
+  },
+  {
+    "number": 6165,
+    "title": "[Doc] update supported features",
+    "author": "zhangxinyuehfad",
+    "files": 1,
+    "lines_added": 10,
+    "lines_deleted": 10,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/6165"
+  },
+  {
+    "number": 6150,
+    "title": "[0.13.0][Doc] update supported features",
+    "author": "zhangxinyuehfad",
+    "files": 1,
+    "lines_added": 10,
+    "lines_deleted": 10,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/6150"
+  },
+  {
+    "number": 7128,
+    "title": "[Test][Feature] Add e2e test for QuaRot model with eagle3",
+    "author": "zhaomingyu13",
+    "files": 3,
+    "lines_added": 215,
+    "lines_deleted": 1,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/7128"
+  },
+  {
+    "number": 7111,
+    "title": "[Feature][Quant] Reapply auto-detect quantization format and support remote model ID",
+    "author": "SlightwindSec",
+    "files": 7,
+    "lines_added": 658,
+    "lines_deleted": 12,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/7111"
+  },
+  {
+    "number": 7110,
+    "title": "[Feature] support aclgraph for model runner v2",
+    "author": "Ronald1995",
+    "files": 30,
+    "lines_added": 235,
+    "lines_deleted": 133,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/7110"
+  },
+  {
+    "number": 7075,
+    "title": "[Feat] [310p] Support w8a8sc quantization method",
+    "author": "pu-zhe",
+    "files": 4,
+    "lines_added": 258,
+    "lines_deleted": 14,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/7075"
+  },
+  {
+    "number": 6878,
+    "title": "[Feat][310p] 310P support w8a8s quantization and saving w8a8sc state",
+    "author": "pu-zhe",
+    "files": 8,
+    "lines_added": 668,
+    "lines_deleted": 1,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/6878"
+  },
+  {
+    "number": 4214,
+    "title": "[Feat] Multi-stream for eplb heat collection and aggregation",
+    "author": "dsxsteven",
+    "files": 3,
+    "lines_added": 40,
+    "lines_deleted": 17,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/4214"
+  },
+  {
+    "number": 6873,
+    "title": "Revert \"[Feature][Quant] Auto-detect quantization format from model f…",
+    "author": "Potabk",
+    "files": 7,
+    "lines_added": 12,
+    "lines_deleted": 584,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/6873"
+  },
+  {
+    "number": 6715,
+    "title": "[Feat]Xlite Qwen3 MoE Support Data Parallel",
+    "author": "banxiaduhuo",
+    "files": 5,
+    "lines_added": 59,
+    "lines_deleted": 19,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/6715"
+  },
+  {
+    "number": 7038,
+    "title": "[main][feature] Support quarot for eagle3 without embedding",
+    "author": "drslark",
+    "files": 5,
+    "lines_added": 148,
+    "lines_deleted": 82,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/7038"
+  },
+  {
+    "number": 5951,
+    "title": "[1/N][Feat] Xlite Qwen3 MoE Support",
+    "author": "changdawei1",
+    "files": 5,
+    "lines_added": 133,
+    "lines_deleted": 56,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/5951"
+  },
+  {
+    "number": 6940,
+    "title": "[Feat]Adapt the graph mode (piecewise and full_decode_only) of PCP and DCP for DeepSeek v3.2.",
+    "author": "xiaocongtou6",
+    "files": 3,
+    "lines_added": 60,
+    "lines_deleted": 33,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/6940"
+  },
+  {
+    "number": 6740,
+    "title": "[Feat]fused_qkvzba_split_reshape supports token number greater than 65536",
+    "author": "songjianquan",
+    "files": 2,
+    "lines_added": 167,
+    "lines_deleted": 66,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/6740"
+  },
+  {
+    "number": 6091,
+    "title": "[Feat] support basic pcp&dcp for qwen3next",
+    "author": "845473182",
+    "files": 16,
+    "lines_added": 908,
+    "lines_deleted": 83,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/6091"
+  },
+  {
+    "number": 6641,
+    "title": "[Feat] 310p support MoE W8A8 quantizaition",
+    "author": "pu-zhe",
+    "files": 15,
+    "lines_added": 694,
+    "lines_deleted": 156,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/6641"
+  },
+  {
+    "number": 6756,
+    "title": "[Feat] 310p supports PrefillCacheHit State",
+    "author": "pu-zhe",
+    "files": 3,
+    "lines_added": 169,
+    "lines_deleted": 24,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/6756"
+  },
+  {
+    "number": 5632,
+    "title": "[Feat]support sequence parallelism by pass for VL models",
+    "author": "realliujiaxu",
+    "files": 22,
+    "lines_added": 460,
+    "lines_deleted": 101,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/5632"
+  },
+  {
+    "number": 6645,
+    "title": "[Feature][Quant] Auto-detect quantization format from model files",
+    "author": "SlightwindSec",
+    "files": 7,
+    "lines_added": 587,
+    "lines_deleted": 13,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/6645"
+  },
+  {
+    "number": 6696,
+    "title": "[Feat] Support routing replay",
+    "author": "Li-Yongwen",
+    "files": 7,
+    "lines_added": 190,
+    "lines_deleted": 0,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/6696"
+  },
+  {
+    "number": 6733,
+    "title": "[Feat]ds3.2 support pcp",
+    "author": "weiguihua2",
+    "files": 4,
+    "lines_added": 504,
+    "lines_deleted": 79,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/6733"
+  },
+  {
+    "number": 6705,
+    "title": "[Feat.][310P]: weightNZ feature with quant or unquant.",
+    "author": "Tflowers-0129",
+    "files": 7,
+    "lines_added": 144,
+    "lines_deleted": 17,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/6705"
+  },
+  {
+    "number": 6704,
+    "title": "[Feat.][310P] addrmsnorm for 300I DUO",
+    "author": "Tflowers-0129",
+    "files": 4,
+    "lines_added": 12,
+    "lines_deleted": 80,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/6704"
+  },
+  {
+    "number": 6657,
+    "title": "[Feature] adapt to uva buffer and main2main",
+    "author": "Ronald1995",
+    "files": 14,
+    "lines_added": 406,
+    "lines_deleted": 178,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/6657"
+  },
+  {
+    "number": 6563,
+    "title": "[Feat](sfa,dcp) support dcp for sfa",
+    "author": "pisceskkk",
+    "files": 5,
+    "lines_added": 190,
+    "lines_deleted": 13,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/6563"
+  },
+  {
+    "number": 6530,
+    "title": "[Feat.]: 310p support MOE models",
+    "author": "pu-zhe",
+    "files": 10,
+    "lines_added": 550,
+    "lines_deleted": 11,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/6530"
+  },
+  {
+    "number": 6454,
+    "title": "[Feat.]: support 310p w8a8",
+    "author": "Tflowers-0129",
+    "files": 9,
+    "lines_added": 392,
+    "lines_deleted": 22,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/6454"
+  },
+  {
+    "number": 6339,
+    "title": "[Feature]KV pool supports sparse attention",
+    "author": "luoxiaolin712",
+    "files": 2,
+    "lines_added": 41,
+    "lines_deleted": 59,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/6339"
+  },
+  {
+    "number": 5889,
+    "title": "[Quantization][Feature] Support compressed tensors moe w4a8 dynamic weight",
+    "author": "LHXuuu",
+    "files": 5,
+    "lines_added": 250,
+    "lines_deleted": 4,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/5889"
+  },
+  {
+    "number": 5228,
+    "title": "[Feat]Xlite Qwen3-vl Support",
+    "author": "LJQ142857",
+    "files": 4,
+    "lines_added": 19,
+    "lines_deleted": 9,
+    "url": "https://github.com/vllm-project/vllm-ascend/pull/5228"
+  }
+]

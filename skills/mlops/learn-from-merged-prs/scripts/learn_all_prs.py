@@ -43,7 +43,7 @@ def get_github_token():
     raise ValueError("GitHub token not found")
 
 def get_merged_prs(page=1, per_page=100):
-    """Get merged PRs from GitHub API"""
+    """Get merged PRs from GitHub API with retry"""
     token = get_github_token()
     
     headers = {
@@ -51,25 +51,35 @@ def get_merged_prs(page=1, per_page=100):
         'Accept': 'application/vnd.github.v3+json'
     }
     
-    response = requests.get(
-        f'https://api.github.com/repos/{REPO_OWNER}/{REPO_NAME}/pulls',
-        headers=headers,
-        params={
-            'state': 'closed',
-            'sort': 'updated',
-            'direction': 'desc',
-            'page': page,
-            'per_page': per_page
-        },
-        timeout=30
-    )
-    
-    if response.status_code == 200:
-        prs = response.json()
-        # Filter merged PRs
-        merged_prs = [pr for pr in prs if pr.get('merged_at')]
-        return merged_prs
-    return []
+    max_retries = 5
+    for retry in range(max_retries):
+        try:
+            response = requests.get(
+                f'https://api.github.com/repos/{REPO_OWNER}/{REPO_NAME}/pulls',
+                headers=headers,
+                params={
+                    'state': 'closed',
+                    'sort': 'updated',
+                    'direction': 'desc',
+                    'page': page,
+                    'per_page': per_page
+                },
+                timeout=30
+            )
+            
+            if response.status_code == 200:
+                prs = response.json()
+                # Filter merged PRs
+                merged_prs = [pr for pr in prs if pr.get('merged_at')]
+                return merged_prs
+            return []
+        except Exception as e:
+            if retry < max_retries - 1:
+                print(f"  ⚠️ 网络错误，等待 10s 后重试... ({retry + 1}/{max_retries})")
+                time.sleep(10)
+            else:
+                print(f"  ❌ 网络错误，已达到最大重试次数: {e}")
+                return []
 
 def categorize_pr(pr_title, files):
     """Categorize PR based on title and files"""
@@ -243,10 +253,24 @@ def save_results(prs_learned, total_prs):
     print(f"✅ 总结文档已保存: {summary_file}")
 
 def git_commit_and_push():
-    """Commit and push results"""
+    """Commit and push results with infinite retry"""
     subprocess.run(['git', 'add', '.'], check=True)
     subprocess.run(['git', 'commit', '-m', f'[Learn] Learn from all merged PRs - {datetime.now().strftime("%Y-%m-%d")}'], check=True)
-    subprocess.run(['git', 'push', 'origin', 'main'], check=True)
+    
+    # Push with infinite retry
+    retry_count = 0
+    while True:
+        try:
+            subprocess.run(['git', 'push', 'origin', 'main'], check=True)
+            return True
+        except Exception as e:
+            retry_count += 1
+            if retry_count <= 5:
+                wait_time = 10
+            else:
+                wait_time = 60  # After 5 retries, wait 1 minute
+            print(f"  ⚠️ 推送失败，等待 {wait_time}s 后重试... (重试 #{retry_count})")
+            time.sleep(wait_time)
 
 def main():
     """Main learning loop"""

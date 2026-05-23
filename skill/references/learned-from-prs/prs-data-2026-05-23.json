@@ -1,6 +1,6 @@
 {
   "date": "2026-05-23",
-  "total_prs": 250,
+  "total_prs": 300,
   "prs": [
     {
       "pr_number": 9456,
@@ -3655,6 +3655,732 @@
         "Other"
       ],
       "url": "https://github.com/vllm-project/vllm-ascend/pull/8887"
+    },
+    {
+      "pr_number": 8879,
+      "title": "[Doc] Cherry-pick 0.18.0 release info",
+      "author": "wangxiyuan",
+      "merged_at": "2026-05-06T03:16:13Z",
+      "issue_number": null,
+      "files_modified": 7,
+      "lines_added": 182,
+      "lines_deleted": 57,
+      "categories": [
+        "Documentation"
+      ],
+      "url": "https://github.com/vllm-project/vllm-ascend/pull/8879"
+    },
+    {
+      "pr_number": 8834,
+      "title": "[Doc] Align PR title prefix guidance",
+      "author": "QwertyJack",
+      "merged_at": "2026-05-06T02:59:23Z",
+      "issue_number": 8840,
+      "files_modified": 3,
+      "lines_added": 5,
+      "lines_deleted": 5,
+      "categories": [
+        "Bug Fix",
+        "Documentation"
+      ],
+      "url": "https://github.com/vllm-project/vllm-ascend/pull/8834"
+    },
+    {
+      "pr_number": 8878,
+      "title": "[Doc] [0.18.0] Add user documentation for DeepSeek V4",
+      "author": "GDzhu01",
+      "merged_at": "2026-05-06T02:36:47Z",
+      "issue_number": null,
+      "files_modified": 4,
+      "lines_added": 2191,
+      "lines_deleted": 0,
+      "categories": [
+        "Feature",
+        "Documentation"
+      ],
+      "url": "https://github.com/vllm-project/vllm-ascend/pull/8878"
+    },
+    {
+      "pr_number": 6559,
+      "title": "[Doc][Misc] Update documentation for v0.13.0 release",
+      "author": "wangxiyuan",
+      "merged_at": "2026-02-05T08:32:08Z",
+      "issue_number": null,
+      "files_modified": 4,
+      "lines_added": 13,
+      "lines_deleted": 5,
+      "categories": [
+        "Documentation"
+      ],
+      "url": "https://github.com/vllm-project/vllm-ascend/pull/6559"
+    },
+    {
+      "pr_number": 6585,
+      "title": "[Doc][Misc] Update release notes and FAQ links for v0.13.0",
+      "author": "wangxiyuan",
+      "merged_at": "2026-02-06T02:29:32Z",
+      "issue_number": null,
+      "files_modified": 2,
+      "lines_added": 6,
+      "lines_deleted": 7,
+      "categories": [
+        "Documentation"
+      ],
+      "url": "https://github.com/vllm-project/vllm-ascend/pull/6585"
+    },
+    {
+      "pr_number": 6567,
+      "title": "[Doc] Update release date",
+      "author": "wangxiyuan",
+      "merged_at": "2026-02-05T08:59:01Z",
+      "issue_number": null,
+      "files_modified": 2,
+      "lines_added": 2,
+      "lines_deleted": 2,
+      "categories": [
+        "Documentation"
+      ],
+      "url": "https://github.com/vllm-project/vllm-ascend/pull/6567"
+    },
+    {
+      "pr_number": 6584,
+      "title": "[Doc] backport 0.13.0 release note",
+      "author": "wangxiyuan",
+      "merged_at": "2026-02-06T02:29:15Z",
+      "issue_number": null,
+      "files_modified": 6,
+      "lines_added": 124,
+      "lines_deleted": 10,
+      "categories": [
+        "Documentation"
+      ],
+      "url": "https://github.com/vllm-project/vllm-ascend/pull/6584"
+    },
+    {
+      "pr_number": 6587,
+      "title": "[CI][Misc] Some improvement for github action",
+      "author": "wangxiyuan",
+      "merged_at": "2026-02-06T06:06:27Z",
+      "issue_number": null,
+      "files_modified": 11,
+      "lines_added": 4,
+      "lines_deleted": 19,
+      "categories": [
+        "Other"
+      ],
+      "url": "https://github.com/vllm-project/vllm-ascend/pull/6587"
+    },
+    {
+      "pr_number": 6489,
+      "title": "[CI] Add workflow support for lint image build",
+      "author": "wangxiyuan",
+      "merged_at": "2026-02-07T01:32:01Z",
+      "issue_number": null,
+      "files_modified": 1,
+      "lines_added": 23,
+      "lines_deleted": 1,
+      "categories": [
+        "Feature",
+        "Other"
+      ],
+      "url": "https://github.com/vllm-project/vllm-ascend/pull/6489"
+    },
+    {
+      "pr_number": 6523,
+      "title": "[Ops][Refactor] Remove custom rotary_embedding operator",
+      "author": "wangxiyuan",
+      "merged_at": "2026-02-07T01:24:05Z",
+      "issue_number": null,
+      "files_modified": 8,
+      "lines_added": 58,
+      "lines_deleted": 1391,
+      "categories": [
+        "Refactor"
+      ],
+      "url": "https://github.com/vllm-project/vllm-ascend/pull/6523"
+    },
+    {
+      "pr_number": 6599,
+      "title": "[CI] Fix broken CI",
+      "author": "wangxiyuan",
+      "merged_at": "2026-02-06T09:23:59Z",
+      "issue_number": null,
+      "files_modified": 17,
+      "lines_added": 1159,
+      "lines_deleted": 959,
+      "categories": [
+        "Bug Fix",
+        "Other"
+      ],
+      "url": "https://github.com/vllm-project/vllm-ascend/pull/6599"
+    },
+    {
+      "pr_number": 6618,
+      "title": "[MISC] Clean up useless env USE_OPTIMIZED_MODEL",
+      "author": "wangxiyuan",
+      "merged_at": "2026-02-09T07:38:58Z",
+      "issue_number": null,
+      "files_modified": 2,
+      "lines_added": 2,
+      "lines_deleted": 8,
+      "categories": [
+        "Performance",
+        "Refactor"
+      ],
+      "url": "https://github.com/vllm-project/vllm-ascend/pull/6618"
+    },
+    {
+      "pr_number": 6797,
+      "title": "[Doc][Feature] Add vLLM Ascend development guidelines AGETNS.md",
+      "author": "wangxiyuan",
+      "merged_at": "2026-02-26T00:47:46Z",
+      "issue_number": null,
+      "files_modified": 3,
+      "lines_added": 369,
+      "lines_deleted": 0,
+      "categories": [
+        "Feature",
+        "Documentation"
+      ],
+      "url": "https://github.com/vllm-project/vllm-ascend/pull/6797"
+    },
+    {
+      "pr_number": 6646,
+      "title": "[Misc] upgrade to vllm main",
+      "author": "wangxiyuan",
+      "merged_at": "2026-02-10T06:09:00Z",
+      "issue_number": null,
+      "files_modified": 19,
+      "lines_added": 299,
+      "lines_deleted": 149,
+      "categories": [
+        "Other"
+      ],
+      "url": "https://github.com/vllm-project/vllm-ascend/pull/6646"
+    },
+    {
+      "pr_number": 6501,
+      "title": "[Doc][Misc] Restructure tutorial documentation",
+      "author": "wangxiyuan",
+      "merged_at": "2026-02-10T07:03:35Z",
+      "issue_number": null,
+      "files_modified": 30,
+      "lines_added": 113,
+      "lines_deleted": 87,
+      "categories": [
+        "Refactor",
+        "Documentation",
+        "Test"
+      ],
+      "url": "https://github.com/vllm-project/vllm-ascend/pull/6501"
+    },
+    {
+      "pr_number": 6817,
+      "title": "[Doc][Misc] Refactor skill documentation and add Claude support instructions",
+      "author": "wangxiyuan",
+      "merged_at": "2026-02-26T06:42:59Z",
+      "issue_number": null,
+      "files_modified": 4,
+      "lines_added": 317,
+      "lines_deleted": 6,
+      "categories": [
+        "Feature",
+        "Refactor",
+        "Documentation"
+      ],
+      "url": "https://github.com/vllm-project/vllm-ascend/pull/6817"
+    },
+    {
+      "pr_number": 6839,
+      "title": "add release note for 0.15.0rc1",
+      "author": "wangxiyuan",
+      "merged_at": "2026-02-27T03:55:55Z",
+      "issue_number": null,
+      "files_modified": 4,
+      "lines_added": 96,
+      "lines_deleted": 5,
+      "categories": [
+        "Feature"
+      ],
+      "url": "https://github.com/vllm-project/vllm-ascend/pull/6839"
+    },
+    {
+      "pr_number": 6826,
+      "title": "[Doc] fix the nit in docs",
+      "author": "wangxiyuan",
+      "merged_at": "2026-02-27T03:50:28Z",
+      "issue_number": null,
+      "files_modified": 30,
+      "lines_added": 145,
+      "lines_deleted": 118,
+      "categories": [
+        "Bug Fix",
+        "Documentation"
+      ],
+      "url": "https://github.com/vllm-project/vllm-ascend/pull/6826"
+    },
+    {
+      "pr_number": 6852,
+      "title": "clean 0.15.0 support",
+      "author": "wangxiyuan",
+      "merged_at": "2026-02-28T01:20:57Z",
+      "issue_number": null,
+      "files_modified": 8,
+      "lines_added": 17,
+      "lines_deleted": 36,
+      "categories": [
+        "Feature",
+        "Refactor"
+      ],
+      "url": "https://github.com/vllm-project/vllm-ascend/pull/6852"
+    },
+    {
+      "pr_number": 6859,
+      "title": "[Doc][Misc] Update release notes for v0.15.0rc1",
+      "author": "wangxiyuan",
+      "merged_at": "2026-02-27T14:35:10Z",
+      "issue_number": null,
+      "files_modified": 1,
+      "lines_added": 2,
+      "lines_deleted": 2,
+      "categories": [
+        "Documentation"
+      ],
+      "url": "https://github.com/vllm-project/vllm-ascend/pull/6859"
+    },
+    {
+      "pr_number": 6947,
+      "title": "[Spec Decode]clean up spec decode interface",
+      "author": "wangxiyuan",
+      "merged_at": "2026-03-05T06:30:10Z",
+      "issue_number": null,
+      "files_modified": 11,
+      "lines_added": 187,
+      "lines_deleted": 308,
+      "categories": [
+        "Refactor"
+      ],
+      "url": "https://github.com/vllm-project/vllm-ascend/pull/6947"
+    },
+    {
+      "pr_number": 7357,
+      "title": "[Misc] Drop Prefetch MLP Env",
+      "author": "wangxiyuan",
+      "merged_at": "2026-03-19T06:27:27Z",
+      "issue_number": null,
+      "files_modified": 4,
+      "lines_added": 10,
+      "lines_deleted": 65,
+      "categories": [
+        "Other"
+      ],
+      "url": "https://github.com/vllm-project/vllm-ascend/pull/7357"
+    },
+    {
+      "pr_number": 7072,
+      "title": "[commuinty]update contributor and refresh tool",
+      "author": "wangxiyuan",
+      "merged_at": "2026-03-09T07:19:36Z",
+      "issue_number": null,
+      "files_modified": 2,
+      "lines_added": 741,
+      "lines_deleted": 305,
+      "categories": [
+        "Test"
+      ],
+      "url": "https://github.com/vllm-project/vllm-ascend/pull/7072"
+    },
+    {
+      "pr_number": 7799,
+      "title": "[CI] add pr title lint check",
+      "author": "wangxiyuan",
+      "merged_at": "2026-03-29T05:31:05Z",
+      "issue_number": null,
+      "files_modified": 1,
+      "lines_added": 31,
+      "lines_deleted": 0,
+      "categories": [
+        "Feature",
+        "Other"
+      ],
+      "url": "https://github.com/vllm-project/vllm-ascend/pull/7799"
+    },
+    {
+      "pr_number": 8066,
+      "title": "[Doc] Fix wrong version map",
+      "author": "wangxiyuan",
+      "merged_at": "2026-04-09T02:50:17Z",
+      "issue_number": null,
+      "files_modified": 2,
+      "lines_added": 3,
+      "lines_deleted": 3,
+      "categories": [
+        "Bug Fix",
+        "Documentation"
+      ],
+      "url": "https://github.com/vllm-project/vllm-ascend/pull/8066"
+    },
+    {
+      "pr_number": 7803,
+      "title": "[CI] fix title check job to make it more generic",
+      "author": "wangxiyuan",
+      "merged_at": "2026-03-29T06:24:01Z",
+      "issue_number": null,
+      "files_modified": 1,
+      "lines_added": 5,
+      "lines_deleted": 4,
+      "categories": [
+        "Bug Fix",
+        "Other"
+      ],
+      "url": "https://github.com/vllm-project/vllm-ascend/pull/7803"
+    },
+    {
+      "pr_number": 7802,
+      "title": "[Doc] Parameterize versioning policy compatibility matrix",
+      "author": "wangxiyuan",
+      "merged_at": "2026-03-29T05:18:25Z",
+      "issue_number": null,
+      "files_modified": 2,
+      "lines_added": 16,
+      "lines_deleted": 3,
+      "categories": [
+        "Documentation"
+      ],
+      "url": "https://github.com/vllm-project/vllm-ascend/pull/7802"
+    },
+    {
+      "pr_number": 8121,
+      "title": "[Misc] Add manual_seed_all interface",
+      "author": "wangxiyuan",
+      "merged_at": "2026-04-13T00:52:55Z",
+      "issue_number": null,
+      "files_modified": 1,
+      "lines_added": 4,
+      "lines_deleted": 0,
+      "categories": [
+        "Feature"
+      ],
+      "url": "https://github.com/vllm-project/vllm-ascend/pull/8121"
+    },
+    {
+      "pr_number": 8164,
+      "title": "[Doc] Update vllm main version",
+      "author": "wangxiyuan",
+      "merged_at": "2026-04-11T13:52:00Z",
+      "issue_number": null,
+      "files_modified": 1,
+      "lines_added": 1,
+      "lines_deleted": 1,
+      "categories": [
+        "Documentation"
+      ],
+      "url": "https://github.com/vllm-project/vllm-ascend/pull/8164"
+    },
+    {
+      "pr_number": 8329,
+      "title": "[CI] Fix pr-create bot",
+      "author": "wangxiyuan",
+      "merged_at": "2026-04-16T06:30:26Z",
+      "issue_number": null,
+      "files_modified": 2,
+      "lines_added": 9,
+      "lines_deleted": 10,
+      "categories": [
+        "Bug Fix",
+        "Other"
+      ],
+      "url": "https://github.com/vllm-project/vllm-ascend/pull/8329"
+    },
+    {
+      "pr_number": 8446,
+      "title": "[Misc] Remove useless patch",
+      "author": "wangxiyuan",
+      "merged_at": "2026-04-21T01:14:29Z",
+      "issue_number": null,
+      "files_modified": 3,
+      "lines_added": 0,
+      "lines_deleted": 39,
+      "categories": [
+        "Bug Fix"
+      ],
+      "url": "https://github.com/vllm-project/vllm-ascend/pull/8446"
+    },
+    {
+      "pr_number": 8452,
+      "title": "[Misc] Clean up out-of-date models from doc and CI",
+      "author": "wangxiyuan",
+      "merged_at": "2026-04-21T06:19:12Z",
+      "issue_number": null,
+      "files_modified": 15,
+      "lines_added": 15,
+      "lines_deleted": 699,
+      "categories": [
+        "Refactor",
+        "Documentation",
+        "Test",
+        "Other"
+      ],
+      "url": "https://github.com/vllm-project/vllm-ascend/pull/8452"
+    },
+    {
+      "pr_number": 8552,
+      "title": "[CI] Fix lint CI",
+      "author": "wangxiyuan",
+      "merged_at": "2026-04-22T06:17:25Z",
+      "issue_number": null,
+      "files_modified": 1,
+      "lines_added": 1,
+      "lines_deleted": 1,
+      "categories": [
+        "Bug Fix",
+        "Other"
+      ],
+      "url": "https://github.com/vllm-project/vllm-ascend/pull/8552"
+    },
+    {
+      "pr_number": 8648,
+      "title": "[v0.13.0][Feature] Add DeepSeek v4 initial support",
+      "author": "wangxiyuan",
+      "merged_at": "2026-04-24T03:29:34Z",
+      "issue_number": null,
+      "files_modified": 30,
+      "lines_added": 10058,
+      "lines_deleted": 441,
+      "categories": [
+        "Feature"
+      ],
+      "url": "https://github.com/vllm-project/vllm-ascend/pull/8648"
+    },
+    {
+      "pr_number": 8726,
+      "title": "[Misc] remove weak_ref_tensor C code",
+      "author": "wangxiyuan",
+      "merged_at": "2026-04-27T06:11:49Z",
+      "issue_number": null,
+      "files_modified": 2,
+      "lines_added": 0,
+      "lines_deleted": 18,
+      "categories": [
+        "Other"
+      ],
+      "url": "https://github.com/vllm-project/vllm-ascend/pull/8726"
+    },
+    {
+      "pr_number": 8656,
+      "title": "[Doc] Update version policy",
+      "author": "wangxiyuan",
+      "merged_at": "2026-04-24T07:41:49Z",
+      "issue_number": null,
+      "files_modified": 1,
+      "lines_added": 4,
+      "lines_deleted": 2,
+      "categories": [
+        "Documentation"
+      ],
+      "url": "https://github.com/vllm-project/vllm-ascend/pull/8656"
+    },
+    {
+      "pr_number": 8825,
+      "title": "[Doc] Add release note for 0.19.1rc1",
+      "author": "wangxiyuan",
+      "merged_at": "2026-04-30T10:32:13Z",
+      "issue_number": null,
+      "files_modified": 6,
+      "lines_added": 213,
+      "lines_deleted": 8,
+      "categories": [
+        "Feature",
+        "Documentation"
+      ],
+      "url": "https://github.com/vllm-project/vllm-ascend/pull/8825"
+    },
+    {
+      "pr_number": 8855,
+      "title": "[Misc] Drop vlllm 0.19.1 support",
+      "author": "wangxiyuan",
+      "merged_at": "2026-05-06T01:25:32Z",
+      "issue_number": null,
+      "files_modified": 30,
+      "lines_added": 94,
+      "lines_deleted": 181,
+      "categories": [
+        "Feature"
+      ],
+      "url": "https://github.com/vllm-project/vllm-ascend/pull/8855"
+    },
+    {
+      "pr_number": 8870,
+      "title": "Bump actions/checkout from 4 to 6",
+      "author": "dependabot[bot]",
+      "merged_at": "2026-05-06T01:45:32Z",
+      "issue_number": null,
+      "files_modified": 2,
+      "lines_added": 3,
+      "lines_deleted": 3,
+      "categories": [
+        "Test"
+      ],
+      "url": "https://github.com/vllm-project/vllm-ascend/pull/8870"
+    },
+    {
+      "pr_number": 8871,
+      "title": "Bump docker/setup-qemu-action from 3 to 4",
+      "author": "dependabot[bot]",
+      "merged_at": "2026-05-06T01:45:09Z",
+      "issue_number": null,
+      "files_modified": 1,
+      "lines_added": 1,
+      "lines_deleted": 1,
+      "categories": [
+        "Documentation"
+      ],
+      "url": "https://github.com/vllm-project/vllm-ascend/pull/8871"
+    },
+    {
+      "pr_number": 8874,
+      "title": "[CI] Remove releases/v0.18.0 branch from nightly test workflows",
+      "author": "zhangxinyuehfad",
+      "merged_at": "2026-05-06T01:40:50Z",
+      "issue_number": null,
+      "files_modified": 3,
+      "lines_added": 4,
+      "lines_deleted": 7,
+      "categories": [
+        "Test",
+        "Other"
+      ],
+      "url": "https://github.com/vllm-project/vllm-ascend/pull/8874"
+    },
+    {
+      "pr_number": 8866,
+      "title": "[BugFix] Changed the minimax wrapper to accept **extra_kwargs",
+      "author": "gcanlin",
+      "merged_at": "2026-05-06T01:39:58Z",
+      "issue_number": null,
+      "files_modified": 1,
+      "lines_added": 2,
+      "lines_deleted": 0,
+      "categories": [
+        "Bug Fix"
+      ],
+      "url": "https://github.com/vllm-project/vllm-ascend/pull/8866"
+    },
+    {
+      "pr_number": 8864,
+      "title": "[BugFix] Fix Ascend MoE routing expert count with EPLB",
+      "author": "gcanlin",
+      "merged_at": "2026-05-06T01:26:09Z",
+      "issue_number": null,
+      "files_modified": 8,
+      "lines_added": 112,
+      "lines_deleted": 24,
+      "categories": [
+        "Bug Fix",
+        "Test"
+      ],
+      "url": "https://github.com/vllm-project/vllm-ascend/pull/8864"
+    },
+    {
+      "pr_number": 7374,
+      "title": "[BugFix] fix draft_model",
+      "author": "KlyzhenkoVadim",
+      "merged_at": "2026-04-22T06:05:58Z",
+      "issue_number": null,
+      "files_modified": 4,
+      "lines_added": 31,
+      "lines_deleted": 81,
+      "categories": [
+        "Bug Fix"
+      ],
+      "url": "https://github.com/vllm-project/vllm-ascend/pull/7374"
+    },
+    {
+      "pr_number": 8790,
+      "title": "[CI] add nightly case: Kimi-K2.5-W4A8, Qwen3.5-122B-A10B-w8a8",
+      "author": "chen-commits",
+      "merged_at": "2026-05-02T08:24:12Z",
+      "issue_number": null,
+      "files_modified": 10,
+      "lines_added": 329,
+      "lines_deleted": 17,
+      "categories": [
+        "Feature",
+        "Test",
+        "Other"
+      ],
+      "url": "https://github.com/vllm-project/vllm-ascend/pull/8790"
+    },
+    {
+      "pr_number": 8854,
+      "title": "[CI] Add v0.18.0 and vv0.19.1rc1 options to build  and push image",
+      "author": "zhangxinyuehfad",
+      "merged_at": "2026-04-30T15:01:42Z",
+      "issue_number": null,
+      "files_modified": 2,
+      "lines_added": 4,
+      "lines_deleted": 0,
+      "categories": [
+        "Feature",
+        "Other"
+      ],
+      "url": "https://github.com/vllm-project/vllm-ascend/pull/8854"
+    },
+    {
+      "pr_number": 8383,
+      "title": "[doc][0.18.0] v0.18.0 release note",
+      "author": "zzzzwwjj",
+      "merged_at": "2026-04-30T10:44:08Z",
+      "issue_number": null,
+      "files_modified": 2,
+      "lines_added": 152,
+      "lines_deleted": 29,
+      "categories": [
+        "Documentation"
+      ],
+      "url": "https://github.com/vllm-project/vllm-ascend/pull/8383"
+    },
+    {
+      "pr_number": 8836,
+      "title": "[BugFix] [P/D] release proxy resources on stream cancellation",
+      "author": "liziyu179",
+      "merged_at": "2026-04-30T08:47:52Z",
+      "issue_number": null,
+      "files_modified": 2,
+      "lines_added": 21,
+      "lines_deleted": 13,
+      "categories": [
+        "Bug Fix"
+      ],
+      "url": "https://github.com/vllm-project/vllm-ascend/pull/8836"
+    },
+    {
+      "pr_number": 8833,
+      "title": "[BugFix][Patch] Backport forced tool choice none-content handling",
+      "author": "QwertyJack",
+      "merged_at": "2026-04-30T06:39:24Z",
+      "issue_number": null,
+      "files_modified": 4,
+      "lines_added": 239,
+      "lines_deleted": 0,
+      "categories": [
+        "Bug Fix"
+      ],
+      "url": "https://github.com/vllm-project/vllm-ascend/pull/8833"
+    },
+    {
+      "pr_number": 8832,
+      "title": "[BugFix][Patch] Backport GLM tool call streaming fixes",
+      "author": "QwertyJack",
+      "merged_at": "2026-04-30T06:45:15Z",
+      "issue_number": null,
+      "files_modified": 4,
+      "lines_added": 886,
+      "lines_deleted": 2,
+      "categories": [
+        "Bug Fix"
+      ],
+      "url": "https://github.com/vllm-project/vllm-ascend/pull/8832"
     }
   ]
 }

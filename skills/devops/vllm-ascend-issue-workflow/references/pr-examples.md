@@ -156,3 +156,56 @@ This document contains real PR examples with problems and solutions.
 ❌ **Don't forget to configure git**
 - Always verify user.name and user.email
 - Must match Signed-off-by
+
+---
+
+## PR #9493 - Issue #9454 pip install Cleanup
+
+**Issue**: #9454 - 移除不必要的 pip install
+
+**Key Decision**: 只删除 pip install，保留 `export VLLM_USE_MODELSCOPE=True`
+
+**Learning**: 修改前仔细理解 Issue 的真正需求，不要过度修改。
+
+---
+
+## PR #9369 → Clean Branch - Issue #9358 DeepSeek-V3.2 Parameter Fix
+
+**Issue**: #9358 - DeepSeek-V3.2.md 参数不匹配
+
+**Problems Encountered**:
+
+1. **DCO Failure** - merge commit 缺少 Signed-off-by
+2. **Git push 失败** - 需要使用 GitHub API 推送
+
+**Solutions Applied**:
+
+1. **创建干净分支** `doc/fix-deepseek-v3.2-parameter-9358-v2` 解决 DCO 问题
+
+**Key Learnings**:
+- merge commits 也需要 Signed-off-by
+- Git push 失败时可用 GitHub API 推送
+- 创建干净分支是解决 DCO 问题的最简单方法
+
+---
+
+## PR #9199 - Issue #9167 Version Suffix Fix
+
+**Issue**: #9167 - vllm_version_is 版本后缀问题
+
+**Problem**: `vllm.__version__` 包含额外后缀（如 `"0.20.1+cpu"`）导致版本比较失败
+
+**Solution**: 使用 `Version.public` 属性代替手动剥离后缀
+
+**Before**:
+```python
+vllm_version = vllm_version.split('+')[0]
+return Version(vllm_version) == Version(target_vllm_version)
+```
+
+**After**:
+```python
+return Version(vllm_version).public == Version(target_vllm_version).public
+```
+
+**Key Learning**: 使用标准库提供的属性处理版本后缀，比手动字符串操作更健壮。

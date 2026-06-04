@@ -10,13 +10,9 @@ vLLM-Ascend PR 工作流规则:
 7) **不要因为 DCO 问题关闭 PR** - DCO 可以通过 rebase 修复
 8) **不要因为 Lint 问题关闭 PR** - Lint 可以通过修改代码修复
 §
-vLLM-Ascend Issue #8975 已分析并修复：BalanceScheduler + RecomputeScheduler 死锁问题
-PR #9149 已创建，Gemini Code Assist 反馈：检查位置错误（冗余不可达），已修复：移到 L474 之前
-关键学习：验证检查需分析现有检查是否已隐式互斥，避免添加不可达代码
-§
 vLLM-Ascend 项目路径: C:/Users/HuaWei/vllm-ascend (已克隆，完整历史 3168 提交)
 §
-学习机制: 每天凌晨自动学习 (memory更新、PR学习、模块学习)，持续积累经验。已学习20个PR，每天学习新合入PR。
+学习机制: 已学习3000+个PR(约100%)，每天凌晨自动学习新PR。已创建6个模块化技能。Issue #9454: 只删除pip install，保留export VLLM_USE_MODELSCOPE=True。PR #9493已创建。
 §
 vLLM-Ascend 贡献完成: 4 个 PR 已提交 - #9149 (死锁检查), #9199 (版本后缀), #9205 (ViT backend), #9216 (shutdown方法). 关键流程：从main创建干净分支、检查依赖方法存在、添加测试、ruff format、处理Gemini反馈、设置cronjob监控。
 §

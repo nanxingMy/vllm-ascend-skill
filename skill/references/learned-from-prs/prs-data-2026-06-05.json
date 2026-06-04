@@ -1,0 +1,1332 @@
+{
+  "date": "2026-06-05",
+  "total_prs": 24,
+  "prs": [
+    {
+      "pr_number": 10008,
+      "title": "[BugFix]Fix the question that cant find num_kv_head from some model config",
+      "author": "wangxiaoteng888",
+      "merged_at": "2026-06-04T14:49:32Z",
+      "issue_number": null,
+      "issue_title": null,
+      "issue_labels": [],
+      "files_modified": 1,
+      "lines_added": 46,
+      "lines_deleted": 27,
+      "categories": [
+        "Bug Fix"
+      ],
+      "patterns": [],
+      "key_files": [
+        {
+          "filename": "vllm_ascend/distributed/kv_transfer/kv_p2p/mooncake_connector.py",
+          "status": "modified",
+          "additions": 46,
+          "deletions": 27
+        }
+      ],
+      "url": "https://github.com/vllm-project/vllm-ascend/pull/10008"
+    },
+    {
+      "pr_number": 9929,
+      "title": "[Ascend950][BugFix] Fix MoonViT3dPretrainedModel.to overriding quantized ViT weight dtype",
+      "author": "gaozihao-shy",
+      "merged_at": "2026-06-04T14:40:57Z",
+      "issue_number": null,
+      "issue_title": null,
+      "issue_labels": [],
+      "files_modified": 1,
+      "lines_added": 26,
+      "lines_deleted": 1,
+      "categories": [
+        "Bug Fix"
+      ],
+      "patterns": [
+        "Patching pattern (vllm_ascend/patch/)"
+      ],
+      "key_files": [
+        {
+          "filename": "vllm_ascend/patch/worker/patch_kimi_k25.py",
+          "status": "modified",
+          "additions": 26,
+          "deletions": 1
+        }
+      ],
+      "url": "https://github.com/vllm-project/vllm-ascend/pull/9929"
+    },
+    {
+      "pr_number": 9994,
+      "title": "[CI][Test] Optimize selective test routing and CI test stability",
+      "author": "MrZ20",
+      "merged_at": "2026-06-04T12:51:38Z",
+      "issue_number": null,
+      "issue_title": null,
+      "issue_labels": [],
+      "files_modified": 19,
+      "lines_added": 333,
+      "lines_deleted": 209,
+      "categories": [
+        "Performance",
+        "Test",
+        "Other"
+      ],
+      "patterns": [
+        "Test modification"
+      ],
+      "key_files": [
+        {
+          "filename": ".github/workflows/scripts/coverage.py",
+          "status": "modified",
+          "additions": 11,
+          "deletions": 6
+        },
+        {
+          "filename": ".github/workflows/scripts/select_tests.py",
+          "status": "modified",
+          "additions": 75,
+          "deletions": 24
+        },
+        {
+          "filename": ".github/workflows/scripts/test_config.yaml",
+          "status": "modified",
+          "additions": 4,
+          "deletions": 1
+        },
+        {
+          "filename": ".github/workflows/scripts/test_select_tests.py",
+          "status": "modified",
+          "additions": 102,
+          "deletions": 0
+        },
+        {
+          "filename": "tests/e2e/pull_request/coverage.md",
+          "status": "modified",
+          "additions": 19,
+          "deletions": 19
+        },
+        {
+          "filename": "tests/e2e/pull_request/four_card/long_sequence/test_accuracy.py",
+          "status": "modified",
+          "additions": 1,
+          "deletions": 1
+        },
+        {
+          "filename": "tests/e2e/pull_request/four_card/long_sequence/test_basic.py",
+          "status": "modified",
+          "additions": 1,
+          "deletions": 1
+        },
+        {
+          "filename": "tests/e2e/pull_request/four_card/long_sequence/test_prefix_caching_cp.py",
+          "status": "modified",
+          "additions": 1,
+          "deletions": 1
+        },
+        {
+          "filename": "tests/e2e/pull_request/four_card/spec_decode/test_mtp_qwen3_next.py",
+          "status": "modified",
+          "additions": 1,
+          "deletions": 1
+        },
+        {
+          "filename": "tests/e2e/pull_request/four_card/test_data_parallel_tp2.py",
+          "status": "modified",
+          "additions": 1,
+          "deletions": 1
+        }
+      ],
+      "url": "https://github.com/vllm-project/vllm-ascend/pull/9994"
+    },
+    {
+      "pr_number": 10003,
+      "title": "[BugFix] fix dsv4 piecewise scenario",
+      "author": "zouyida2052",
+      "merged_at": "2026-06-04T12:38:23Z",
+      "issue_number": null,
+      "issue_title": null,
+      "issue_labels": [],
+      "files_modified": 1,
+      "lines_added": 8,
+      "lines_deleted": 8,
+      "categories": [
+        "Bug Fix"
+      ],
+      "patterns": [
+        "Platform-level change"
+      ],
+      "key_files": [
+        {
+          "filename": "vllm_ascend/platform.py",
+          "status": "modified",
+          "additions": 8,
+          "deletions": 8
+        }
+      ],
+      "url": "https://github.com/vllm-project/vllm-ascend/pull/10003"
+    },
+    {
+      "pr_number": 10017,
+      "title": "[Test][CI] final part for selected test",
+      "author": "wangxiyuan",
+      "merged_at": "2026-06-04T09:32:26Z",
+      "issue_number": null,
+      "issue_title": null,
+      "issue_labels": [],
+      "files_modified": 30,
+      "lines_added": 215,
+      "lines_deleted": 349,
+      "categories": [
+        "Test",
+        "Other"
+      ],
+      "patterns": [
+        "Test modification"
+      ],
+      "key_files": [
+        {
+          "filename": ".github/TEST_README.md",
+          "status": "modified",
+          "additions": 15,
+          "deletions": 31
+        },
+        {
+          "filename": ".github/workflows/_parse_trigger.yaml",
+          "status": "modified",
+          "additions": 6,
+          "deletions": 6
+        },
+        {
+          "filename": ".github/workflows/_selected_tests.yaml",
+          "status": "modified",
+          "additions": 6,
+          "deletions": 0
+        },
+        {
+          "filename": ".github/workflows/pr_test.yaml",
+          "status": "renamed",
+          "additions": 11,
+          "deletions": 7
+        },
+        {
+          "filename": ".github/workflows/pr_test_full.yaml",
+          "status": "removed",
+          "additions": 0,
+          "deletions": 90
+        },
+        {
+          "filename": ".github/workflows/scripts/run_selected_tests.sh",
+          "status": "modified",
+          "additions": 1,
+          "deletions": 1
+        },
+        {
+          "filename": ".github/workflows/scripts/select_tests.py",
+          "status": "modified",
+          "additions": 10,
+          "deletions": 44
+        },
+        {
+          "filename": ".github/workflows/scripts/test_config.yaml",
+          "status": "modified",
+          "additions": 109,
+          "deletions": 111
+        },
+        {
+          "filename": ".github/workflows/scripts/test_select_tests.py",
+          "status": "modified",
+          "additions": 18,
+          "deletions": 25
+        },
+        {
+          "filename": "AGENTS.md",
+          "status": "modified",
+          "additions": 1,
+          "deletions": 1
+        }
+      ],
+      "url": "https://github.com/vllm-project/vllm-ascend/pull/10017"
+    },
+    {
+      "pr_number": 9638,
+      "title": "[Feature] Enable prefix caching with PCP/DCP",
+      "author": "cfq0",
+      "merged_at": "2026-06-04T08:55:33Z",
+      "issue_number": null,
+      "issue_title": null,
+      "issue_labels": [],
+      "files_modified": 6,
+      "lines_added": 400,
+      "lines_deleted": 16,
+      "categories": [
+        "Bug Fix",
+        "Feature"
+      ],
+      "patterns": [
+        "Patching pattern (vllm_ascend/patch/)",
+        "Platform-level change",
+        "Test modification"
+      ],
+      "key_files": [
+        {
+          "filename": "tests/ut/patch/platform/test_prefix_cache_cp_patches.py",
+          "status": "added",
+          "additions": 260,
+          "deletions": 0
+        },
+        {
+          "filename": "vllm_ascend/patch/__init__.py",
+          "status": "modified",
+          "additions": 15,
+          "deletions": 0
+        },
+        {
+          "filename": "vllm_ascend/patch/platform/__init__.py",
+          "status": "modified",
+          "additions": 3,
+          "deletions": 1
+        },
+        {
+          "filename": "vllm_ascend/patch/platform/patch_kv_cache_coordinator.py",
+          "status": "modified",
+          "additions": 65,
+          "deletions": 14
+        },
+        {
+          "filename": "vllm_ascend/patch/platform/patch_kv_cache_utils.py",
+          "status": "modified",
+          "additions": 4,
+          "deletions": 1
+        },
+        {
+          "filename": "vllm_ascend/patch/platform/patch_mamba_manager.py",
+          "status": "added",
+          "additions": 53,
+          "deletions": 0
+        }
+      ],
+      "url": "https://github.com/vllm-project/vllm-ascend/pull/9638"
+    },
+    {
+      "pr_number": 9889,
+      "title": "[Doc]Update GLM-5 documentation and support matrix",
+      "author": "nakairika",
+      "merged_at": "2026-06-04T08:32:09Z",
+      "issue_number": null,
+      "issue_title": null,
+      "issue_labels": [],
+      "files_modified": 2,
+      "lines_added": 57,
+      "lines_deleted": 36,
+      "categories": [
+        "Feature",
+        "Documentation"
+      ],
+      "patterns": [],
+      "key_files": [
+        {
+          "filename": "docs/source/tutorials/models/GLM5.md",
+          "status": "modified",
+          "additions": 56,
+          "deletions": 35
+        },
+        {
+          "filename": "docs/source/user_guide/support_matrix/supported_models.md",
+          "status": "modified",
+          "additions": 1,
+          "deletions": 1
+        }
+      ],
+      "url": "https://github.com/vllm-project/vllm-ascend/pull/9889"
+    },
+    {
+      "pr_number": 9855,
+      "title": "[CI] add MiniMax A2 acc case",
+      "author": "weixinAc",
+      "merged_at": "2026-06-04T08:24:50Z",
+      "issue_number": null,
+      "issue_title": null,
+      "issue_labels": [],
+      "files_modified": 4,
+      "lines_added": 47,
+      "lines_deleted": 18,
+      "categories": [
+        "Feature",
+        "Other"
+      ],
+      "patterns": [
+        "Test modification"
+      ],
+      "key_files": [
+        {
+          "filename": "tests/e2e/nightly/single_node/models/configs/MiniMax-M2.5-w8a8-QuaRot-A2.yaml",
+          "status": "modified",
+          "additions": 20,
+          "deletions": 1
+        },
+        {
+          "filename": "tests/e2e/nightly/single_node/models/configs/MiniMax-M2.5-w8a8-QuaRot-A3.yaml",
+          "status": "modified",
+          "additions": 11,
+          "deletions": 3
+        },
+        {
+          "filename": "tests/e2e/nightly/single_node/models/configs/Qwen3.5-27B-w8a8-A3.yaml",
+          "status": "modified",
+          "additions": 14,
+          "deletions": 3
+        },
+        {
+          "filename": "tests/e2e/weekly/single_node/configs/Qwen3.5-27B-w8a8-A3.yaml",
+          "status": "modified",
+          "additions": 2,
+          "deletions": 11
+        }
+      ],
+      "url": "https://github.com/vllm-project/vllm-ascend/pull/9855"
+    },
+    {
+      "pr_number": 9996,
+      "title": "[Bugfix] [kimi] upgrade transformers from 5.5.3 to 5.5.4",
+      "author": "aipaes",
+      "merged_at": "2026-06-04T08:19:47Z",
+      "issue_number": null,
+      "issue_title": null,
+      "issue_labels": [],
+      "files_modified": 2,
+      "lines_added": 2,
+      "lines_deleted": 2,
+      "categories": [
+        "Bug Fix"
+      ],
+      "patterns": [],
+      "key_files": [
+        {
+          "filename": "pyproject.toml",
+          "status": "modified",
+          "additions": 1,
+          "deletions": 1
+        },
+        {
+          "filename": "requirements.txt",
+          "status": "modified",
+          "additions": 1,
+          "deletions": 1
+        }
+      ],
+      "url": "https://github.com/vllm-project/vllm-ascend/pull/9996"
+    },
+    {
+      "pr_number": 9995,
+      "title": "[Doc][Model] Add DeepSeek-V4 Flash and Pro documentation",
+      "author": "GDzhu01",
+      "merged_at": "2026-06-04T08:18:45Z",
+      "issue_number": null,
+      "issue_title": null,
+      "issue_labels": [],
+      "files_modified": 4,
+      "lines_added": 2047,
+      "lines_deleted": 0,
+      "categories": [
+        "Feature",
+        "Documentation"
+      ],
+      "patterns": [],
+      "key_files": [
+        {
+          "filename": "docs/source/tutorials/models/DeepSeek-V4-Flash.md",
+          "status": "added",
+          "additions": 855,
+          "deletions": 0
+        },
+        {
+          "filename": "docs/source/tutorials/models/DeepSeek-V4-Pro.md",
+          "status": "added",
+          "additions": 1188,
+          "deletions": 0
+        },
+        {
+          "filename": "docs/source/tutorials/models/index.md",
+          "status": "modified",
+          "additions": 2,
+          "deletions": 0
+        },
+        {
+          "filename": "docs/source/user_guide/support_matrix/supported_models.md",
+          "status": "modified",
+          "additions": 2,
+          "deletions": 0
+        }
+      ],
+      "url": "https://github.com/vllm-project/vllm-ascend/pull/9995"
+    },
+    {
+      "pr_number": 9966,
+      "title": "[Doc][Model] Add DeepSeek-V4 Flash and Pro documentation",
+      "author": "GDzhu01",
+      "merged_at": "2026-06-04T08:17:28Z",
+      "issue_number": null,
+      "issue_title": null,
+      "issue_labels": [],
+      "files_modified": 4,
+      "lines_added": 2047,
+      "lines_deleted": 0,
+      "categories": [
+        "Feature",
+        "Documentation"
+      ],
+      "patterns": [],
+      "key_files": [
+        {
+          "filename": "docs/source/tutorials/models/DeepSeek-V4-Flash.md",
+          "status": "added",
+          "additions": 855,
+          "deletions": 0
+        },
+        {
+          "filename": "docs/source/tutorials/models/DeepSeek-V4-Pro.md",
+          "status": "added",
+          "additions": 1188,
+          "deletions": 0
+        },
+        {
+          "filename": "docs/source/tutorials/models/index.md",
+          "status": "modified",
+          "additions": 2,
+          "deletions": 0
+        },
+        {
+          "filename": "docs/source/user_guide/support_matrix/supported_models.md",
+          "status": "modified",
+          "additions": 2,
+          "deletions": 0
+        }
+      ],
+      "url": "https://github.com/vllm-project/vllm-ascend/pull/9966"
+    },
+    {
+      "pr_number": 9997,
+      "title": "[Test] Split ops test for selected way",
+      "author": "wangxiyuan",
+      "merged_at": "2026-06-04T07:44:19Z",
+      "issue_number": null,
+      "issue_title": null,
+      "issue_labels": [],
+      "files_modified": 15,
+      "lines_added": 258,
+      "lines_deleted": 397,
+      "categories": [
+        "Test"
+      ],
+      "patterns": [
+        "Test modification"
+      ],
+      "key_files": [
+        {
+          "filename": ".github/workflows/scripts/run_selected_tests.sh",
+          "status": "modified",
+          "additions": 1,
+          "deletions": 1
+        },
+        {
+          "filename": ".github/workflows/scripts/select_tests.py",
+          "status": "modified",
+          "additions": 11,
+          "deletions": 40
+        },
+        {
+          "filename": ".github/workflows/scripts/test_config.yaml",
+          "status": "modified",
+          "additions": 88,
+          "deletions": 42
+        },
+        {
+          "filename": ".github/workflows/scripts/test_select_tests.py",
+          "status": "modified",
+          "additions": 3,
+          "deletions": 3
+        },
+        {
+          "filename": "tests/e2e/pull_request/full/two_cards/test_offline_inference_distributed.py",
+          "status": "removed",
+          "additions": 0,
+          "deletions": 229
+        },
+        {
+          "filename": "tests/e2e/pull_request/full/two_cards/test_qwen3_moe.py",
+          "status": "modified",
+          "additions": 0,
+          "deletions": 47
+        },
+        {
+          "filename": "tests/e2e/pull_request/light/four_card/test_qwen3_5.py",
+          "status": "renamed",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "filename": "tests/e2e/pull_request/light/four_card/test_qwen3_next.py",
+          "status": "renamed",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "filename": "tests/e2e/pull_request/light/one_card/test_minicpm.py",
+          "status": "renamed",
+          "additions": 0,
+          "deletions": 23
+        },
+        {
+          "filename": "tests/e2e/pull_request/light/one_card/test_multistream_overlap_shared_expert.py",
+          "status": "renamed",
+          "additions": 0,
+          "deletions": 0
+        }
+      ],
+      "url": "https://github.com/vllm-project/vllm-ascend/pull/9997"
+    },
+    {
+      "pr_number": 9989,
+      "title": "[Doc] Translated Doc files 2026-06-04",
+      "author": "vllm-ascend-ci",
+      "merged_at": "2026-06-04T07:00:51Z",
+      "issue_number": null,
+      "issue_title": null,
+      "issue_labels": [],
+      "files_modified": 30,
+      "lines_added": 5834,
+      "lines_deleted": 3273,
+      "categories": [
+        "Documentation"
+      ],
+      "patterns": [
+        "Test modification"
+      ],
+      "key_files": [
+        {
+          "filename": "docs/source/locale/zh_CN/LC_MESSAGES/community/user_stories/index.po",
+          "status": "modified",
+          "additions": 6,
+          "deletions": 7
+        },
+        {
+          "filename": "docs/source/locale/zh_CN/LC_MESSAGES/community/user_stories/llamafactory.po",
+          "status": "modified",
+          "additions": 19,
+          "deletions": 9
+        },
+        {
+          "filename": "docs/source/locale/zh_CN/LC_MESSAGES/community/versioning_policy.po",
+          "status": "modified",
+          "additions": 196,
+          "deletions": 168
+        },
+        {
+          "filename": "docs/source/locale/zh_CN/LC_MESSAGES/developer_guide/Design_Documents/ACL_Graph.po",
+          "status": "modified",
+          "additions": 124,
+          "deletions": 117
+        },
+        {
+          "filename": "docs/source/locale/zh_CN/LC_MESSAGES/developer_guide/contribution/doc_writing.po",
+          "status": "added",
+          "additions": 522,
+          "deletions": 0
+        },
+        {
+          "filename": "docs/source/locale/zh_CN/LC_MESSAGES/developer_guide/contribution/e2e_ci_test.po",
+          "status": "modified",
+          "additions": 29,
+          "deletions": 23
+        },
+        {
+          "filename": "docs/source/locale/zh_CN/LC_MESSAGES/developer_guide/contribution/multi_node_test.po",
+          "status": "modified",
+          "additions": 319,
+          "deletions": 93
+        },
+        {
+          "filename": "docs/source/locale/zh_CN/LC_MESSAGES/developer_guide/contribution/testing.po",
+          "status": "modified",
+          "additions": 23,
+          "deletions": 82
+        },
+        {
+          "filename": "docs/source/locale/zh_CN/LC_MESSAGES/developer_guide/performance_and_debug/optimization_and_tuning.po",
+          "status": "modified",
+          "additions": 94,
+          "deletions": 74
+        },
+        {
+          "filename": "docs/source/locale/zh_CN/LC_MESSAGES/faqs.po",
+          "status": "modified",
+          "additions": 110,
+          "deletions": 96
+        }
+      ],
+      "url": "https://github.com/vllm-project/vllm-ascend/pull/9989"
+    },
+    {
+      "pr_number": 9985,
+      "title": "[Test] selected test for spec decode",
+      "author": "wangxiyuan",
+      "merged_at": "2026-06-04T06:08:43Z",
+      "issue_number": null,
+      "issue_title": null,
+      "issue_labels": [],
+      "files_modified": 20,
+      "lines_added": 646,
+      "lines_deleted": 594,
+      "categories": [
+        "Test"
+      ],
+      "patterns": [
+        "Test modification"
+      ],
+      "key_files": [
+        {
+          "filename": ".github/workflows/_selected_tests.yaml",
+          "status": "modified",
+          "additions": 1,
+          "deletions": 1
+        },
+        {
+          "filename": ".github/workflows/scripts/run_selected_tests.sh",
+          "status": "modified",
+          "additions": 5,
+          "deletions": 1
+        },
+        {
+          "filename": ".github/workflows/scripts/test_config.yaml",
+          "status": "modified",
+          "additions": 77,
+          "deletions": 12
+        },
+        {
+          "filename": "tests/e2e/pull_request/full/one_card/spec_decode/test_v1_spec_decode.py",
+          "status": "removed",
+          "additions": 0,
+          "deletions": 580
+        },
+        {
+          "filename": "tests/e2e/pull_request/light/coverage.md",
+          "status": "modified",
+          "additions": 13,
+          "deletions": 0
+        },
+        {
+          "filename": "tests/e2e/pull_request/light/four_card/spec_decode/__init__.py",
+          "status": "renamed",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "filename": "tests/e2e/pull_request/light/four_card/spec_decode/test_mtp_qwen3_next.py",
+          "status": "renamed",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "filename": "tests/e2e/pull_request/light/one_card/spec_decode/__init__.py",
+          "status": "added",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "filename": "tests/e2e/pull_request/light/one_card/spec_decode/conftest.py",
+          "status": "added",
+          "additions": 53,
+          "deletions": 0
+        },
+        {
+          "filename": "tests/e2e/pull_request/light/one_card/spec_decode/test_dflash.py",
+          "status": "added",
+          "additions": 81,
+          "deletions": 0
+        }
+      ],
+      "url": "https://github.com/vllm-project/vllm-ascend/pull/9985"
+    },
+    {
+      "pr_number": 9674,
+      "title": "[Doc][Misc] Improve readability and fix typos in documentation",
+      "author": "sunshine202600",
+      "merged_at": "2026-06-04T05:55:40Z",
+      "issue_number": null,
+      "issue_title": null,
+      "issue_labels": [],
+      "files_modified": 2,
+      "lines_added": 89,
+      "lines_deleted": 20,
+      "categories": [
+        "Bug Fix",
+        "Documentation"
+      ],
+      "patterns": [],
+      "key_files": [
+        {
+          "filename": "docs/source/installation.md",
+          "status": "modified",
+          "additions": 82,
+          "deletions": 20
+        },
+        {
+          "filename": "docs/source/quick_start.md",
+          "status": "modified",
+          "additions": 7,
+          "deletions": 0
+        }
+      ],
+      "url": "https://github.com/vllm-project/vllm-ascend/pull/9674"
+    },
+    {
+      "pr_number": 9735,
+      "title": "[BugFix]Reduce sampling is reconstructed to eliminate all patch behaviors and support DFlash and MTP",
+      "author": "hzx55906",
+      "merged_at": "2026-06-04T03:56:02Z",
+      "issue_number": null,
+      "issue_title": null,
+      "issue_labels": [],
+      "files_modified": 8,
+      "lines_added": 265,
+      "lines_deleted": 156,
+      "categories": [
+        "Bug Fix",
+        "Feature"
+      ],
+      "patterns": [
+        "Patching pattern (vllm_ascend/patch/)",
+        "Test modification",
+        "Custom operator change",
+        "Patching approach"
+      ],
+      "key_files": [
+        {
+          "filename": "tests/ut/spec_decode/a2/test_eagle_proposer.py",
+          "status": "modified",
+          "additions": 14,
+          "deletions": 7
+        },
+        {
+          "filename": "vllm_ascend/ops/triton/bincount.py",
+          "status": "modified",
+          "additions": 8,
+          "deletions": 4
+        },
+        {
+          "filename": "vllm_ascend/ops/triton/reject_sample.py",
+          "status": "modified",
+          "additions": 161,
+          "deletions": 64
+        },
+        {
+          "filename": "vllm_ascend/patch/worker/__init__.py",
+          "status": "modified",
+          "additions": 0,
+          "deletions": 3
+        },
+        {
+          "filename": "vllm_ascend/patch/worker/patch_llama_eagle3.py",
+          "status": "removed",
+          "additions": 0,
+          "deletions": 60
+        },
+        {
+          "filename": "vllm_ascend/sample/rejection_sampler.py",
+          "status": "modified",
+          "additions": 3,
+          "deletions": 2
+        },
+        {
+          "filename": "vllm_ascend/spec_decode/dflash_proposer.py",
+          "status": "modified",
+          "additions": 2,
+          "deletions": 0
+        },
+        {
+          "filename": "vllm_ascend/spec_decode/llm_base_proposer.py",
+          "status": "modified",
+          "additions": 77,
+          "deletions": 16
+        }
+      ],
+      "url": "https://github.com/vllm-project/vllm-ascend/pull/9735"
+    },
+    {
+      "pr_number": 9977,
+      "title": "[Test] Keep move test to selected way",
+      "author": "wangxiyuan",
+      "merged_at": "2026-06-04T03:39:35Z",
+      "issue_number": null,
+      "issue_title": null,
+      "issue_labels": [],
+      "files_modified": 11,
+      "lines_added": 40,
+      "lines_deleted": 15,
+      "categories": [
+        "Test"
+      ],
+      "patterns": [
+        "Test modification"
+      ],
+      "key_files": [
+        {
+          "filename": ".github/workflows/scripts/test_config.yaml",
+          "status": "modified",
+          "additions": 25,
+          "deletions": 15
+        },
+        {
+          "filename": "tests/e2e/pull_request/light/coverage.md",
+          "status": "modified",
+          "additions": 15,
+          "deletions": 0
+        },
+        {
+          "filename": "tests/e2e/pull_request/light/four_card/test_data_parallel_tp2.py",
+          "status": "renamed",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "filename": "tests/e2e/pull_request/light/one_card/test_batch_invariant.py",
+          "status": "renamed",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "filename": "tests/e2e/pull_request/light/one_card/test_sampler.py",
+          "status": "renamed",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "filename": "tests/e2e/pull_request/light/two_card/aclgraph/test_full_graph_mode.py",
+          "status": "renamed",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "filename": "tests/e2e/pull_request/light/two_card/aclgraph/test_single_request_aclgraph.py",
+          "status": "renamed",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "filename": "tests/e2e/pull_request/light/two_card/test_data_parallel.py",
+          "status": "renamed",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "filename": "tests/e2e/pull_request/light/two_card/test_disaggregated_encoder.py",
+          "status": "renamed",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "filename": "tests/e2e/pull_request/light/two_card/test_sequence_parallelism_moe.py",
+          "status": "renamed",
+          "additions": 0,
+          "deletions": 0
+        }
+      ],
+      "url": "https://github.com/vllm-project/vllm-ascend/pull/9977"
+    },
+    {
+      "pr_number": 8998,
+      "title": "[CI] add peagle spec decode ci test",
+      "author": "HF-001",
+      "merged_at": "2026-06-04T03:23:47Z",
+      "issue_number": null,
+      "issue_title": null,
+      "issue_labels": [],
+      "files_modified": 1,
+      "lines_added": 105,
+      "lines_deleted": 0,
+      "categories": [
+        "Feature",
+        "Test",
+        "Other"
+      ],
+      "patterns": [
+        "Test modification"
+      ],
+      "key_files": [
+        {
+          "filename": "tests/e2e/pull_request/full/two_cards/spec_decode/test_spec_decode.py",
+          "status": "modified",
+          "additions": 105,
+          "deletions": 0
+        }
+      ],
+      "url": "https://github.com/vllm-project/vllm-ascend/pull/8998"
+    },
+    {
+      "pr_number": 9829,
+      "title": "[BugFix][CI] Fix Qwen3-VL MMMU accuracy test failure by enabling chat template",
+      "author": "xuchi-0808",
+      "merged_at": "2026-06-04T03:23:08Z",
+      "issue_number": null,
+      "issue_title": null,
+      "issue_labels": [],
+      "files_modified": 6,
+      "lines_added": 16,
+      "lines_deleted": 4,
+      "categories": [
+        "Bug Fix",
+        "Test",
+        "Other"
+      ],
+      "patterns": [
+        "Test modification"
+      ],
+      "key_files": [
+        {
+          "filename": ".github/workflows/_e2e_nightly_single_node.yaml",
+          "status": "modified",
+          "additions": 6,
+          "deletions": 0
+        },
+        {
+          "filename": ".github/workflows/_e2e_nightly_single_node_models.yaml",
+          "status": "modified",
+          "additions": 6,
+          "deletions": 0
+        },
+        {
+          "filename": "tests/e2e/models/configs/Qwen3-Omni-30B-A3B-Instruct.yaml",
+          "status": "modified",
+          "additions": 1,
+          "deletions": 1
+        },
+        {
+          "filename": "tests/e2e/models/configs/Qwen3-VL-30B-A3B-Instruct.yaml",
+          "status": "modified",
+          "additions": 1,
+          "deletions": 1
+        },
+        {
+          "filename": "tests/e2e/models/configs/Qwen3-VL-8B-Instruct-W8A8.yaml",
+          "status": "modified",
+          "additions": 1,
+          "deletions": 1
+        },
+        {
+          "filename": "tests/e2e/models/configs/Qwen3-VL-8B-Instruct.yaml",
+          "status": "modified",
+          "additions": 1,
+          "deletions": 1
+        }
+      ],
+      "url": "https://github.com/vllm-project/vllm-ascend/pull/9829"
+    },
+    {
+      "pr_number": 9967,
+      "title": "[Test] Add more test to selected way",
+      "author": "wangxiyuan",
+      "merged_at": "2026-06-04T02:48:06Z",
+      "issue_number": null,
+      "issue_title": null,
+      "issue_labels": [],
+      "files_modified": 19,
+      "lines_added": 286,
+      "lines_deleted": 345,
+      "categories": [
+        "Feature",
+        "Test"
+      ],
+      "patterns": [
+        "Test modification"
+      ],
+      "key_files": [
+        {
+          "filename": ".github/workflows/_pre_commit.yml",
+          "status": "removed",
+          "additions": 0,
+          "deletions": 111
+        },
+        {
+          "filename": ".github/workflows/_selected_tests.yaml",
+          "status": "modified",
+          "additions": 21,
+          "deletions": 50
+        },
+        {
+          "filename": ".github/workflows/pr_test_light.yaml",
+          "status": "modified",
+          "additions": 89,
+          "deletions": 13
+        },
+        {
+          "filename": ".github/workflows/scripts/run_selected_tests.sh",
+          "status": "added",
+          "additions": 101,
+          "deletions": 0
+        },
+        {
+          "filename": ".github/workflows/scripts/test_config.yaml",
+          "status": "modified",
+          "additions": 60,
+          "deletions": 21
+        },
+        {
+          "filename": "tests/e2e/pull_request/full/one_card/compile/test_npu_storage_metadata.py",
+          "status": "removed",
+          "additions": 0,
+          "deletions": 54
+        },
+        {
+          "filename": "tests/e2e/pull_request/full/one_card/test_auto_fit_max_mode_len.py",
+          "status": "removed",
+          "additions": 0,
+          "deletions": 95
+        },
+        {
+          "filename": "tests/e2e/pull_request/full/two_cards/test_sequence_parallelism_moe.py",
+          "status": "modified",
+          "additions": 1,
+          "deletions": 1
+        },
+        {
+          "filename": "tests/e2e/pull_request/light/coverage.md",
+          "status": "modified",
+          "additions": 14,
+          "deletions": 0
+        },
+        {
+          "filename": "tests/e2e/pull_request/light/one_card/aclgraph/__init__.py",
+          "status": "renamed",
+          "additions": 0,
+          "deletions": 0
+        }
+      ],
+      "url": "https://github.com/vllm-project/vllm-ascend/pull/9967"
+    },
+    {
+      "pr_number": 9965,
+      "title": "[CI] change nightly test for main",
+      "author": "zhangxinyuehfad",
+      "merged_at": "2026-06-04T02:21:31Z",
+      "issue_number": null,
+      "issue_title": null,
+      "issue_labels": [],
+      "files_modified": 3,
+      "lines_added": 7,
+      "lines_deleted": 7,
+      "categories": [
+        "Test",
+        "Other"
+      ],
+      "patterns": [
+        "Test modification"
+      ],
+      "key_files": [
+        {
+          "filename": ".github/workflows/schedule_image_build_and_push.yaml",
+          "status": "modified",
+          "additions": 3,
+          "deletions": 3
+        },
+        {
+          "filename": ".github/workflows/schedule_nightly_test_a2.yaml",
+          "status": "modified",
+          "additions": 2,
+          "deletions": 2
+        },
+        {
+          "filename": ".github/workflows/schedule_nightly_test_a3.yaml",
+          "status": "modified",
+          "additions": 2,
+          "deletions": 2
+        }
+      ],
+      "url": "https://github.com/vllm-project/vllm-ascend/pull/9965"
+    },
+    {
+      "pr_number": 9491,
+      "title": "[Feature][Ops] Add LightningIndexer and SparseFlashAttention ACLNN ops",
+      "author": "maoxx241",
+      "merged_at": "2026-06-04T01:25:30Z",
+      "issue_number": null,
+      "issue_title": null,
+      "issue_labels": [],
+      "files_modified": 30,
+      "lines_added": 7729,
+      "lines_deleted": 0,
+      "categories": [
+        "Feature"
+      ],
+      "patterns": [],
+      "key_files": [
+        {
+          "filename": "csrc/attention/common/op_kernel/CopyInL1.h",
+          "status": "added",
+          "additions": 514,
+          "deletions": 0
+        },
+        {
+          "filename": "csrc/attention/common/op_kernel/FixpipeOut.h",
+          "status": "added",
+          "additions": 56,
+          "deletions": 0
+        },
+        {
+          "filename": "csrc/attention/common/op_kernel/arch35/vf/vf_basic_block_aligned128_no_update_sfa.h",
+          "status": "added",
+          "additions": 139,
+          "deletions": 0
+        },
+        {
+          "filename": "csrc/attention/common/op_kernel/arch35/vf/vf_basic_block_aligned128_update_sfa.h",
+          "status": "added",
+          "additions": 143,
+          "deletions": 0
+        },
+        {
+          "filename": "csrc/attention/common/op_kernel/arch35/vf/vf_basic_block_unaligned128_no_update_sfa.h",
+          "status": "added",
+          "additions": 149,
+          "deletions": 0
+        },
+        {
+          "filename": "csrc/attention/common/op_kernel/arch35/vf/vf_basic_block_unaligned128_update_sfa.h",
+          "status": "added",
+          "additions": 159,
+          "deletions": 0
+        },
+        {
+          "filename": "csrc/attention/common/op_kernel/arch35/vf/vf_basic_block_unaligned64_no_update_sfa.h",
+          "status": "added",
+          "additions": 129,
+          "deletions": 0
+        },
+        {
+          "filename": "csrc/attention/common/op_kernel/arch35/vf/vf_basic_block_unaligned64_update_sfa.h",
+          "status": "added",
+          "additions": 141,
+          "deletions": 0
+        },
+        {
+          "filename": "csrc/attention/common/op_kernel/arch35/vf/vf_basic_block_utils.h",
+          "status": "added",
+          "additions": 112,
+          "deletions": 0
+        },
+        {
+          "filename": "csrc/attention/common/op_kernel/arch35/vf/vf_flashupdate_new.h",
+          "status": "added",
+          "additions": 727,
+          "deletions": 0
+        }
+      ],
+      "url": "https://github.com/vllm-project/vllm-ascend/pull/9491"
+    },
+    {
+      "pr_number": 9619,
+      "title": "[Doc][Misc] Improve readability and fix typos in documentation",
+      "author": "sunshine202600",
+      "merged_at": "2026-06-04T01:23:37Z",
+      "issue_number": null,
+      "issue_title": null,
+      "issue_labels": [],
+      "files_modified": 1,
+      "lines_added": 7,
+      "lines_deleted": 0,
+      "categories": [
+        "Bug Fix",
+        "Documentation"
+      ],
+      "patterns": [],
+      "key_files": [
+        {
+          "filename": "docs/source/quick_start.md",
+          "status": "modified",
+          "additions": 7,
+          "deletions": 0
+        }
+      ],
+      "url": "https://github.com/vllm-project/vllm-ascend/pull/9619"
+    },
+    {
+      "pr_number": 9955,
+      "title": "[Test] Move more test to selected way",
+      "author": "wangxiyuan",
+      "merged_at": "2026-06-04T00:47:57Z",
+      "issue_number": null,
+      "issue_title": null,
+      "issue_labels": [],
+      "files_modified": 30,
+      "lines_added": 115,
+      "lines_deleted": 397,
+      "categories": [
+        "Test"
+      ],
+      "patterns": [
+        "Test modification"
+      ],
+      "key_files": [
+        {
+          "filename": ".github/workflows/_selected_tests.yaml",
+          "status": "modified",
+          "additions": 18,
+          "deletions": 0
+        },
+        {
+          "filename": ".github/workflows/scripts/test_config.yaml",
+          "status": "modified",
+          "additions": 16,
+          "deletions": 21
+        },
+        {
+          "filename": "docs/source/community/versioning_policy.md",
+          "status": "modified",
+          "additions": 1,
+          "deletions": 1
+        },
+        {
+          "filename": "tests/e2e/pull_request/full/one_card/test_async_scheduling.py",
+          "status": "removed",
+          "additions": 0,
+          "deletions": 234
+        },
+        {
+          "filename": "tests/e2e/pull_request/full/one_card/test_eager_mode_acc.py",
+          "status": "removed",
+          "additions": 0,
+          "deletions": 68
+        },
+        {
+          "filename": "tests/e2e/pull_request/full/two_cards/test_qwen3_moe.py",
+          "status": "modified",
+          "additions": 1,
+          "deletions": 53
+        },
+        {
+          "filename": "tests/e2e/pull_request/light/coverage.md",
+          "status": "modified",
+          "additions": 79,
+          "deletions": 20
+        },
+        {
+          "filename": "tests/e2e/pull_request/light/four_card/_310p/__init__.py",
+          "status": "added",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "filename": "tests/e2e/pull_request/light/four_card/_310p/test_dense_model_310p.py",
+          "status": "renamed",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "filename": "tests/e2e/pull_request/light/four_card/_310p/test_moe_model_310p.py",
+          "status": "renamed",
+          "additions": 0,
+          "deletions": 0
+        }
+      ],
+      "url": "https://github.com/vllm-project/vllm-ascend/pull/9955"
+    }
+  ]
+}
